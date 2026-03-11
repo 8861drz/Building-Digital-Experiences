@@ -1,0 +1,188 @@
+<h1 id="relative-architecture">Relative Architecture</h1>
+<h3 id="a-responsibility-driven-model-for-business-product-and-system-architecture">A Responsibility-Driven Model for Business, Product, and System Architecture</h3>
+<hr>
+<h1 id="executive-summary">Executive Summary</h1>
+<p>Most organizations attempt to understand their systems by modeling applications, services, and technology platforms. While useful for engineering, this perspective often obscures a more important question:</p>
+<p><strong>How does the business actually fulfill its responsibilities?</strong></p>
+<p>Organizations deliver value by fulfilling responsibilities that originate in the business or product domain. These responsibilities are carried out through a combination of people, partners, processes, and software systems.</p>
+<p>Traditional architecture approaches tend to begin by modeling systems and technical components. As a result, the architecture often reflects system boundaries rather than the responsibilities that produce outcomes.</p>
+<p>Relative Architecture proposes a different starting point: <strong>model the responsibilities that fulfill outcomes across the ecosystem.</strong></p>
+<p>Architecture should:</p>
+<ul>
+<li><strong>Model how the business fulfills responsibilities</strong>, not just the systems that automate them  </li>
+<li><strong>Use business semantics and capability contracts</strong> rather than technical jargon  </li>
+<li><strong>Represent interactions consistently</strong>, so the architecture looks similar regardless of scale or magnification  </li>
+</ul>
+<p>When architecture begins with responsibilities rather than systems, organizations gain several important advantages:</p>
+<ul>
+<li>A <strong>complete model of how the business operates</strong>, independent of implementation technology  </li>
+<li>Clear visibility into <strong>buy-versus-build decisions</strong>, including partner capabilities  </li>
+<li><strong>Impact awareness as systems evolve</strong>, because collaborations and dependencies are explicit  </li>
+<li>The ability to <strong>plug in trusted external capabilities</strong>, enabled through clear contracts and events  </li>
+</ul>
+<p>Relative Architecture therefore provides a unified model connecting <strong>business architecture, product architecture, and system architecture</strong> through a shared representation of responsibilities and their interactions.</p>
+<p>The following principles summarize the core ideas behind this approach.</p>
+<hr>
+<h1 id="relative-architecture-manifesto">Relative Architecture Manifesto</h1>
+<ol>
+<li><p><strong>Organizations deliver value by fulfilling responsibilities.</strong></p>
+</li>
+<li><p><strong>Responsibilities originate in the business or product domain, not in technology.</strong></p>
+</li>
+<li><p><strong>Architecture should model responsibilities before modeling systems.</strong></p>
+</li>
+<li><p><strong>Responsibilities may be fulfilled by people, partners, manual processes, or software capabilities.</strong></p>
+</li>
+<li><p><strong>Capabilities are the software realization of responsibilities.</strong></p>
+</li>
+<li><p><strong>Responsibilities collaborate by requesting outcomes through intent.</strong></p>
+</li>
+<li><p><strong>Responsibilities share facts through events.</strong></p>
+</li>
+<li><p><strong>Domains organize responsibilities and their vocabulary.</strong></p>
+</li>
+<li><p><strong>System behavior emerges from networks of collaborating responsibilities.</strong></p>
+</li>
+<li><p><strong>The same architectural model should apply at every level of responsibility.</strong></p>
+</li>
+</ol>
+<hr>
+<h1 id="understanding-relative-architecture">Understanding Relative Architecture</h1>
+<p>Organizations deliver outcomes by fulfilling responsibilities. These responsibilities originate within the business or product domain and are carried out through a combination of people, partners, processes, and software systems.</p>
+<p>Traditional architecture approaches typically begin by modeling applications, services, or technical platforms. While useful for implementation, this perspective often hides how work actually flows through the organization. The resulting architecture tends to mirror system boundaries rather than the responsibilities that produce outcomes.</p>
+<p>Relative Architecture proposes a different perspective: <strong>model responsibilities first, and then implement them through capabilities.</strong></p>
+<p>Responsibilities may be fulfilled in many ways. Some are performed manually by teams. Others are handled by external partners. Some are automated through software capabilities. Regardless of how they are implemented, responsibilities and their collaborations should be represented in a single unified model.</p>
+<p>Responsibilities collaborate in two fundamental ways: by requesting outcomes and by sharing facts. Requests express <strong>intent</strong>, while facts are communicated through <strong>events</strong>. These interactions form the network through which work flows across the ecosystem.</p>
+<p>Software capabilities represent the automation of specific responsibilities. Each capability owns the policies, vocabulary, and state required to fulfill its responsibility. Capabilities accept intents from requestors, may initiate intents toward dependencies, consume events from informers, and publish events for interested parties.</p>
+<p>Responsibilities are organized into scopes such as ecosystems, domains, capabilities, and modules. These scopes help structure ownership and understanding, while the operational behavior of the organization emerges from the network of collaborations between responsibilities.</p>
+<p>Because responsibilities collaborate through the same interaction model regardless of scale, the architecture remains consistent across the entire ecosystem.</p>
+<hr>
+<h1 id="self-similar-architecture">Self-Similar Architecture</h1>
+<p>A key property of Relative Architecture is that the model is <strong>self-similar across scales</strong>.</p>
+<p>Responsibilities exist at multiple levels of magnification, including:</p>
+<ul>
+<li>Ecosystem  </li>
+<li>Domain  </li>
+<li>Capability  </li>
+<li>Module</li>
+</ul>
+<p>Regardless of scale, the same structural pattern applies. Each responsibility accepts intents, evaluates policies, executes processes, produces events, and maintains knowledge through entities and projections.</p>
+<p>Because the structure is consistent, teams can reason about any responsibility boundary relative to its collaborators. Complex systems can therefore be decomposed incrementally while maintaining a consistent mental model.</p>
+<p>Responsibilities may be broken into smaller responsibilities, or smaller responsibilities may evolve into capabilities of their own. The architectural model remains consistent throughout.</p>
+<p>Relative Architecture is therefore <strong>not defined by fixed layers</strong>, but by a recurring pattern that appears wherever responsibilities interact.</p>
+<p><strong>Architecture should look the same no matter where you stand in the system.</strong></p>
+<hr>
+<h1 id="the-capability-model">The Capability Model</h1>
+<p>Capabilities represent responsibilities that are realized through software.</p>
+<p>Each capability owns:</p>
+<ul>
+<li><strong>Responsibility</strong> — the outcome it fulfills  </li>
+<li><strong>Policies</strong> — the rules governing decisions  </li>
+<li><strong>Vocabulary</strong> — the business semantics used within the capability  </li>
+<li><strong>State / Entities</strong> — the knowledge the capability maintains  </li>
+<li><strong>Projections</strong> — representations used by users and other systems  </li>
+</ul>
+<p>Capabilities process work using the following internal structure:</p>
+<ul>
+<li>Intent → Policy → Process → Event → Knowledge → Projection</li>
+</ul>
+<p>This structure separates two major concerns.</p>
+<p><strong>Execution</strong></p>
+<ul>
+<li>intents  </li>
+<li>policies  </li>
+<li>processes  </li>
+<li>events  </li>
+</ul>
+<p><strong>Knowledge</strong></p>
+<ul>
+<li>entities  </li>
+<li>state  </li>
+<li>projections  </li>
+<li>operational work queues  </li>
+</ul>
+<p>Operators and user interfaces interact with the capability through <strong>projections and intents</strong>, rather than by directly manipulating internal state.</p>
+<p>This separation ensures that capabilities maintain clear ownership of their knowledge while providing predictable interfaces for collaboration.</p>
+<hr>
+<h1 id="interaction-model">Interaction Model</h1>
+<h3 id="collaboration-through-intents-and-events">Collaboration Through Intents and Events</h3>
+<p>Responsibilities collaborate using two fundamental primitives.</p>
+<h2 id="intent">Intent</h2>
+<p>An <strong>intent</strong> represents a request for an outcome.</p>
+<p>Examples:</p>
+<ul>
+<li>ReserveSeat  </li>
+<li>ChargeDropInFee  </li>
+<li>SendNotification</li>
+</ul>
+<p>Intents are directed toward another responsibility capable of fulfilling them.</p>
+<hr>
+<h2 id="event">Event</h2>
+<p>An <strong>event</strong> represents a fact that has occurred.</p>
+<p>Examples:</p>
+<ul>
+<li>ClassScheduled  </li>
+<li>SeatReserved  </li>
+<li>ReservationCancelled</li>
+</ul>
+<p>Events allow other responsibilities to react to what has happened without requiring direct coordination.</p>
+<hr>
+<p>Together, intents and events form the <strong>collaboration network</strong> between responsibilities.</p>
+<p>Capabilities may interact as:</p>
+<ul>
+<li><strong>Requestors</strong> — initiating intents  </li>
+<li><strong>Dependencies</strong> — fulfilling intents  </li>
+<li><strong>Informers</strong> — publishing events  </li>
+<li><strong>Interested Parties</strong> — reacting to events  </li>
+</ul>
+<p>These relationships form a <strong>graph of responsibility interactions</strong> across the ecosystem.</p>
+<hr>
+<h1 id="responsibility-graph">Responsibility Graph</h1>
+<p>The architecture can be visualized as a <strong>graph of collaborating responsibilities</strong>.</p>
+<p>Nodes may represent:</p>
+<ul>
+<li>software capabilities  </li>
+<li>human teams  </li>
+<li>manual responsibilities  </li>
+<li>external partners  </li>
+<li>legacy systems  </li>
+</ul>
+<p>Edges represent two types of interaction:</p>
+<ul>
+<li>Intent — requests for outcomes  </li>
+<li>Event — facts about what has happened</li>
+</ul>
+<p>Because the model includes manual and external responsibilities, it represents the <strong>actual operating model of the organization</strong>, not just the software architecture.</p>
+<hr>
+<h1 id="example-ecosystem">Example Ecosystem</h1>
+<h3 id="class-scheduling-example">Class Scheduling Example</h3>
+<p>Consider a fitness platform.</p>
+<p>Responsibilities include:</p>
+<ul>
+<li>Scheduling  </li>
+<li>Reservation  </li>
+<li>Billing  </li>
+<li>Notifications  </li>
+<li>Survey</li>
+</ul>
+<p>A typical interaction might look like:</p>
+<ul>
+<li>User → ReserveSeat → Reservation  </li>
+<li>Reservation → ChargeDropInFee → Billing  </li>
+<li>Reservation → SeatReserved → Notifications  </li>
+<li>Reservation → SeatReserved → Survey  </li>
+<li>Scheduling → ClassCancelled → Reservation</li>
+</ul>
+<p>Each capability fulfills its own responsibility while collaborating through intents and events.</p>
+<p>The result is a <strong>network of autonomous responsibilities</strong> that together deliver the product experience.</p>
+<hr>
+<h1 id="core-insight">Core Insight</h1>
+<p>Relative Architecture provides a shared model for understanding how work flows through an organization.</p>
+<p>It connects:</p>
+<ul>
+<li>Business Architecture  </li>
+<li>Product Architecture  </li>
+<li>System Architecture</li>
+</ul>
+<p>through a single <strong>responsibility graph</strong>.</p>
+<p>By modeling responsibilities first and implementing them through capabilities, organizations can build ecosystems that evolve while remaining aligned with how the business actually operates.</p>
