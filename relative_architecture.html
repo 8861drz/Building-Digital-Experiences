@@ -1,188 +1,224 @@
 <h1 id="relative-architecture">Relative Architecture</h1>
-<h3 id="a-responsibility-driven-model-for-business-product-and-system-architecture">A Responsibility-Driven Model for Business, Product, and System Architecture</h3>
+<h2 id="a-responsibility-driven-model-for-business-product-and-system-architecture">A Responsibility-Driven Model for Business, Product, and System Architecture</h2>
 <hr>
-<h1 id="executive-summary">Executive Summary</h1>
+<h2 id="executive-summary">Executive Summary</h2>
 <p>Most organizations attempt to understand their systems by modeling applications, services, and technology platforms. While useful for engineering, this perspective often obscures a more important question:</p>
 <p><strong>How does the business actually fulfill its responsibilities?</strong></p>
 <p>Organizations deliver value by fulfilling responsibilities that originate in the business or product domain. These responsibilities are carried out through a combination of people, partners, processes, and software systems.</p>
 <p>Traditional architecture approaches tend to begin by modeling systems and technical components. As a result, the architecture often reflects system boundaries rather than the responsibilities that produce outcomes.</p>
-<p>Relative Architecture proposes a different starting point: <strong>model the responsibilities that fulfill outcomes across the ecosystem.</strong></p>
+<p>Relative Architecture proposes a different starting point: model the responsibilities that fulfill outcomes across the ecosystem.</p>
 <p>Architecture should:</p>
 <ul>
-<li><strong>Model how the business fulfills responsibilities</strong>, not just the systems that automate them  </li>
-<li><strong>Use business semantics and capability contracts</strong> rather than technical jargon  </li>
-<li><strong>Represent interactions consistently</strong>, so the architecture looks similar regardless of scale or magnification  </li>
+<li>Model how the business fulfills responsibilities, not just the systems that automate them</li>
+<li>Use business semantics and capability contracts rather than technical jargon</li>
+<li>Represent interactions consistently, so the architecture looks similar regardless of scale or magnification</li>
 </ul>
 <p>When architecture begins with responsibilities rather than systems, organizations gain several important advantages:</p>
 <ul>
-<li>A <strong>complete model of how the business operates</strong>, independent of implementation technology  </li>
-<li>Clear visibility into <strong>buy-versus-build decisions</strong>, including partner capabilities  </li>
-<li><strong>Impact awareness as systems evolve</strong>, because collaborations and dependencies are explicit  </li>
-<li>The ability to <strong>plug in trusted external capabilities</strong>, enabled through clear contracts and events  </li>
+<li>A complete model of how the business operates, independent of implementation technology</li>
+<li>Clear visibility into buy-versus-build decisions, including partner capabilities</li>
+<li>Impact awareness as systems evolve, because collaborations and dependencies are explicit</li>
+<li>The ability to plug in trusted external capabilities, enabled through clear contracts and events</li>
 </ul>
-<p>Relative Architecture therefore provides a unified model connecting <strong>business architecture, product architecture, and system architecture</strong> through a shared representation of responsibilities and their interactions.</p>
-<p>The following principles summarize the core ideas behind this approach.</p>
+<p>Relative Architecture provides a unified model connecting business architecture, product architecture, and system architecture through a shared representation of responsibilities and their interactions.</p>
 <hr>
-<h1 id="relative-architecture-manifesto">Relative Architecture Manifesto</h1>
+<h2 id="relative-architecture-manifesto">Relative Architecture Manifesto</h2>
 <ol>
-<li><p><strong>Organizations deliver value by fulfilling responsibilities.</strong></p>
-</li>
-<li><p><strong>Responsibilities originate in the business or product domain, not in technology.</strong></p>
-</li>
-<li><p><strong>Architecture should model responsibilities before modeling systems.</strong></p>
-</li>
-<li><p><strong>Responsibilities may be fulfilled by people, partners, manual processes, or software capabilities.</strong></p>
-</li>
-<li><p><strong>Capabilities are the software realization of responsibilities.</strong></p>
-</li>
-<li><p><strong>Responsibilities collaborate by requesting outcomes through intent.</strong></p>
-</li>
-<li><p><strong>Responsibilities share facts through events.</strong></p>
-</li>
-<li><p><strong>Domains organize responsibilities and their vocabulary.</strong></p>
-</li>
-<li><p><strong>System behavior emerges from networks of collaborating responsibilities.</strong></p>
-</li>
-<li><p><strong>The same architectural model should apply at every level of responsibility.</strong></p>
-</li>
+<li>Organizations deliver value by fulfilling responsibilities.</li>
+<li>Responsibilities originate in the business or product domain, not in technology.</li>
+<li>Architecture should model responsibilities before modeling systems.</li>
+<li>Responsibilities may be fulfilled by people, partners, manual processes, or software capabilities.</li>
+<li>Capabilities are the software realization of responsibilities.</li>
+<li>Responsibilities collaborate by requesting outcomes through intent.</li>
+<li>Responsibilities share facts through events.</li>
+<li>Domains organize responsibilities and their vocabulary.</li>
+<li>System behavior emerges from networks of collaborating responsibilities.</li>
+<li>The same architectural model should apply at every level of responsibility.</li>
 </ol>
 <hr>
-<h1 id="understanding-relative-architecture">Understanding Relative Architecture</h1>
+<p>![[Capability.png]]</p>
+<blockquote>
+<p><em>Where does your domain end and the ecosystem begin?</em></p>
+</blockquote>
+<hr>
+<h2 id="the-generations-that-make-this-necessary">The Generations That Make This Necessary</h2>
+<p>Understanding why Relative Architecture matters now requires understanding how business integration has evolved across three generations. The responsibilities never changed. The medium did.</p>
+<h3 id="generation-1-analog-internal">Generation 1 — Analog Internal</h3>
+<p>Organizations fulfilled responsibilities through people and manual processes. An order entry clerk entered the order. A loan officer submitted the application. A booking agent made the reservation. Integration between responsibilities happened over analog channels — interoffice mail, phone calls, physical forms moving between departments, fax transmissions to external partners.</p>
+<p>The integration was real and necessary. It just ran on analog infrastructure. The responsibility boundaries were clear. The contracts were implicit — everyone knew what information to pass and what to expect back. The over the wall communication was the ecosystem.</p>
+<p>The operator&#39;s role was <strong>execution</strong>. They were the human face of the business process.</p>
+<blockquote>
+<p><em>Gen 1 definition: A responsibility captures intent, applies rules, produces an outcome, and communicates it over analog channels.</em></p>
+</blockquote>
+<h3 id="generation-2-analog-to-digital-surface">Generation 2 — Analog to Digital Surface</h3>
+<p>Consumers began interacting directly with systems. The internet made this possible and competitive pressure made it necessary. The system now faced outward — consumers entered their own orders, submitted their own applications, made their own reservations.</p>
+<p>But the integration between responsibilities remained largely analog. A website collected the application. A batch job moved it somewhere. An email triggered a downstream process. A fax still went to the credit bureau. The consumer-facing surface went digital. The integration behind it stayed over the wall.</p>
+<p>The operator&#39;s role shifted to <strong>exception management</strong>. Routine work moved to the consumer. Humans handled what the system could not.</p>
+<blockquote>
+<p><em>Gen 2 definition: A responsibility captures intent from consumers directly, applies rules, produces an outcome, and communicates it — still largely over analog channels between responsibilities.</em></p>
+</blockquote>
+<h3 id="generation-3-fully-digital-ecosystem">Generation 3 — Fully Digital Ecosystem</h3>
+<p>The analog channels are replaced by digital contracts and events. Anyone who honors the contract can participate — a consumer through a mobile app, a partner through an API, an automated system reacting to an event, another organization integrating your capability into their own process.</p>
+<p>The over the wall communication becomes published events and explicit contracts. The phone calls become subscriptions. The interoffice mail becomes intent. The fax becomes an API. The responsibilities that were always there now interact through a digital ecosystem that is faster, more reliable, and formally governed.</p>
+<p>The operator&#39;s role becomes <strong>stewardship</strong> — setting the rules, managing exceptions, making judgment calls the automation cannot resolve. The routine flows digitally because the contracts govern it.</p>
+<blockquote>
+<p><em>Gen 3 definition: A responsibility captures intent from any participant who honors its contract, applies rules, produces an outcome, publishes that outcome as an event for the ecosystem to react to, and subscribes to external events that shift its own context.</em></p>
+</blockquote>
+<p>This final definition is where Relative Architecture lives. The following sections unpack what it means and how to realize it.</p>
+<hr>
+<h2 id="understanding-relative-architecture">Understanding Relative Architecture</h2>
 <p>Organizations deliver outcomes by fulfilling responsibilities. These responsibilities originate within the business or product domain and are carried out through a combination of people, partners, processes, and software systems.</p>
 <p>Traditional architecture approaches typically begin by modeling applications, services, or technical platforms. While useful for implementation, this perspective often hides how work actually flows through the organization. The resulting architecture tends to mirror system boundaries rather than the responsibilities that produce outcomes.</p>
-<p>Relative Architecture proposes a different perspective: <strong>model responsibilities first, and then implement them through capabilities.</strong></p>
-<p>Responsibilities may be fulfilled in many ways. Some are performed manually by teams. Others are handled by external partners. Some are automated through software capabilities. Regardless of how they are implemented, responsibilities and their collaborations should be represented in a single unified model.</p>
-<p>Responsibilities collaborate in two fundamental ways: by requesting outcomes and by sharing facts. Requests express <strong>intent</strong>, while facts are communicated through <strong>events</strong>. These interactions form the network through which work flows across the ecosystem.</p>
+<p>Relative Architecture proposes a different perspective: model responsibilities first, and then implement them through capabilities.</p>
+<p>Responsibilities may be fulfilled in many ways. Some are performed manually by teams. Others are handled by external partners. Some are automated through software capabilities. Regardless of how they are implemented, responsibilities and their collaborations are represented in a single unified model.</p>
+<p>Responsibilities collaborate in two fundamental ways: by requesting outcomes and by sharing facts. Requests express intent. Facts are communicated through events. These interactions form the network through which work flows across the ecosystem.</p>
+<p><strong>Context travels with the process.</strong> When a responsibility consults another it passes everything that responsibility needs to fulfill its obligation. No responsibility should need to call back to a central record to assemble context mid-process. The over the wall analog model required someone to physically gather and forward information. The digital model makes that explicit in the contract.</p>
 <p>Software capabilities represent the automation of specific responsibilities. Each capability owns the policies, vocabulary, and state required to fulfill its responsibility. Capabilities accept intents from requestors, may initiate intents toward dependencies, consume events from informers, and publish events for interested parties.</p>
-<p>Responsibilities are organized into scopes such as ecosystems, domains, capabilities, and modules. These scopes help structure ownership and understanding, while the operational behavior of the organization emerges from the network of collaborations between responsibilities.</p>
+<p>Responsibilities are organized into scopes — ecosystems, domains, capabilities, and modules. These scopes help structure ownership and understanding while the operational behavior of the organization emerges from the network of collaborations between responsibilities.</p>
 <p>Because responsibilities collaborate through the same interaction model regardless of scale, the architecture remains consistent across the entire ecosystem.</p>
 <hr>
-<h1 id="self-similar-architecture">Self-Similar Architecture</h1>
-<p>A key property of Relative Architecture is that the model is <strong>self-similar across scales</strong>.</p>
-<p>Responsibilities exist at multiple levels of magnification, including:</p>
+<h2 id="self-similar-architecture">Self-Similar Architecture</h2>
+<p>A key property of Relative Architecture is that the model is self-similar across scales.</p>
+<p>Responsibilities exist at multiple levels of magnification:</p>
 <ul>
-<li>Ecosystem  </li>
-<li>Domain  </li>
-<li>Capability  </li>
+<li>Ecosystem</li>
+<li>Domain</li>
+<li>Capability</li>
 <li>Module</li>
 </ul>
 <p>Regardless of scale, the same structural pattern applies. Each responsibility accepts intents, evaluates policies, executes processes, produces events, and maintains knowledge through entities and projections.</p>
-<p>Because the structure is consistent, teams can reason about any responsibility boundary relative to its collaborators. Complex systems can therefore be decomposed incrementally while maintaining a consistent mental model.</p>
+<p>Because the structure is consistent, teams can reason about any responsibility boundary relative to its collaborators. Complex systems can be decomposed incrementally while maintaining a consistent mental model.</p>
 <p>Responsibilities may be broken into smaller responsibilities, or smaller responsibilities may evolve into capabilities of their own. The architectural model remains consistent throughout.</p>
-<p>Relative Architecture is therefore <strong>not defined by fixed layers</strong>, but by a recurring pattern that appears wherever responsibilities interact.</p>
-<p><strong>Architecture should look the same no matter where you stand in the system.</strong></p>
+<p>Relative Architecture is not defined by fixed layers, but by a recurring pattern that appears wherever responsibilities interact.</p>
+<blockquote>
+<p><em>Architecture should look the same no matter where you stand in the system.</em></p>
+</blockquote>
 <hr>
-<h1 id="the-capability-model">The Capability Model</h1>
+<h2 id="the-three-teams">The Three Teams</h2>
+<blockquote>
+<p>Business provides clarity. Product writes contracts. Engineering implements them.</p>
+</blockquote>
+<p>Three teams. Three distinct contributions. All working in parallel once the contract exists.</p>
+<p><strong>Business</strong> provides the domain knowledge that cannot be invented. The rules, the edge cases, the vocabulary, the meaning behind every outcome. The irreplaceable source of truth about what a responsibility does and why. Business does not need to think in terms of contracts or events — that is product&#39;s job. Business thinks in terms of what we do and how we do it. That is exactly as it should be.</p>
+<p><strong>Product</strong> is the essential middle team — and the one most often missing or miscast. Not feature prioritization. Not requirements translation. Domain modeling. The ability to sit with a business expert, extract precise domain knowledge, and express it as a contract that engineering can act on without interpretation. Named intents, explicit outcomes, declared events, trust levels, vocabulary definitions. Product&#39;s primary deliverable is the contract — not the feature.</p>
+<p><strong>Engineering</strong> implements with full technical sovereignty. Given a precise contract, every decision about framework, language, data model, and infrastructure belongs to engineering. No domain decisions. No interpretation. Just realization of what the contract specifies.</p>
+<p>Once the contract exists all three teams work in parallel. Business continues refining domain knowledge. Product evolves the model. Engineering builds against the contract. The contract is the coordination mechanism — replacing the constant back and forth of traditional development with a clean shared artifact that each team can work against independently.</p>
+<table>
+<thead>
+<tr>
+<th>Team</th>
+<th>Contributes</th>
+<th>Delivers</th>
+<th>Validates</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Business</td>
+<td>Domain knowledge</td>
+<td>Clarity</td>
+<td>Contract reflects reality</td>
+</tr>
+<tr>
+<td>Product</td>
+<td>Domain modeling</td>
+<td>Contract</td>
+<td>Implementation honors contract</td>
+</tr>
+<tr>
+<td>Engineering</td>
+<td>Realization</td>
+<td>Working capability</td>
+<td>Everything behind the boundary</td>
+</tr>
+</tbody>
+</table>
+<h3 id="finding-your-product-team-they-are-in-your-domain">Finding Your Product Team — They Are In Your Domain</h3>
+<p>Every domain carries accumulated knowledge that rarely makes it into documentation. Rules developed over decades. Exceptions that exist because of things that happened long before current systems were built. Judgment calls that experienced practitioners make automatically without being able to articulate why. This knowledge has been passed down through generations of practitioners — through training, through habit, through institutional memory. It predates any of the current systems and will outlast them.</p>
+<p>The product team&#39;s job is to harvest that knowledge and give it a form that can be owned, shared, and built against. Not to capture one person&#39;s experience — but to surface what the domain has always known and finally express it as a contract.</p>
+<p>The people who can facilitate that harvest are already in your organization. They are close to the domain. They understand the rules and the exceptions. They have developed an instinct for when a system is modeling the domain correctly and when it is subtly wrong. They are often living through Gen 3 frustrated that integrations require heroic custom work and that rules are buried in code nobody in the business can read.</p>
+<p>That frustration is diagnostic. Give them the language — contracts, responsibilities, events, ecosystem participation — and they recognize it immediately as a precise description of what the domain has always needed. They don&#39;t need to learn the domain. They need to learn the expression.</p>
+<h3 id="the-organizational-owner">The Organizational Owner</h3>
+<p>The responsibility graph and process traces are a precise description of how the business operates. Whoever owns that picture — whether it sits under operations, a product organization, domain leads, or technology leadership — should be accountable for both the clarity of the model and the fidelity of its realization.</p>
+<p>What matters is not the title. What matters is that someone owns it at the right level with the right authority to make commitments on behalf of the business and hold the three teams accountable to each other.</p>
+<p>The most important organizational principle is the separation of concerns the three teams represent — regardless of how they are structured on the org chart:</p>
+<p><strong>Business owns the domain knowledge. Product owns the contracts. Engineering owns the implementation.</strong></p>
+<hr>
+<h2 id="the-capability-model">The Capability Model</h2>
 <p>Capabilities represent responsibilities that are realized through software.</p>
 <p>Each capability owns:</p>
 <ul>
-<li><strong>Responsibility</strong> — the outcome it fulfills  </li>
-<li><strong>Policies</strong> — the rules governing decisions  </li>
-<li><strong>Vocabulary</strong> — the business semantics used within the capability  </li>
-<li><strong>State / Entities</strong> — the knowledge the capability maintains  </li>
-<li><strong>Projections</strong> — representations used by users and other systems  </li>
+<li><strong>Responsibility</strong> — the outcome it fulfills</li>
+<li><strong>Policies</strong> — the rules governing decisions</li>
+<li><strong>Vocabulary</strong> — the business semantics owned by the capability and shared through its contracts and events. Established by the domain on its own terms — not adopted from consumers or callers. A domain that names things the way its consumers name them loses its own identity and becomes pulled in as many directions as it has callers. Callers adapt to the domain&#39;s vocabulary at the boundary. The domain never adapts to theirs.</li>
+<li><strong>State / Entities</strong> — the knowledge the capability maintains</li>
+<li><strong>Projections</strong> — representations used by participants and other systems</li>
 </ul>
 <p>Capabilities process work using the following internal structure:</p>
-<ul>
-<li>Intent → Policy → Process → Event → Knowledge → Projection</li>
-</ul>
-<p>This structure separates two major concerns.</p>
-<p><strong>Execution</strong></p>
-<ul>
-<li>intents  </li>
-<li>policies  </li>
-<li>processes  </li>
-<li>events  </li>
-</ul>
-<p><strong>Knowledge</strong></p>
-<ul>
-<li>entities  </li>
-<li>state  </li>
-<li>projections  </li>
-<li>operational work queues  </li>
-</ul>
-<p>Operators and user interfaces interact with the capability through <strong>projections and intents</strong>, rather than by directly manipulating internal state.</p>
-<p>This separation ensures that capabilities maintain clear ownership of their knowledge while providing predictable interfaces for collaboration.</p>
+<blockquote>
+<p>Intent → Policy → Process → Event → Knowledge → Projection</p>
+</blockquote>
+<p>This structure separates two major concerns:</p>
+<p><strong>Execution</strong> — intents, policies, processes, events</p>
+<p><strong>Knowledge</strong> — entities, state, projections, operational work queues</p>
+<p>Operators and user interfaces interact with the capability through projections and intents, rather than by directly manipulating internal state. This ensures capabilities maintain clear ownership of their knowledge while providing predictable interfaces for collaboration.</p>
 <hr>
-<h1 id="interaction-model">Interaction Model</h1>
+<h2 id="interaction-model">Interaction Model</h2>
 <h3 id="collaboration-through-intents-and-events">Collaboration Through Intents and Events</h3>
 <p>Responsibilities collaborate using two fundamental primitives.</p>
-<h2 id="intent">Intent</h2>
-<p>An <strong>intent</strong> represents a request for an outcome.</p>
-<p>Examples:</p>
+<p><strong>Intent</strong> — a request for an outcome. Directed toward another responsibility capable of fulfilling it.</p>
+<p>Examples: <code>ReserveSeat</code>, <code>ChargeDropInFee</code>, <code>SendNotification</code></p>
+<p><strong>Event</strong> — a fact that has occurred. Allows other responsibilities to react without requiring direct coordination.</p>
+<p>Examples: <code>ClassScheduled</code>, <code>SeatReserved</code>, <code>ReservationCancelled</code></p>
+<p>Together, intents and events form the collaboration network between responsibilities — the digital replacement for the phone calls, fax transmissions, and interoffice mail of earlier generations.</p>
+<p>Capabilities interact as:</p>
 <ul>
-<li>ReserveSeat  </li>
-<li>ChargeDropInFee  </li>
-<li>SendNotification</li>
+<li><strong>Requestors</strong> — initiating intents</li>
+<li><strong>Dependencies</strong> — fulfilling intents</li>
+<li><strong>Informers</strong> — publishing events</li>
+<li><strong>Interested Parties</strong> — reacting to events</li>
 </ul>
-<p>Intents are directed toward another responsibility capable of fulfilling them.</p>
+<h3 id="orchestration-and-choreography">Orchestration and Choreography</h3>
+<p>A business process is orchestrated by definition. It has an owner, an outcome, and accountability. The owning responsibility holds the thread end to end — invokes other responsibilities in sequence, owns the decisions between steps, manages in-flight state, and is accountable for the overall outcome.</p>
+<p>Within that orchestration, events are published that trigger choreographed reactions. Once <code>SeatReserved</code> is published the owning responsibility&#39;s accountability for that outcome ends. Notifications, billing follow-up, survey triggers — these react independently according to their own rules.</p>
+<p><strong>Inside the process — orchestration. Outside the published event — choreography.</strong></p>
+<p>Choreography without an owning process is where accountability and visibility disappear. The process exists only as an emergent property of a call chain with no single owner accountable when it breaks.</p>
+<h3 id="trust-and-identity">Trust and Identity</h3>
+<p>Responsibilities declare the trust level required for each intent. The surface achieves it through whatever mechanism is available. The domain never sees the mechanism — it sees a token carrying a trust level claim.</p>
+<p>Four trust levels form a natural progression:</p>
+<p><strong>Recognition</strong> — we have seen this device before. A cookie, a remembered session. No active verification. Sufficient for personalization and browsing.</p>
+<p><strong>Possession</strong> — you have access to a channel right now. An SMS code, an email link. Sufficient for low stakes transactional intents — reserving a seat, cancelling a reservation.</p>
+<p><strong>Knowledge</strong> — you know a secret. A password or PIN. Flexible but increasingly considered the weakest standalone mechanism.</p>
+<p><strong>Presence</strong> — you are physically the enrolled person on this device. A biometric. Sufficient for higher stakes actions — updating payment details, accessing sensitive account information.</p>
+<p>The contract declares what level an intent requires. Engineering decides how to achieve it. Business never has to specify the mechanism.</p>
 <hr>
-<h2 id="event">Event</h2>
-<p>An <strong>event</strong> represents a fact that has occurred.</p>
-<p>Examples:</p>
-<ul>
-<li>ClassScheduled  </li>
-<li>SeatReserved  </li>
-<li>ReservationCancelled</li>
-</ul>
-<p>Events allow other responsibilities to react to what has happened without requiring direct coordination.</p>
+<h2 id="the-responsibility-map">The Responsibility Map</h2>
+<p>The full picture of how an organization operates is a map of collaborating responsibilities — including software capabilities, human teams, external partners, manual processes, and legacy systems — capturing the nature of the relationship between them: what each responsibility requires from others, what it provides to others, and what it simply needs to stay informed about.</p>
+<p>Because the map includes manual and external responsibilities alongside software, it represents how the organization actually operates — not just what its software does.</p>
+<p>External participants are black boxes. What lives behind their boundary is entirely their concern — it could be a single developer with a focused API or a large organization operating their own full ecosystem. The contract is all that matters. The model does not change based on what is behind the boundary.</p>
 <hr>
-<p>Together, intents and events form the <strong>collaboration network</strong> between responsibilities.</p>
-<p>Capabilities may interact as:</p>
+<h2 id="example-ecosystem-fitness-platform">Example Ecosystem — Fitness Platform</h2>
+<p>Consider a fitness platform built on Relative Architecture.</p>
+<p>Responsibilities include Scheduling, Reservation, Billing, Notifications, and Survey.</p>
+<p><strong>Proactive scenario — Member reserves a seat:</strong></p>
+<p>Member submits <code>ReserveSeat</code> → <strong>Reservation</strong> owns the process from here</p>
+<p>Reservation consults → <strong>Billing</strong> if applicable — <code>ChargeDropInFee</code></p>
+<p>Reservation produces outcome → publishes <code>SeatReserved</code></p>
+<p>Ecosystem reacts independently:</p>
 <ul>
-<li><strong>Requestors</strong> — initiating intents  </li>
-<li><strong>Dependencies</strong> — fulfilling intents  </li>
-<li><strong>Informers</strong> — publishing events  </li>
-<li><strong>Interested Parties</strong> — reacting to events  </li>
+<li><strong>Notifications</strong> subscribed → member notified</li>
+<li><strong>Survey</strong> subscribed → post-class survey scheduled</li>
 </ul>
-<p>These relationships form a <strong>graph of responsibility interactions</strong> across the ecosystem.</p>
+<p><strong>Reactive scenario — Class is cancelled:</strong></p>
+<p><strong>Scheduling</strong> publishes <code>ClassCancelled</code></p>
+<p><strong>Reservation</strong> subscribed → cancels affected reservations, publishes <code>ReservationCancelled</code></p>
+<p><strong>Notifications</strong> subscribed → affected members notified</p>
+<p><strong>Billing</strong> subscribed → any charges reversed</p>
+<p>No orchestrator directed this response. Each responsibility reacted according to its own rules. The coordinated outcome emerged from independent reactions to a shared event — the digital equivalent of a cancellation notice going out over the old analog channels, but faster, reliable, and formally governed.</p>
 <hr>
-<h1 id="responsibility-graph">Responsibility Graph</h1>
-<p>The architecture can be visualized as a <strong>graph of collaborating responsibilities</strong>.</p>
-<p>Nodes may represent:</p>
-<ul>
-<li>software capabilities  </li>
-<li>human teams  </li>
-<li>manual responsibilities  </li>
-<li>external partners  </li>
-<li>legacy systems  </li>
-</ul>
-<p>Edges represent two types of interaction:</p>
-<ul>
-<li>Intent — requests for outcomes  </li>
-<li>Event — facts about what has happened</li>
-</ul>
-<p>Because the model includes manual and external responsibilities, it represents the <strong>actual operating model of the organization</strong>, not just the software architecture.</p>
-<hr>
-<h1 id="example-ecosystem">Example Ecosystem</h1>
-<h3 id="class-scheduling-example">Class Scheduling Example</h3>
-<p>Consider a fitness platform.</p>
-<p>Responsibilities include:</p>
-<ul>
-<li>Scheduling  </li>
-<li>Reservation  </li>
-<li>Billing  </li>
-<li>Notifications  </li>
-<li>Survey</li>
-</ul>
-<p>A typical interaction might look like:</p>
-<ul>
-<li>User → ReserveSeat → Reservation  </li>
-<li>Reservation → ChargeDropInFee → Billing  </li>
-<li>Reservation → SeatReserved → Notifications  </li>
-<li>Reservation → SeatReserved → Survey  </li>
-<li>Scheduling → ClassCancelled → Reservation</li>
-</ul>
-<p>Each capability fulfills its own responsibility while collaborating through intents and events.</p>
-<p>The result is a <strong>network of autonomous responsibilities</strong> that together deliver the product experience.</p>
-<hr>
-<h1 id="core-insight">Core Insight</h1>
+<h2 id="summary">Summary</h2>
 <p>Relative Architecture provides a shared model for understanding how work flows through an organization.</p>
-<p>It connects:</p>
-<ul>
-<li>Business Architecture  </li>
-<li>Product Architecture  </li>
-<li>System Architecture</li>
-</ul>
-<p>through a single <strong>responsibility graph</strong>.</p>
+<p>It connects Business Architecture, Product Architecture, and System Architecture through a single responsibility graph — unified by a vocabulary each domain owns and shares at its boundary.</p>
 <p>By modeling responsibilities first and implementing them through capabilities, organizations can build ecosystems that evolve while remaining aligned with how the business actually operates.</p>
+<p>The phone calls and interoffice mail were always this model. They just ran on analog infrastructure. Gen 3 replaces the medium while honoring the same responsibilities that were always there.</p>
+<p><strong>The architecture was always relative. Now it can be expressed precisely.</strong></p>
