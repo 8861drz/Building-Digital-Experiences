@@ -1,4 +1,3 @@
-
 <h1 id="relative-architecture">Relative Architecture</h1>
 <h3 id="responsibility-based-business-driven-">Responsibility Based. Business Driven.</h3>
 <hr>
@@ -105,11 +104,11 @@
 <p><em>Architecture should look the same no matter where you stand in the system.</em></p>
 </blockquote>
 <hr>
-<h2 id="the-three-teams">The Three Teams</h2>
+<h2 id="three-roles-business-product-and-engineering">Three Roles — Business, Product, and Engineering</h2>
 <blockquote>
 <p>Business provides clarity. Product writes contracts. Engineering implements them.</p>
 </blockquote>
-<p>Three teams. Three distinct contributions. All working in parallel once the contract exists.</p>
+<p>Relative Architecture works in practice when three distinct roles are fulfilled — Business, Product, and Engineering. They may be inhabited by one person or many, by existing teams or new ones. What matters is that the responsibilities each role carries are clearly owned. All three work in parallel once the contract exists.</p>
 <p><strong>Business</strong> provides the domain knowledge that cannot be invented. The rules, the edge cases, the vocabulary, the meaning behind every outcome. The irreplaceable source of truth about what a responsibility does and why. Business does not need to think in terms of contracts or events — that is product&#39;s job. Business thinks in terms of what we do and how we do it. That is exactly as it should be.</p>
 <p><strong>Product</strong> is the essential middle team — and the one most often missing or miscast. Not feature prioritization. Not requirements translation. Domain modeling. The ability to sit with a business expert, extract precise domain knowledge, and express it as a contract that engineering can act on without interpretation. Named intents, explicit outcomes, declared events, trust levels, vocabulary definitions. Product&#39;s primary deliverable is the contract — not the feature.</p>
 <p><strong>Engineering</strong> implements with full technical sovereignty. Given a precise contract, every decision about framework, language, data model, and infrastructure belongs to engineering. No domain decisions. No interpretation. Just realization of what the contract specifies.</p>
@@ -117,7 +116,7 @@
 <table>
 <thead>
 <tr>
-<th>Team</th>
+<th>Role</th>
 <th>Contributes</th>
 <th>Delivers</th>
 <th>Validates</th>
@@ -146,6 +145,9 @@
 </table>
 <p>Business engagement with the model starts simply — reviewing contracts, validating that the vocabulary is right, confirming that the outcomes reflect how the domain actually works. That conversation is immediately natural because the content is the business&#39;s own domain expressed back to them.</p>
 <p>Engineering&#39;s deliverable to the business is the OpenAPI specification — nothing more complex than that. It is the contract expressed precisely. Business confirms that the capability names, inputs, outcomes, and events match what was agreed. Product mediates the review where notation feels unfamiliar but the confirmation is the business&#39;s call. If the spec reflects the contract the business defined, engineering has delivered.</p>
+<p>This closes a loop that today rarely closes. Business knowledge travels through analysts into requirements documents into engineering and disappears into code that the business has no path back to. Here the capability contract is the shared artifact both sides worked from — and the OpenAPI spec is its living record. Business defined it. Engineering realized it. The spec connects both and belongs to both.</p>
+<p>Both the contract and the OpenAPI spec are internal public documents — living together in the same catalog, accessible to anyone in the organization. The business can browse the current state of their own domain at any time, compare what exists against what they are considering changing, and see who depends on a capability before proposing a change. That is a direct and informed relationship with their own domain — not mediated by IT.</p>
+<p>The boundary between them is important. The contract is the business&#39;s instrument — the avenue for proposing change. The OpenAPI spec is engineering&#39;s confirmation — the realization of the contract. Business reads the spec to confirm alignment. They do not edit it. Changes always flow through the contract first. Product sharpens the contract. Engineering produces a new spec. The catalog reflects both.</p>
 <p>As that familiarity builds, business and product become increasingly indistinguishable at the domain level. The model has been absorbed when the domain expert reaches for the contract template themselves.</p>
 <h3 id="finding-your-product-team-they-are-in-your-domain">Finding Your Product Team — They Are In Your Domain</h3>
 <p>Every domain carries accumulated knowledge that rarely makes it into documentation. Rules developed over decades. Exceptions that exist because of things that happened long before current systems were built. Judgment calls that experienced practitioners make automatically without being able to articulate why. This knowledge has been passed down through generations of practitioners — through training, through habit, through institutional memory. It predates any of the current systems and will outlast them.</p>
