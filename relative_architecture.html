@@ -1,5 +1,6 @@
+
 <h1 id="relative-architecture">Relative Architecture</h1>
-<h2 id="a-responsibility-driven-model-for-business-product-and-system-architecture">A Responsibility-Driven Model for Business, Product, and System Architecture</h2>
+<h3 id="responsibility-based-business-driven-">Responsibility Based. Business Driven.</h3>
 <hr>
 <h2 id="executive-summary">Executive Summary</h2>
 <p>Most organizations attempt to understand their systems by modeling applications, services, and technology platforms. While useful for engineering, this perspective often obscures a more important question:</p>
@@ -35,7 +36,11 @@
 <li>System behavior emerges from networks of collaborating responsibilities.</li>
 <li>The same architectural model should apply at every level of responsibility.</li>
 </ol>
+<hr>
 <blockquote>
+<p><em>The model that follows has implications beyond technology. Organizational structures will vary — but that business owns its domain knowledge and the contracts that express it remains paramount regardless.</em></p>
+</blockquote>
+<hr><blockquote>
 <br>
 <br>
 <br>
@@ -46,6 +51,7 @@
 <br>
 <br>
 </blockquote>
+<hr>
 <h2 id="the-generations-that-make-this-necessary">The Generations That Make This Necessary</h2>
 <p>Understanding why Relative Architecture matters now requires understanding how business integration has evolved across three generations. The responsibilities never changed. The medium did.</p>
 <h3 id="generation-1-analog-internal">Generation 1 — Analog Internal</h3>
@@ -138,6 +144,9 @@
 </tr>
 </tbody>
 </table>
+<p>Business engagement with the model starts simply — reviewing contracts, validating that the vocabulary is right, confirming that the outcomes reflect how the domain actually works. That conversation is immediately natural because the content is the business&#39;s own domain expressed back to them.</p>
+<p>Engineering&#39;s deliverable to the business is the OpenAPI specification — nothing more complex than that. It is the contract expressed precisely. Business confirms that the capability names, inputs, outcomes, and events match what was agreed. Product mediates the review where notation feels unfamiliar but the confirmation is the business&#39;s call. If the spec reflects the contract the business defined, engineering has delivered.</p>
+<p>As that familiarity builds, business and product become increasingly indistinguishable at the domain level. The model has been absorbed when the domain expert reaches for the contract template themselves.</p>
 <h3 id="finding-your-product-team-they-are-in-your-domain">Finding Your Product Team — They Are In Your Domain</h3>
 <p>Every domain carries accumulated knowledge that rarely makes it into documentation. Rules developed over decades. Exceptions that exist because of things that happened long before current systems were built. Judgment calls that experienced practitioners make automatically without being able to articulate why. This knowledge has been passed down through generations of practitioners — through training, through habit, through institutional memory. It predates any of the current systems and will outlast them.</p>
 <p>The product team&#39;s job is to harvest that knowledge and give it a form that can be owned, shared, and built against. Not to capture one person&#39;s experience — but to surface what the domain has always known and finally express it as a contract.</p>
