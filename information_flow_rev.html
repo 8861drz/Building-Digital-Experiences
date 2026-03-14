@@ -1,0 +1,3319 @@
+<html xmlns:v="urn:schemas-microsoft-com:vml"
+xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:w="urn:schemas-microsoft-com:office:word"
+xmlns:m="http://schemas.microsoft.com/office/2004/12/omml"
+xmlns="http://www.w3.org/TR/REC-html40">
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+<meta name=ProgId content=Word.Document>
+<meta name=Generator content="Microsoft Word 15">
+<meta name=Originator content="Microsoft Word 15">
+<link rel=File-List href="opengym-information-flow_files/filelist.xml">
+<!--[if gte mso 9]><xml>
+ <o:DocumentProperties>
+  <o:Author>Un-named</o:Author>
+  <o:LastAuthor>Lou Drzewiecki</o:LastAuthor>
+  <o:Revision>2</o:Revision>
+  <o:TotalTime>2</o:TotalTime>
+  <o:Created>2026-03-14T15:05:00Z</o:Created>
+  <o:LastSaved>2026-03-14T15:05:00Z</o:LastSaved>
+  <o:Pages>1</o:Pages>
+  <o:Words>2655</o:Words>
+  <o:Characters>15139</o:Characters>
+  <o:Lines>126</o:Lines>
+  <o:Paragraphs>35</o:Paragraphs>
+  <o:CharactersWithSpaces>17759</o:CharactersWithSpaces>
+  <o:Version>16.00</o:Version>
+ </o:DocumentProperties>
+</xml><![endif]-->
+<link rel=themeData href="opengym-information-flow_files/themedata.thmx">
+<link rel=colorSchemeMapping
+href="opengym-information-flow_files/colorschememapping.xml">
+<!--[if gte mso 9]><xml>
+ <w:WordDocument>
+  <w:DisplayBackgroundShape/>
+  <w:SpellingState>Clean</w:SpellingState>
+  <w:GrammarState>Clean</w:GrammarState>
+  <w:TrackMoves>false</w:TrackMoves>
+  <w:TrackFormatting/>
+  <w:PunctuationKerning/>
+  <w:ValidateAgainstSchemas/>
+  <w:SaveIfXMLInvalid>false</w:SaveIfXMLInvalid>
+  <w:IgnoreMixedContent>false</w:IgnoreMixedContent>
+  <w:AlwaysShowPlaceholderText>false</w:AlwaysShowPlaceholderText>
+  <w:DoNotPromoteQF/>
+  <w:LidThemeOther>EN-US</w:LidThemeOther>
+  <w:LidThemeAsian>X-NONE</w:LidThemeAsian>
+  <w:LidThemeComplexScript>X-NONE</w:LidThemeComplexScript>
+  <w:Compatibility>
+   <w:BreakWrappedTables/>
+   <w:SnapToGridInCell/>
+   <w:WrapTextWithPunct/>
+   <w:UseAsianBreakRules/>
+   <w:DontGrowAutofit/>
+   <w:SplitPgBreakAndParaMark/>
+   <w:EnableOpenTypeKerning/>
+   <w:DontFlipMirrorIndents/>
+   <w:OverrideTableStyleHps/>
+  </w:Compatibility>
+  <w:DoNotOptimizeForBrowser/>
+  <m:mathPr>
+   <m:mathFont m:val="Cambria Math"/>
+   <m:brkBin m:val="before"/>
+   <m:brkBinSub m:val="&#45;-"/>
+   <m:smallFrac m:val="off"/>
+   <m:dispDef/>
+   <m:lMargin m:val="0"/>
+   <m:rMargin m:val="0"/>
+   <m:defJc m:val="centerGroup"/>
+   <m:wrapIndent m:val="1440"/>
+   <m:intLim m:val="subSup"/>
+   <m:naryLim m:val="undOvr"/>
+  </m:mathPr></w:WordDocument>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <w:LatentStyles DefLockedState="false" DefUnhideWhenUsed="false"
+  DefSemiHidden="false" DefQFormat="false" DefPriority="99"
+  LatentStyleCount="376">
+  <w:LsdException Locked="false" Priority="0" QFormat="true" Name="Normal"/>
+  <w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 1"/>
+  <w:LsdException Locked="false" Priority="9" SemiHidden="true"
+   UnhideWhenUsed="true" QFormat="true" Name="heading 2"/>
+  <w:LsdException Locked="false" Priority="9" SemiHidden="true"
+   UnhideWhenUsed="true" QFormat="true" Name="heading 3"/>
+  <w:LsdException Locked="false" Priority="9" SemiHidden="true"
+   UnhideWhenUsed="true" QFormat="true" Name="heading 4"/>
+  <w:LsdException Locked="false" Priority="9" SemiHidden="true"
+   UnhideWhenUsed="true" QFormat="true" Name="heading 5"/>
+  <w:LsdException Locked="false" Priority="9" SemiHidden="true"
+   UnhideWhenUsed="true" QFormat="true" Name="heading 6"/>
+  <w:LsdException Locked="false" Priority="9" SemiHidden="true"
+   UnhideWhenUsed="true" QFormat="true" Name="heading 7"/>
+  <w:LsdException Locked="false" Priority="9" SemiHidden="true"
+   UnhideWhenUsed="true" QFormat="true" Name="heading 8"/>
+  <w:LsdException Locked="false" Priority="9" SemiHidden="true"
+   UnhideWhenUsed="true" QFormat="true" Name="heading 9"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="index 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="index 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="index 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="index 4"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="index 5"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="index 6"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="index 7"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="index 8"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="index 9"/>
+  <w:LsdException Locked="false" Priority="39" SemiHidden="true"
+   UnhideWhenUsed="true" Name="toc 1"/>
+  <w:LsdException Locked="false" Priority="39" SemiHidden="true"
+   UnhideWhenUsed="true" Name="toc 2"/>
+  <w:LsdException Locked="false" Priority="39" SemiHidden="true"
+   UnhideWhenUsed="true" Name="toc 3"/>
+  <w:LsdException Locked="false" Priority="39" SemiHidden="true"
+   UnhideWhenUsed="true" Name="toc 4"/>
+  <w:LsdException Locked="false" Priority="39" SemiHidden="true"
+   UnhideWhenUsed="true" Name="toc 5"/>
+  <w:LsdException Locked="false" Priority="39" SemiHidden="true"
+   UnhideWhenUsed="true" Name="toc 6"/>
+  <w:LsdException Locked="false" Priority="39" SemiHidden="true"
+   UnhideWhenUsed="true" Name="toc 7"/>
+  <w:LsdException Locked="false" Priority="39" SemiHidden="true"
+   UnhideWhenUsed="true" Name="toc 8"/>
+  <w:LsdException Locked="false" Priority="39" SemiHidden="true"
+   UnhideWhenUsed="true" Name="toc 9"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Normal Indent"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="footnote text"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="annotation text"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="header"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="footer"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="index heading"/>
+  <w:LsdException Locked="false" Priority="35" SemiHidden="true"
+   UnhideWhenUsed="true" QFormat="true" Name="caption"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="table of figures"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="envelope address"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="envelope return"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="footnote reference"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="annotation reference"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="line number"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="page number"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="endnote reference"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="endnote text"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="table of authorities"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="macro"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="toa heading"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Bullet"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Number"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List 4"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List 5"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Bullet 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Bullet 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Bullet 4"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Bullet 5"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Number 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Number 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Number 4"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Number 5"/>
+  <w:LsdException Locked="false" Priority="10" QFormat="true" Name="Title"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Closing"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Signature"/>
+  <w:LsdException Locked="false" Priority="1" SemiHidden="true"
+   UnhideWhenUsed="true" Name="Default Paragraph Font"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Body Text"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Body Text Indent"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Continue"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Continue 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Continue 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Continue 4"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Continue 5"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Message Header"/>
+  <w:LsdException Locked="false" Priority="11" QFormat="true" Name="Subtitle"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Salutation"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Date"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Body Text First Indent"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Body Text First Indent 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Note Heading"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Body Text 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Body Text 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Body Text Indent 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Body Text Indent 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Block Text"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Hyperlink"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="FollowedHyperlink"/>
+  <w:LsdException Locked="false" Priority="22" QFormat="true" Name="Strong"/>
+  <w:LsdException Locked="false" Priority="20" QFormat="true" Name="Emphasis"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Document Map"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Plain Text"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="E-mail Signature"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Top of Form"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Bottom of Form"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Normal (Web)"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Acronym"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Address"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Cite"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Code"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Definition"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Keyboard"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Preformatted"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Sample"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Typewriter"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Variable"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Normal Table"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="annotation subject"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="No List"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Outline List 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Outline List 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Outline List 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Simple 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Simple 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Simple 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Classic 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Classic 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Classic 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Classic 4"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Colorful 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Colorful 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Colorful 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Columns 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Columns 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Columns 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Columns 4"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Columns 5"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Grid 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Grid 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Grid 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Grid 4"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Grid 5"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Grid 6"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Grid 7"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Grid 8"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table List 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table List 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table List 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table List 4"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table List 5"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table List 6"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table List 7"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table List 8"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table 3D effects 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table 3D effects 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table 3D effects 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Contemporary"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Elegant"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Professional"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Subtle 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Subtle 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Web 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Web 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Web 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Balloon Text"/>
+  <w:LsdException Locked="false" Priority="39" Name="Table Grid"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Theme"/>
+  <w:LsdException Locked="false" SemiHidden="true" Name="Placeholder Text"/>
+  <w:LsdException Locked="false" Priority="1" QFormat="true" Name="No Spacing"/>
+  <w:LsdException Locked="false" Priority="60" Name="Light Shading"/>
+  <w:LsdException Locked="false" Priority="61" Name="Light List"/>
+  <w:LsdException Locked="false" Priority="62" Name="Light Grid"/>
+  <w:LsdException Locked="false" Priority="63" Name="Medium Shading 1"/>
+  <w:LsdException Locked="false" Priority="64" Name="Medium Shading 2"/>
+  <w:LsdException Locked="false" Priority="65" Name="Medium List 1"/>
+  <w:LsdException Locked="false" Priority="66" Name="Medium List 2"/>
+  <w:LsdException Locked="false" Priority="67" Name="Medium Grid 1"/>
+  <w:LsdException Locked="false" Priority="68" Name="Medium Grid 2"/>
+  <w:LsdException Locked="false" Priority="69" Name="Medium Grid 3"/>
+  <w:LsdException Locked="false" Priority="70" Name="Dark List"/>
+  <w:LsdException Locked="false" Priority="71" Name="Colorful Shading"/>
+  <w:LsdException Locked="false" Priority="72" Name="Colorful List"/>
+  <w:LsdException Locked="false" Priority="73" Name="Colorful Grid"/>
+  <w:LsdException Locked="false" Priority="60" Name="Light Shading Accent 1"/>
+  <w:LsdException Locked="false" Priority="61" Name="Light List Accent 1"/>
+  <w:LsdException Locked="false" Priority="62" Name="Light Grid Accent 1"/>
+  <w:LsdException Locked="false" Priority="63" Name="Medium Shading 1 Accent 1"/>
+  <w:LsdException Locked="false" Priority="64" Name="Medium Shading 2 Accent 1"/>
+  <w:LsdException Locked="false" Priority="65" Name="Medium List 1 Accent 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" Name="Revision"/>
+  <w:LsdException Locked="false" Priority="34" QFormat="true"
+   Name="List Paragraph"/>
+  <w:LsdException Locked="false" Priority="29" QFormat="true" Name="Quote"/>
+  <w:LsdException Locked="false" Priority="30" QFormat="true"
+   Name="Intense Quote"/>
+  <w:LsdException Locked="false" Priority="66" Name="Medium List 2 Accent 1"/>
+  <w:LsdException Locked="false" Priority="67" Name="Medium Grid 1 Accent 1"/>
+  <w:LsdException Locked="false" Priority="68" Name="Medium Grid 2 Accent 1"/>
+  <w:LsdException Locked="false" Priority="69" Name="Medium Grid 3 Accent 1"/>
+  <w:LsdException Locked="false" Priority="70" Name="Dark List Accent 1"/>
+  <w:LsdException Locked="false" Priority="71" Name="Colorful Shading Accent 1"/>
+  <w:LsdException Locked="false" Priority="72" Name="Colorful List Accent 1"/>
+  <w:LsdException Locked="false" Priority="73" Name="Colorful Grid Accent 1"/>
+  <w:LsdException Locked="false" Priority="60" Name="Light Shading Accent 2"/>
+  <w:LsdException Locked="false" Priority="61" Name="Light List Accent 2"/>
+  <w:LsdException Locked="false" Priority="62" Name="Light Grid Accent 2"/>
+  <w:LsdException Locked="false" Priority="63" Name="Medium Shading 1 Accent 2"/>
+  <w:LsdException Locked="false" Priority="64" Name="Medium Shading 2 Accent 2"/>
+  <w:LsdException Locked="false" Priority="65" Name="Medium List 1 Accent 2"/>
+  <w:LsdException Locked="false" Priority="66" Name="Medium List 2 Accent 2"/>
+  <w:LsdException Locked="false" Priority="67" Name="Medium Grid 1 Accent 2"/>
+  <w:LsdException Locked="false" Priority="68" Name="Medium Grid 2 Accent 2"/>
+  <w:LsdException Locked="false" Priority="69" Name="Medium Grid 3 Accent 2"/>
+  <w:LsdException Locked="false" Priority="70" Name="Dark List Accent 2"/>
+  <w:LsdException Locked="false" Priority="71" Name="Colorful Shading Accent 2"/>
+  <w:LsdException Locked="false" Priority="72" Name="Colorful List Accent 2"/>
+  <w:LsdException Locked="false" Priority="73" Name="Colorful Grid Accent 2"/>
+  <w:LsdException Locked="false" Priority="60" Name="Light Shading Accent 3"/>
+  <w:LsdException Locked="false" Priority="61" Name="Light List Accent 3"/>
+  <w:LsdException Locked="false" Priority="62" Name="Light Grid Accent 3"/>
+  <w:LsdException Locked="false" Priority="63" Name="Medium Shading 1 Accent 3"/>
+  <w:LsdException Locked="false" Priority="64" Name="Medium Shading 2 Accent 3"/>
+  <w:LsdException Locked="false" Priority="65" Name="Medium List 1 Accent 3"/>
+  <w:LsdException Locked="false" Priority="66" Name="Medium List 2 Accent 3"/>
+  <w:LsdException Locked="false" Priority="67" Name="Medium Grid 1 Accent 3"/>
+  <w:LsdException Locked="false" Priority="68" Name="Medium Grid 2 Accent 3"/>
+  <w:LsdException Locked="false" Priority="69" Name="Medium Grid 3 Accent 3"/>
+  <w:LsdException Locked="false" Priority="70" Name="Dark List Accent 3"/>
+  <w:LsdException Locked="false" Priority="71" Name="Colorful Shading Accent 3"/>
+  <w:LsdException Locked="false" Priority="72" Name="Colorful List Accent 3"/>
+  <w:LsdException Locked="false" Priority="73" Name="Colorful Grid Accent 3"/>
+  <w:LsdException Locked="false" Priority="60" Name="Light Shading Accent 4"/>
+  <w:LsdException Locked="false" Priority="61" Name="Light List Accent 4"/>
+  <w:LsdException Locked="false" Priority="62" Name="Light Grid Accent 4"/>
+  <w:LsdException Locked="false" Priority="63" Name="Medium Shading 1 Accent 4"/>
+  <w:LsdException Locked="false" Priority="64" Name="Medium Shading 2 Accent 4"/>
+  <w:LsdException Locked="false" Priority="65" Name="Medium List 1 Accent 4"/>
+  <w:LsdException Locked="false" Priority="66" Name="Medium List 2 Accent 4"/>
+  <w:LsdException Locked="false" Priority="67" Name="Medium Grid 1 Accent 4"/>
+  <w:LsdException Locked="false" Priority="68" Name="Medium Grid 2 Accent 4"/>
+  <w:LsdException Locked="false" Priority="69" Name="Medium Grid 3 Accent 4"/>
+  <w:LsdException Locked="false" Priority="70" Name="Dark List Accent 4"/>
+  <w:LsdException Locked="false" Priority="71" Name="Colorful Shading Accent 4"/>
+  <w:LsdException Locked="false" Priority="72" Name="Colorful List Accent 4"/>
+  <w:LsdException Locked="false" Priority="73" Name="Colorful Grid Accent 4"/>
+  <w:LsdException Locked="false" Priority="60" Name="Light Shading Accent 5"/>
+  <w:LsdException Locked="false" Priority="61" Name="Light List Accent 5"/>
+  <w:LsdException Locked="false" Priority="62" Name="Light Grid Accent 5"/>
+  <w:LsdException Locked="false" Priority="63" Name="Medium Shading 1 Accent 5"/>
+  <w:LsdException Locked="false" Priority="64" Name="Medium Shading 2 Accent 5"/>
+  <w:LsdException Locked="false" Priority="65" Name="Medium List 1 Accent 5"/>
+  <w:LsdException Locked="false" Priority="66" Name="Medium List 2 Accent 5"/>
+  <w:LsdException Locked="false" Priority="67" Name="Medium Grid 1 Accent 5"/>
+  <w:LsdException Locked="false" Priority="68" Name="Medium Grid 2 Accent 5"/>
+  <w:LsdException Locked="false" Priority="69" Name="Medium Grid 3 Accent 5"/>
+  <w:LsdException Locked="false" Priority="70" Name="Dark List Accent 5"/>
+  <w:LsdException Locked="false" Priority="71" Name="Colorful Shading Accent 5"/>
+  <w:LsdException Locked="false" Priority="72" Name="Colorful List Accent 5"/>
+  <w:LsdException Locked="false" Priority="73" Name="Colorful Grid Accent 5"/>
+  <w:LsdException Locked="false" Priority="60" Name="Light Shading Accent 6"/>
+  <w:LsdException Locked="false" Priority="61" Name="Light List Accent 6"/>
+  <w:LsdException Locked="false" Priority="62" Name="Light Grid Accent 6"/>
+  <w:LsdException Locked="false" Priority="63" Name="Medium Shading 1 Accent 6"/>
+  <w:LsdException Locked="false" Priority="64" Name="Medium Shading 2 Accent 6"/>
+  <w:LsdException Locked="false" Priority="65" Name="Medium List 1 Accent 6"/>
+  <w:LsdException Locked="false" Priority="66" Name="Medium List 2 Accent 6"/>
+  <w:LsdException Locked="false" Priority="67" Name="Medium Grid 1 Accent 6"/>
+  <w:LsdException Locked="false" Priority="68" Name="Medium Grid 2 Accent 6"/>
+  <w:LsdException Locked="false" Priority="69" Name="Medium Grid 3 Accent 6"/>
+  <w:LsdException Locked="false" Priority="70" Name="Dark List Accent 6"/>
+  <w:LsdException Locked="false" Priority="71" Name="Colorful Shading Accent 6"/>
+  <w:LsdException Locked="false" Priority="72" Name="Colorful List Accent 6"/>
+  <w:LsdException Locked="false" Priority="73" Name="Colorful Grid Accent 6"/>
+  <w:LsdException Locked="false" Priority="19" QFormat="true"
+   Name="Subtle Emphasis"/>
+  <w:LsdException Locked="false" Priority="21" QFormat="true"
+   Name="Intense Emphasis"/>
+  <w:LsdException Locked="false" Priority="31" QFormat="true"
+   Name="Subtle Reference"/>
+  <w:LsdException Locked="false" Priority="32" QFormat="true"
+   Name="Intense Reference"/>
+  <w:LsdException Locked="false" Priority="33" QFormat="true" Name="Book Title"/>
+  <w:LsdException Locked="false" Priority="37" SemiHidden="true"
+   UnhideWhenUsed="true" Name="Bibliography"/>
+  <w:LsdException Locked="false" Priority="39" SemiHidden="true"
+   UnhideWhenUsed="true" QFormat="true" Name="TOC Heading"/>
+  <w:LsdException Locked="false" Priority="41" Name="Plain Table 1"/>
+  <w:LsdException Locked="false" Priority="42" Name="Plain Table 2"/>
+  <w:LsdException Locked="false" Priority="43" Name="Plain Table 3"/>
+  <w:LsdException Locked="false" Priority="44" Name="Plain Table 4"/>
+  <w:LsdException Locked="false" Priority="45" Name="Plain Table 5"/>
+  <w:LsdException Locked="false" Priority="40" Name="Grid Table Light"/>
+  <w:LsdException Locked="false" Priority="46" Name="Grid Table 1 Light"/>
+  <w:LsdException Locked="false" Priority="47" Name="Grid Table 2"/>
+  <w:LsdException Locked="false" Priority="48" Name="Grid Table 3"/>
+  <w:LsdException Locked="false" Priority="49" Name="Grid Table 4"/>
+  <w:LsdException Locked="false" Priority="50" Name="Grid Table 5 Dark"/>
+  <w:LsdException Locked="false" Priority="51" Name="Grid Table 6 Colorful"/>
+  <w:LsdException Locked="false" Priority="52" Name="Grid Table 7 Colorful"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="Grid Table 1 Light Accent 1"/>
+  <w:LsdException Locked="false" Priority="47" Name="Grid Table 2 Accent 1"/>
+  <w:LsdException Locked="false" Priority="48" Name="Grid Table 3 Accent 1"/>
+  <w:LsdException Locked="false" Priority="49" Name="Grid Table 4 Accent 1"/>
+  <w:LsdException Locked="false" Priority="50" Name="Grid Table 5 Dark Accent 1"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="Grid Table 6 Colorful Accent 1"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="Grid Table 7 Colorful Accent 1"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="Grid Table 1 Light Accent 2"/>
+  <w:LsdException Locked="false" Priority="47" Name="Grid Table 2 Accent 2"/>
+  <w:LsdException Locked="false" Priority="48" Name="Grid Table 3 Accent 2"/>
+  <w:LsdException Locked="false" Priority="49" Name="Grid Table 4 Accent 2"/>
+  <w:LsdException Locked="false" Priority="50" Name="Grid Table 5 Dark Accent 2"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="Grid Table 6 Colorful Accent 2"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="Grid Table 7 Colorful Accent 2"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="Grid Table 1 Light Accent 3"/>
+  <w:LsdException Locked="false" Priority="47" Name="Grid Table 2 Accent 3"/>
+  <w:LsdException Locked="false" Priority="48" Name="Grid Table 3 Accent 3"/>
+  <w:LsdException Locked="false" Priority="49" Name="Grid Table 4 Accent 3"/>
+  <w:LsdException Locked="false" Priority="50" Name="Grid Table 5 Dark Accent 3"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="Grid Table 6 Colorful Accent 3"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="Grid Table 7 Colorful Accent 3"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="Grid Table 1 Light Accent 4"/>
+  <w:LsdException Locked="false" Priority="47" Name="Grid Table 2 Accent 4"/>
+  <w:LsdException Locked="false" Priority="48" Name="Grid Table 3 Accent 4"/>
+  <w:LsdException Locked="false" Priority="49" Name="Grid Table 4 Accent 4"/>
+  <w:LsdException Locked="false" Priority="50" Name="Grid Table 5 Dark Accent 4"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="Grid Table 6 Colorful Accent 4"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="Grid Table 7 Colorful Accent 4"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="Grid Table 1 Light Accent 5"/>
+  <w:LsdException Locked="false" Priority="47" Name="Grid Table 2 Accent 5"/>
+  <w:LsdException Locked="false" Priority="48" Name="Grid Table 3 Accent 5"/>
+  <w:LsdException Locked="false" Priority="49" Name="Grid Table 4 Accent 5"/>
+  <w:LsdException Locked="false" Priority="50" Name="Grid Table 5 Dark Accent 5"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="Grid Table 6 Colorful Accent 5"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="Grid Table 7 Colorful Accent 5"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="Grid Table 1 Light Accent 6"/>
+  <w:LsdException Locked="false" Priority="47" Name="Grid Table 2 Accent 6"/>
+  <w:LsdException Locked="false" Priority="48" Name="Grid Table 3 Accent 6"/>
+  <w:LsdException Locked="false" Priority="49" Name="Grid Table 4 Accent 6"/>
+  <w:LsdException Locked="false" Priority="50" Name="Grid Table 5 Dark Accent 6"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="Grid Table 6 Colorful Accent 6"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="Grid Table 7 Colorful Accent 6"/>
+  <w:LsdException Locked="false" Priority="46" Name="List Table 1 Light"/>
+  <w:LsdException Locked="false" Priority="47" Name="List Table 2"/>
+  <w:LsdException Locked="false" Priority="48" Name="List Table 3"/>
+  <w:LsdException Locked="false" Priority="49" Name="List Table 4"/>
+  <w:LsdException Locked="false" Priority="50" Name="List Table 5 Dark"/>
+  <w:LsdException Locked="false" Priority="51" Name="List Table 6 Colorful"/>
+  <w:LsdException Locked="false" Priority="52" Name="List Table 7 Colorful"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="List Table 1 Light Accent 1"/>
+  <w:LsdException Locked="false" Priority="47" Name="List Table 2 Accent 1"/>
+  <w:LsdException Locked="false" Priority="48" Name="List Table 3 Accent 1"/>
+  <w:LsdException Locked="false" Priority="49" Name="List Table 4 Accent 1"/>
+  <w:LsdException Locked="false" Priority="50" Name="List Table 5 Dark Accent 1"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="List Table 6 Colorful Accent 1"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="List Table 7 Colorful Accent 1"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="List Table 1 Light Accent 2"/>
+  <w:LsdException Locked="false" Priority="47" Name="List Table 2 Accent 2"/>
+  <w:LsdException Locked="false" Priority="48" Name="List Table 3 Accent 2"/>
+  <w:LsdException Locked="false" Priority="49" Name="List Table 4 Accent 2"/>
+  <w:LsdException Locked="false" Priority="50" Name="List Table 5 Dark Accent 2"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="List Table 6 Colorful Accent 2"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="List Table 7 Colorful Accent 2"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="List Table 1 Light Accent 3"/>
+  <w:LsdException Locked="false" Priority="47" Name="List Table 2 Accent 3"/>
+  <w:LsdException Locked="false" Priority="48" Name="List Table 3 Accent 3"/>
+  <w:LsdException Locked="false" Priority="49" Name="List Table 4 Accent 3"/>
+  <w:LsdException Locked="false" Priority="50" Name="List Table 5 Dark Accent 3"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="List Table 6 Colorful Accent 3"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="List Table 7 Colorful Accent 3"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="List Table 1 Light Accent 4"/>
+  <w:LsdException Locked="false" Priority="47" Name="List Table 2 Accent 4"/>
+  <w:LsdException Locked="false" Priority="48" Name="List Table 3 Accent 4"/>
+  <w:LsdException Locked="false" Priority="49" Name="List Table 4 Accent 4"/>
+  <w:LsdException Locked="false" Priority="50" Name="List Table 5 Dark Accent 4"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="List Table 6 Colorful Accent 4"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="List Table 7 Colorful Accent 4"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="List Table 1 Light Accent 5"/>
+  <w:LsdException Locked="false" Priority="47" Name="List Table 2 Accent 5"/>
+  <w:LsdException Locked="false" Priority="48" Name="List Table 3 Accent 5"/>
+  <w:LsdException Locked="false" Priority="49" Name="List Table 4 Accent 5"/>
+  <w:LsdException Locked="false" Priority="50" Name="List Table 5 Dark Accent 5"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="List Table 6 Colorful Accent 5"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="List Table 7 Colorful Accent 5"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="List Table 1 Light Accent 6"/>
+  <w:LsdException Locked="false" Priority="47" Name="List Table 2 Accent 6"/>
+  <w:LsdException Locked="false" Priority="48" Name="List Table 3 Accent 6"/>
+  <w:LsdException Locked="false" Priority="49" Name="List Table 4 Accent 6"/>
+  <w:LsdException Locked="false" Priority="50" Name="List Table 5 Dark Accent 6"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="List Table 6 Colorful Accent 6"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="List Table 7 Colorful Accent 6"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Mention"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Smart Hyperlink"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Hashtag"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Unresolved Mention"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Smart Link"/>
+ </w:LatentStyles>
+</xml><![endif]-->
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;
+	mso-font-charset:0;
+	mso-generic-font-family:roman;
+	mso-font-pitch:variable;
+	mso-font-signature:-536869121 1107305727 33554432 0 415 0;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-parent:"";
+	margin:0in;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Arial",sans-serif;
+	mso-fareast-font-family:Arial;
+	color:#2D3748;}
+h1
+	{mso-style-priority:9;
+	mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-parent:"";
+	margin-top:22.0pt;
+	margin-right:0in;
+	margin-bottom:10.0pt;
+	margin-left:0in;
+	mso-pagination:widow-orphan;
+	mso-outline-level:1;
+	font-size:17.0pt;
+	font-family:"Arial",sans-serif;
+	color:#1B2A4A;
+	mso-font-kerning:0pt;}
+h2
+	{mso-style-priority:9;
+	mso-style-qformat:yes;
+	mso-style-parent:"";
+	margin-top:16.0pt;
+	margin-right:0in;
+	margin-bottom:8.0pt;
+	margin-left:0in;
+	mso-pagination:widow-orphan;
+	mso-outline-level:2;
+	font-size:13.0pt;
+	font-family:"Arial",sans-serif;
+	color:#2A7A6A;}
+h3
+	{mso-style-priority:9;
+	mso-style-qformat:yes;
+	mso-style-parent:"";
+	margin-top:12.0pt;
+	margin-right:0in;
+	margin-bottom:6.0pt;
+	margin-left:0in;
+	mso-pagination:widow-orphan;
+	mso-outline-level:3;
+	font-size:12.0pt;
+	font-family:"Arial",sans-serif;
+	color:#4A5568;}
+h4
+	{mso-style-noshow:yes;
+	mso-style-priority:9;
+	mso-style-qformat:yes;
+	mso-style-parent:"";
+	margin:0in;
+	mso-pagination:widow-orphan;
+	mso-outline-level:4;
+	font-size:12.0pt;
+	font-family:"Arial",sans-serif;
+	color:#2E74B5;
+	font-weight:normal;
+	font-style:italic;}
+h5
+	{mso-style-noshow:yes;
+	mso-style-priority:9;
+	mso-style-qformat:yes;
+	mso-style-parent:"";
+	margin:0in;
+	mso-pagination:widow-orphan;
+	mso-outline-level:5;
+	font-size:12.0pt;
+	font-family:"Arial",sans-serif;
+	color:#2E74B5;
+	font-weight:normal;}
+h6
+	{mso-style-noshow:yes;
+	mso-style-priority:9;
+	mso-style-qformat:yes;
+	mso-style-parent:"";
+	margin:0in;
+	mso-pagination:widow-orphan;
+	mso-outline-level:6;
+	font-size:12.0pt;
+	font-family:"Arial",sans-serif;
+	color:#1F4D78;
+	font-weight:normal;}
+p.MsoFootnoteText, li.MsoFootnoteText, div.MsoFootnoteText
+	{mso-style-noshow:yes;
+	mso-style-priority:99;
+	mso-style-parent:"";
+	mso-style-link:"Footnote Text Char";
+	margin:0in;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:"Arial",sans-serif;
+	mso-fareast-font-family:Arial;
+	color:#2D3748;}
+span.MsoFootnoteReference
+	{mso-style-noshow:yes;
+	mso-style-priority:99;
+	mso-style-parent:"";
+	vertical-align:super;}
+p.MsoTitle, li.MsoTitle, div.MsoTitle
+	{mso-style-priority:10;
+	mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-parent:"";
+	margin:0in;
+	mso-pagination:widow-orphan;
+	font-size:28.0pt;
+	font-family:"Arial",sans-serif;
+	mso-fareast-font-family:Arial;
+	color:#2D3748;}
+a:link, span.MsoHyperlink
+	{mso-style-priority:99;
+	mso-style-parent:"";
+	color:#0563C1;
+	text-decoration:underline;
+	text-underline:single;}
+a:visited, span.MsoHyperlinkFollowed
+	{mso-style-noshow:yes;
+	mso-style-priority:99;
+	color:#96607D;
+	mso-themecolor:followedhyperlink;
+	text-decoration:underline;
+	text-underline:single;}
+p.MsoListParagraph, li.MsoListParagraph, div.MsoListParagraph
+	{mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-parent:"";
+	margin:0in;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Arial",sans-serif;
+	mso-fareast-font-family:Arial;
+	color:#2D3748;}
+p.Strong1, li.Strong1, div.Strong1
+	{mso-style-name:Strong1;
+	mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-parent:"";
+	margin:0in;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Arial",sans-serif;
+	mso-fareast-font-family:Arial;
+	color:#2D3748;
+	font-weight:bold;}
+span.FootnoteTextChar
+	{mso-style-name:"Footnote Text Char";
+	mso-style-noshow:yes;
+	mso-style-priority:99;
+	mso-style-locked:yes;
+	mso-style-parent:"";
+	mso-style-link:"Footnote Text";
+	mso-ansi-font-size:10.0pt;
+	mso-bidi-font-size:10.0pt;}
+span.SpellE
+	{mso-style-name:"";
+	mso-spl-e:yes;}
+span.GramE
+	{mso-style-name:"";
+	mso-gram-e:yes;}
+.MsoChpDefault
+	{mso-style-type:export-only;
+	mso-default-props:yes;
+	font-size:12.0pt;
+	mso-ansi-font-size:12.0pt;
+	mso-bidi-font-size:12.0pt;
+	font-family:"Arial",sans-serif;
+	mso-ascii-font-family:Arial;
+	mso-fareast-font-family:Arial;
+	mso-hansi-font-family:Arial;
+	mso-bidi-font-family:Arial;
+	color:#2D3748;
+	mso-font-kerning:0pt;
+	mso-ligatures:none;}
+ /* Page Definitions */
+ @page
+	{mso-footnote-separator:url("opengym-information-flow_files/header.htm") fs;
+	mso-footnote-continuation-separator:url("opengym-information-flow_files/header.htm") fcs;
+	mso-endnote-separator:url("opengym-information-flow_files/header.htm") es;
+	mso-endnote-continuation-separator:url("opengym-information-flow_files/header.htm") ecs;}
+@page WordSection1
+	{size:8.5in 11.0in;
+	margin:63.0pt 63.0pt 63.0pt 63.0pt;
+	mso-header-margin:35.4pt;
+	mso-footer-margin:35.4pt;
+	mso-header:url("opengym-information-flow_files/header.htm") h1;
+	mso-footer:url("opengym-information-flow_files/header.htm") f1;
+	mso-paper-source:0;}
+div.WordSection1
+	{page:WordSection1;}
+ /* List Definitions */
+ @list l0
+	{mso-list-id:398328809;
+	mso-list-type:hybrid;
+	mso-list-template-ids:1827182050 -1952683434 -623981032 642164354 1325550996 2075796976 -1326257506 1219640432 -206552606 -184511892;}
+@list l0:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:•;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l0:level2
+	{mso-level-number-format:bullet;
+	mso-level-text:\25E6;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:.75in;
+	text-indent:-.25in;}
+@list l0:level3
+	{mso-level-start-at:0;
+	mso-level-text:"";
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:0in;
+	text-indent:0in;}
+@list l0:level4
+	{mso-level-start-at:0;
+	mso-level-text:"";
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:0in;
+	text-indent:0in;}
+@list l0:level5
+	{mso-level-start-at:0;
+	mso-level-text:"";
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:0in;
+	text-indent:0in;}
+@list l0:level6
+	{mso-level-start-at:0;
+	mso-level-text:"";
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:0in;
+	text-indent:0in;}
+@list l0:level7
+	{mso-level-start-at:0;
+	mso-level-text:"";
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:0in;
+	text-indent:0in;}
+@list l0:level8
+	{mso-level-start-at:0;
+	mso-level-text:"";
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:0in;
+	text-indent:0in;}
+@list l0:level9
+	{mso-level-start-at:0;
+	mso-level-text:"";
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:0in;
+	text-indent:0in;}
+@list l1
+	{mso-list-id:2098625832;
+	mso-list-type:hybrid;
+	mso-list-template-ids:-642480946 1054357892 -262667094 1491914092 1593840988 -320562966 -1075565498 -626228018 1085820398 583578396;}
+@list l1:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\25CF;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l1:level2
+	{mso-level-number-format:bullet;
+	mso-level-text:\25CB;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l1:level3
+	{mso-level-number-format:bullet;
+	mso-level-text:\25A0;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l1:level4
+	{mso-level-number-format:bullet;
+	mso-level-text:\25CF;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l1:level5
+	{mso-level-number-format:bullet;
+	mso-level-text:\25CB;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l1:level6
+	{mso-level-number-format:bullet;
+	mso-level-text:\25A0;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l1:level7
+	{mso-level-number-format:bullet;
+	mso-level-text:\25CF;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l1:level8
+	{mso-level-number-format:bullet;
+	mso-level-text:\25CF;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l1:level9
+	{mso-level-number-format:bullet;
+	mso-level-text:\25CF;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+ol
+	{margin-bottom:0in;}
+ul
+	{margin-bottom:0in;}
+-->
+</style>
+<!--[if gte mso 10]>
+<style>
+ /* Style Definitions */
+ table.MsoNormalTable
+	{mso-style-name:"Table Normal";
+	mso-tstyle-rowband-size:0;
+	mso-tstyle-colband-size:0;
+	mso-style-noshow:yes;
+	mso-style-priority:99;
+	mso-style-parent:"";
+	mso-padding-alt:0in 5.4pt 0in 5.4pt;
+	mso-para-margin:0in;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Arial",sans-serif;
+	color:#2D3748;}
+</style>
+<![endif]--><!--[if gte mso 9]><xml>
+ <o:shapedefaults v:ext="edit" spidmax="1026"/>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <o:shapelayout v:ext="edit">
+  <o:idmap v:ext="edit" data="1"/>
+ </o:shapelayout></xml><![endif]-->
+</head>
+
+<body lang=EN-US link="#0563C1" vlink="#96607D" style='tab-interval:.5in;
+word-wrap:break-word'>
+
+<div class=WordSection1>
+
+<p class=MsoNormal style='margin-bottom:26.0pt'><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal style='margin-bottom:5.0pt'><b><span style='font-size:30.0pt;
+color:#1B2A4A'>How Information Flows</span></b></p>
+
+<p class=MsoNormal style='margin-bottom:4.0pt'><span style='font-size:18.0pt;
+color:#2A7A6A'>Through an <span class=SpellE>OpenGym</span> <span class=SpellE>Organisation</span></span></p>
+
+<div style='mso-element:para-border-div;border:none;border-bottom:solid #2A7A6A 1.0pt;
+padding:0in 0in 1.0pt 0in'>
+
+<p class=MsoNormal style='margin-bottom:12.0pt;border:none;mso-border-bottom-alt:
+solid #2A7A6A 1.0pt;padding:0in;mso-padding-alt:0in 0in 1.0pt 0in'><o:p>&nbsp;</o:p></p>
+
+</div>
+
+<p class=MsoNormal style='margin-bottom:2.0pt'><i><span style='font-size:13.0pt;
+color:#4A5568'>From the moment a member places an order to the moment revenue
+is <span class=SpellE>recognised</span> —</span></i></p>
+
+<p class=MsoNormal style='margin-bottom:5.0pt'><b><i><span style='font-size:
+13.0pt;color:#4A5568'>tracing every business fact through every domain.</span></i></b></p>
+
+<p class=MsoNormal style='margin-bottom:30.0pt'><span style='font-size:10.0pt;
+color:#4A5568'>Version <span class=GramE>1.0<span style='mso-spacerun:yes'> 
+</span>·</span><span style='mso-spacerun:yes'>  </span>March <span class=GramE>2026<span
+style='mso-spacerun:yes'>  </span>·</span><span style='mso-spacerun:yes'> 
+</span>Recurring Membership</span></p>
+
+<p class=MsoNormal style='margin-bottom:4.0pt'><b><span style='font-size:10.0pt;
+color:#1B2A4A'>PART ONE</span></b></p>
+
+<p class=MsoNormal style='margin-bottom:2.0pt'><span class=GramE><b><span
+style='font-size:20.0pt;color:#1B2A4A'>The Business</span></b></span><b><span
+style='font-size:20.0pt;color:#1B2A4A'> Story</span></b></p>
+
+<p class=MsoNormal style='margin-bottom:15.0pt'><i><span style='font-size:11.0pt;
+color:#4A5568'>Written for gym owners and business stakeholders.</span></i></p>
+
+<div style='mso-element:para-border-div;border:none;border-bottom:solid #2A7A6A 1.0pt;
+mso-border-bottom-alt:solid #2A7A6A .75pt;padding:0in 0in 1.0pt 0in'>
+
+<h1 style='border:none;mso-border-bottom-alt:solid #2A7A6A .75pt;padding:0in;
+mso-padding-alt:0in 0in 1.0pt 0in'>1. The <span class=SpellE>Organisation</span>
+on <span class=SpellE>OpenGym</span></h1>
+
+</div>
+
+<p class=MsoNormal style='margin-bottom:8.0pt'>A gym on <span class=SpellE>OpenGym</span>
+is not a single system. It is a collection of business domains — each
+responsible for a distinct part of how the gym operates, each with its own
+information and its own decisions to make.</p>
+
+<p class=MsoNormal style='margin-bottom:8.0pt'>These domains share information
+— but only through well-defined handoff points. When something happens in one
+part of the business, the other parts learn about it and react. The mechanism
+that makes this work is the <b>business event</b> — a formal record of a fact
+that has occurred.</p>
+
+<p class=MsoNormal style='margin-bottom:4.0pt'><o:p>&nbsp;</o:p></p>
+
+<table class=MsoNormalTable border=1 cellspacing=0 cellpadding=0 width=624
+ style='width:6.5in;border-collapse:collapse;border:none;mso-border-alt:solid windowtext .5pt;
+ mso-yfti-tbllook:1184;mso-padding-alt:0in .5pt 0in .5pt;mso-border-insideh:
+ .5pt solid windowtext;mso-border-insidev:.5pt solid windowtext'>
+ <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes'>
+  <td width=147 valign=top style='width:110.0pt;border:solid #CBD5E0 1.0pt;
+  mso-border-alt:solid #CBD5E0 .25pt;background:#1B2A4A;padding:4.0pt 7.0pt 4.0pt 7.0pt'>
+  <p class=MsoNormal><b><span style='font-size:10.0pt;color:white'>Domain</span></b></p>
+  </td>
+  <td width=120 valign=top style='width:1.25in;border:solid #CBD5E0 1.0pt;
+  border-left:none;mso-border-left-alt:solid #CBD5E0 .25pt;mso-border-alt:solid #CBD5E0 .25pt;
+  background:#1B2A4A;padding:4.0pt 7.0pt 4.0pt 7.0pt'>
+  <p class=MsoNormal><b><span style='font-size:10.0pt;color:white'>Reacts To</span></b></p>
+  </td>
+  <td width=357 valign=top style='width:268.0pt;border:solid #CBD5E0 1.0pt;
+  border-left:none;mso-border-left-alt:solid #CBD5E0 .25pt;mso-border-alt:solid #CBD5E0 .25pt;
+  background:#1B2A4A;padding:4.0pt 7.0pt 4.0pt 7.0pt'>
+  <p class=MsoNormal><b><span style='font-size:10.0pt;color:white'>Business
+  Consequence</span></b></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:1'>
+  <td width=147 valign=top style='width:110.0pt;border:solid #CBD5E0 1.0pt;
+  border-top:none;mso-border-top-alt:solid #CBD5E0 .25pt;mso-border-alt:solid #CBD5E0 .25pt;
+  background:#EDF2F7;padding:4.0pt 7.0pt 4.0pt 7.0pt'>
+  <p class=MsoNormal><b><span style='font-size:10.0pt'>Sales &amp; Marketing</span></b></p>
+  </td>
+  <td width=120 valign=top style='width:1.25in;border-top:none;border-left:
+  none;border-bottom:solid #CBD5E0 1.0pt;border-right:solid #CBD5E0 1.0pt;
+  mso-border-top-alt:solid #CBD5E0 .25pt;mso-border-left-alt:solid #CBD5E0 .25pt;
+  mso-border-alt:solid #CBD5E0 .25pt;background:#EDF2F7;padding:4.0pt 7.0pt 4.0pt 7.0pt'>
+  <p class=MsoNormal><span style='font-size:10.0pt'>New order, lead, campaign</span></p>
+  </td>
+  <td width=357 valign=top style='width:268.0pt;border-top:none;border-left:
+  none;border-bottom:solid #CBD5E0 1.0pt;border-right:solid #CBD5E0 1.0pt;
+  mso-border-top-alt:solid #CBD5E0 .25pt;mso-border-left-alt:solid #CBD5E0 .25pt;
+  mso-border-alt:solid #CBD5E0 .25pt;background:#EDF2F7;padding:4.0pt 7.0pt 4.0pt 7.0pt'>
+  <p class=MsoNormal><span style='font-size:10.0pt'>The door through which new
+  members enter. Owns the offer and closes the sale.</span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:2'>
+  <td width=147 valign=top style='width:110.0pt;border:solid #CBD5E0 1.0pt;
+  border-top:none;mso-border-top-alt:solid #CBD5E0 .25pt;mso-border-alt:solid #CBD5E0 .25pt;
+  background:white;padding:4.0pt 7.0pt 4.0pt 7.0pt'>
+  <p class=MsoNormal><b><span style='font-size:10.0pt'>Customer</span></b></p>
+  </td>
+  <td width=120 valign=top style='width:1.25in;border-top:none;border-left:
+  none;border-bottom:solid #CBD5E0 1.0pt;border-right:solid #CBD5E0 1.0pt;
+  mso-border-top-alt:solid #CBD5E0 .25pt;mso-border-left-alt:solid #CBD5E0 .25pt;
+  mso-border-alt:solid #CBD5E0 .25pt;background:white;padding:4.0pt 7.0pt 4.0pt 7.0pt'>
+  <p class=MsoNormal><span style='font-size:10.0pt'>Member relationship,
+  balance, arrears</span></p>
+  </td>
+  <td width=357 valign=top style='width:268.0pt;border-top:none;border-left:
+  none;border-bottom:solid #CBD5E0 1.0pt;border-right:solid #CBD5E0 1.0pt;
+  mso-border-top-alt:solid #CBD5E0 .25pt;mso-border-left-alt:solid #CBD5E0 .25pt;
+  mso-border-alt:solid #CBD5E0 .25pt;background:white;padding:4.0pt 7.0pt 4.0pt 7.0pt'>
+  <p class=MsoNormal><span style='font-size:10.0pt'>The ongoing <span
+  class=GramE>member relationship</span> after joining. Knows every member by
+  name, payment status, and history.</span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:3'>
+  <td width=147 valign=top style='width:110.0pt;border:solid #CBD5E0 1.0pt;
+  border-top:none;mso-border-top-alt:solid #CBD5E0 .25pt;mso-border-alt:solid #CBD5E0 .25pt;
+  background:#EDF2F7;padding:4.0pt 7.0pt 4.0pt 7.0pt'>
+  <p class=MsoNormal><b><span style='font-size:10.0pt'>Operations</span></b></p>
+  </td>
+  <td width=120 valign=top style='width:1.25in;border-top:none;border-left:
+  none;border-bottom:solid #CBD5E0 1.0pt;border-right:solid #CBD5E0 1.0pt;
+  mso-border-top-alt:solid #CBD5E0 .25pt;mso-border-left-alt:solid #CBD5E0 .25pt;
+  mso-border-alt:solid #CBD5E0 .25pt;background:#EDF2F7;padding:4.0pt 7.0pt 4.0pt 7.0pt'>
+  <p class=MsoNormal><span style='font-size:10.0pt'>Schedule, bookings,
+  attendance</span></p>
+  </td>
+  <td width=357 valign=top style='width:268.0pt;border-top:none;border-left:
+  none;border-bottom:solid #CBD5E0 1.0pt;border-right:solid #CBD5E0 1.0pt;
+  mso-border-top-alt:solid #CBD5E0 .25pt;mso-border-left-alt:solid #CBD5E0 .25pt;
+  mso-border-alt:solid #CBD5E0 .25pt;background:#EDF2F7;padding:4.0pt 7.0pt 4.0pt 7.0pt'>
+  <p class=MsoNormal><span style='font-size:10.0pt'>Delivery of the service the
+  member paid for. Classes, coaches, entitlements, attendance records.</span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:4'>
+  <td width=147 valign=top style='width:110.0pt;border:solid #CBD5E0 1.0pt;
+  border-top:none;mso-border-top-alt:solid #CBD5E0 .25pt;mso-border-alt:solid #CBD5E0 .25pt;
+  background:white;padding:4.0pt 7.0pt 4.0pt 7.0pt'>
+  <p class=MsoNormal><b><span style='font-size:10.0pt'>Finance</span></b></p>
+  </td>
+  <td width=120 valign=top style='width:1.25in;border-top:none;border-left:
+  none;border-bottom:solid #CBD5E0 1.0pt;border-right:solid #CBD5E0 1.0pt;
+  mso-border-top-alt:solid #CBD5E0 .25pt;mso-border-left-alt:solid #CBD5E0 .25pt;
+  mso-border-alt:solid #CBD5E0 .25pt;background:white;padding:4.0pt 7.0pt 4.0pt 7.0pt'>
+  <p class=MsoNormal><span style='font-size:10.0pt'>Ledger, cash, revenue,
+  reporting</span></p>
+  </td>
+  <td width=357 valign=top style='width:268.0pt;border-top:none;border-left:
+  none;border-bottom:solid #CBD5E0 1.0pt;border-right:solid #CBD5E0 1.0pt;
+  mso-border-top-alt:solid #CBD5E0 .25pt;mso-border-left-alt:solid #CBD5E0 .25pt;
+  mso-border-alt:solid #CBD5E0 .25pt;background:white;padding:4.0pt 7.0pt 4.0pt 7.0pt'>
+  <p class=MsoNormal><span style='font-size:10.0pt'>The financial shadow of the
+  business. Records the accounting consequence of every business event. Never
+  manages member relationships.</span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:5;mso-yfti-lastrow:yes'>
+  <td width=147 valign=top style='width:110.0pt;border:solid #CBD5E0 1.0pt;
+  border-top:none;mso-border-top-alt:solid #CBD5E0 .25pt;mso-border-alt:solid #CBD5E0 .25pt;
+  background:#EDF2F7;padding:4.0pt 7.0pt 4.0pt 7.0pt'>
+  <p class=MsoNormal><b><span style='font-size:10.0pt'>Supplier</span></b></p>
+  </td>
+  <td width=120 valign=top style='width:1.25in;border-top:none;border-left:
+  none;border-bottom:solid #CBD5E0 1.0pt;border-right:solid #CBD5E0 1.0pt;
+  mso-border-top-alt:solid #CBD5E0 .25pt;mso-border-left-alt:solid #CBD5E0 .25pt;
+  mso-border-alt:solid #CBD5E0 .25pt;background:#EDF2F7;padding:4.0pt 7.0pt 4.0pt 7.0pt'>
+  <p class=MsoNormal><span style='font-size:10.0pt'>Partners, retail inventory,
+  referrals</span></p>
+  </td>
+  <td width=357 valign=top style='width:268.0pt;border-top:none;border-left:
+  none;border-bottom:solid #CBD5E0 1.0pt;border-right:solid #CBD5E0 1.0pt;
+  mso-border-top-alt:solid #CBD5E0 .25pt;mso-border-left-alt:solid #CBD5E0 .25pt;
+  mso-border-alt:solid #CBD5E0 .25pt;background:#EDF2F7;padding:4.0pt 7.0pt 4.0pt 7.0pt'>
+  <p class=MsoNormal><span style='font-size:10.0pt'>External relationships —
+  partner gyms, suppliers, referral arrangements.</span></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal style='margin-bottom:10.0pt'><o:p>&nbsp;</o:p></p>
+
+<table class=MsoNormalTable border=1 cellspacing=0 cellpadding=0 width=624
+ style='width:6.5in;border-collapse:collapse;border:none;mso-border-alt:solid windowtext .5pt;
+ mso-yfti-tbllook:1184;mso-padding-alt:0in .5pt 0in .5pt;mso-border-insideh:
+ .5pt solid windowtext;mso-border-insidev:.5pt solid windowtext'>
+ <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes;mso-yfti-lastrow:yes'>
+  <td valign=top style='border-top:#2A7A6A;border-left:#2A7A6A;border-bottom:
+  #CBD5E0;border-right:#CBD5E0;border-style:solid;border-width:1.0pt;
+  mso-border-top-alt:#2A7A6A 1.0pt;mso-border-left-alt:#2A7A6A 1.0pt;
+  mso-border-bottom-alt:#CBD5E0 .25pt;mso-border-right-alt:#CBD5E0 .25pt;
+  mso-border-style-alt:solid;background:#F7FAFA;padding:8.0pt 10.0pt 8.0pt 10.0pt'>
+  <p class=MsoNormal><b><span style='color:#2A7A6A'>The key principle<span
+  class=GramE>:<span style='mso-spacerun:yes'>  </span><span style='color:windowtext;
+  font-weight:normal'>Each</span></span></span></b> domain minds its own
+  business. Finance does not manage member relationships. Customer does not
+  process cash. Operations <span class=GramE>does</span> not <span
+  class=SpellE>recognise</span> revenue. Each domain does its own job and
+  learns what it needs to know from events other domains publish.</p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal style='margin-bottom:10.0pt'><o:p>&nbsp;</o:p></p>
+
+<div style='mso-element:para-border-div;border:none;border-bottom:solid #2A7A6A 1.0pt;
+mso-border-bottom-alt:solid #2A7A6A .75pt;padding:0in 0in 1.0pt 0in'>
+
+<h1 style='border:none;mso-border-bottom-alt:solid #2A7A6A .75pt;padding:0in;
+mso-padding-alt:0in 0in 1.0pt 0in'>2. What Is a Business Event?</h1>
+
+</div>
+
+<p class=MsoNormal style='margin-bottom:8.0pt'>A business event is a formal
+record that something has happened. Not a request — a fact. When a member
+places an order, <span class=SpellE><b>OrderCreated</b></span> is published.
+Every domain that needs to know receives a copy and reacts independently. No
+domain waited for another. No domain called another.</p>
+
+<p class=MsoNormal style='margin-bottom:8.0pt'>This is what makes the system
+resilient — and what makes it possible to add new capabilities later without
+rebuilding what already works. A loyalty <span class=SpellE>programme</span>
+added next year subscribes to events that already exist. The ordering system <span
+class=GramE>does not change</span>.</p>
+
+<p class=MsoNormal style='margin-bottom:10.0pt'><o:p>&nbsp;</o:p></p>
+
+<table class=MsoNormalTable border=1 cellspacing=0 cellpadding=0 width=624
+ style='width:6.5in;border-collapse:collapse;border:none;mso-border-alt:solid windowtext .5pt;
+ mso-yfti-tbllook:1184;mso-padding-alt:0in .5pt 0in .5pt;mso-border-insideh:
+ .5pt solid windowtext;mso-border-insidev:.5pt solid windowtext'>
+ <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes;mso-yfti-lastrow:yes'>
+  <td valign=top style='border-top:#2A7A6A;border-left:#2A7A6A;border-bottom:
+  #CBD5E0;border-right:#CBD5E0;border-style:solid;border-width:1.0pt;
+  mso-border-top-alt:#2A7A6A 1.0pt;mso-border-left-alt:#2A7A6A 1.0pt;
+  mso-border-bottom-alt:#CBD5E0 .25pt;mso-border-right-alt:#CBD5E0 .25pt;
+  mso-border-style-alt:solid;background:#F7FAFA;padding:8.0pt 10.0pt 8.0pt 10.0pt'>
+  <p class=MsoNormal><b><span style='color:#2A7A6A'>Why this matters for your
+  gym<span class=GramE>:<span style='mso-spacerun:yes'>  </span><span
+  style='color:windowtext;font-weight:normal'>If</span></span></span></b> you
+  add a loyalty <span class=SpellE>programme</span>, a new product type, or a
+  partner network, those capabilities subscribe to existing events. The
+  existing business keeps running. New capabilities plug in.</p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal style='margin-bottom:10.0pt'><o:p>&nbsp;</o:p></p>
+
+<div style='mso-element:para-border-div;border:none;border-bottom:solid #2A7A6A 1.0pt;
+mso-border-bottom-alt:solid #2A7A6A .75pt;padding:0in 0in 1.0pt 0in'>
+
+<h1 style='border:none;mso-border-bottom-alt:solid #2A7A6A .75pt;padding:0in;
+mso-padding-alt:0in 0in 1.0pt 0in'>3. The Member Journey</h1>
+
+</div>
+
+<p class=MsoNormal style='margin-bottom:8.0pt'>Follow a single member — Jane —
+from signup through her first month of active membership.</p>
+
+<h2><span class=GramE>3.1<span style='mso-spacerun:yes'>  </span>Jane</span>
+Places an Order</h2>
+
+<p class=MsoNormal style='margin-bottom:8.0pt'>Jane signs up online for a
+monthly membership at $99/month. She clicks confirm. One thing happens at the
+platform level: <span class=SpellE><b>OrderCreated</b></span> is published.
+From that single event, five different things happen simultaneously across the
+business.</p>
+
+<p class=MsoNormal style='margin-bottom:4.0pt'><o:p>&nbsp;</o:p></p>
+
+<table class=MsoNormalTable border=1 cellspacing=0 cellpadding=0 width=624
+ style='width:6.5in;border-collapse:collapse;border:none;mso-border-alt:solid windowtext .5pt;
+ mso-yfti-tbllook:1184;mso-padding-alt:0in .5pt 0in .5pt;mso-border-insideh:
+ .5pt solid windowtext;mso-border-insidev:.5pt solid windowtext'>
+ <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes'>
+  <td width=147 valign=top style='width:110.0pt;border:solid #CBD5E0 1.0pt;
+  mso-border-alt:solid #CBD5E0 .25pt;background:#1B2A4A;padding:4.0pt 7.0pt 4.0pt 7.0pt'>
+  <p class=MsoNormal><b><span style='font-size:10.0pt;color:white'>Domain</span></b></p>
+  </td>
+  <td width=120 valign=top style='width:1.25in;border:solid #CBD5E0 1.0pt;
+  border-left:none;mso-border-left-alt:solid #CBD5E0 .25pt;mso-border-alt:solid #CBD5E0 .25pt;
+  background:#1B2A4A;padding:4.0pt 7.0pt 4.0pt 7.0pt'>
+  <p class=MsoNormal><b><span style='font-size:10.0pt;color:white'>Reacts To</span></b></p>
+  </td>
+  <td width=357 valign=top style='width:268.0pt;border:solid #CBD5E0 1.0pt;
+  border-left:none;mso-border-left-alt:solid #CBD5E0 .25pt;mso-border-alt:solid #CBD5E0 .25pt;
+  background:#1B2A4A;padding:4.0pt 7.0pt 4.0pt 7.0pt'>
+  <p class=MsoNormal><b><span style='font-size:10.0pt;color:white'>Business
+  Consequence</span></b></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:1'>
+  <td width=147 valign=top style='width:110.0pt;border:solid #CBD5E0 1.0pt;
+  border-top:none;mso-border-top-alt:solid #CBD5E0 .25pt;mso-border-alt:solid #CBD5E0 .25pt;
+  background:#EDF2F7;padding:4.0pt 7.0pt 4.0pt 7.0pt'>
+  <p class=MsoNormal><b><span style='font-size:10.0pt'>Sales &amp; Marketing</span></b></p>
+  </td>
+  <td width=120 valign=top style='width:1.25in;border-top:none;border-left:
+  none;border-bottom:solid #CBD5E0 1.0pt;border-right:solid #CBD5E0 1.0pt;
+  mso-border-top-alt:solid #CBD5E0 .25pt;mso-border-left-alt:solid #CBD5E0 .25pt;
+  mso-border-alt:solid #CBD5E0 .25pt;background:#EDF2F7;padding:4.0pt 7.0pt 4.0pt 7.0pt'>
+  <p class=MsoNormal><span class=SpellE><span style='font-size:10.0pt;
+  font-family:"Courier New";mso-fareast-font-family:"Courier New";color:#4A5568'>OrderCreated</span></span></p>
+  </td>
+  <td width=357 valign=top style='width:268.0pt;border-top:none;border-left:
+  none;border-bottom:solid #CBD5E0 1.0pt;border-right:solid #CBD5E0 1.0pt;
+  mso-border-top-alt:solid #CBD5E0 .25pt;mso-border-left-alt:solid #CBD5E0 .25pt;
+  mso-border-alt:solid #CBD5E0 .25pt;background:#EDF2F7;padding:4.0pt 7.0pt 4.0pt 7.0pt'>
+  <p class=MsoNormal><span class=GramE><span style='font-size:10.0pt'>Closes</span></span><span
+  style='font-size:10.0pt'> the lead. Updates conversion reporting. <span
+  class=GramE>Stops</span> acquisition campaigns for Jane. Records channel
+  attribution.</span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:2'>
+  <td width=147 valign=top style='width:110.0pt;border:solid #CBD5E0 1.0pt;
+  border-top:none;mso-border-top-alt:solid #CBD5E0 .25pt;mso-border-alt:solid #CBD5E0 .25pt;
+  background:white;padding:4.0pt 7.0pt 4.0pt 7.0pt'>
+  <p class=MsoNormal><b><span style='font-size:10.0pt'>Customer</span></b></p>
+  </td>
+  <td width=120 valign=top style='width:1.25in;border-top:none;border-left:
+  none;border-bottom:solid #CBD5E0 1.0pt;border-right:solid #CBD5E0 1.0pt;
+  mso-border-top-alt:solid #CBD5E0 .25pt;mso-border-left-alt:solid #CBD5E0 .25pt;
+  mso-border-alt:solid #CBD5E0 .25pt;background:white;padding:4.0pt 7.0pt 4.0pt 7.0pt'>
+  <p class=MsoNormal><span class=SpellE><span style='font-size:10.0pt;
+  font-family:"Courier New";mso-fareast-font-family:"Courier New";color:#4A5568'>OrderCreated</span></span></p>
+  </td>
+  <td width=357 valign=top style='width:268.0pt;border-top:none;border-left:
+  none;border-bottom:solid #CBD5E0 1.0pt;border-right:solid #CBD5E0 1.0pt;
+  mso-border-top-alt:solid #CBD5E0 .25pt;mso-border-left-alt:solid #CBD5E0 .25pt;
+  mso-border-alt:solid #CBD5E0 .25pt;background:white;padding:4.0pt 7.0pt 4.0pt 7.0pt'>
+  <p class=MsoNormal><span style='font-size:10.0pt'>Creates Jane's member
+  record. <span class=GramE>Sends</span> welcome email. Sets up her balance
+  ($99 due). Begins payment collection. Schedules <span class=GramE>dunning</span>
+  if needed.</span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:3'>
+  <td width=147 valign=top style='width:110.0pt;border:solid #CBD5E0 1.0pt;
+  border-top:none;mso-border-top-alt:solid #CBD5E0 .25pt;mso-border-alt:solid #CBD5E0 .25pt;
+  background:#EDF2F7;padding:4.0pt 7.0pt 4.0pt 7.0pt'>
+  <p class=MsoNormal><b><span style='font-size:10.0pt'>Operations</span></b></p>
+  </td>
+  <td width=120 valign=top style='width:1.25in;border-top:none;border-left:
+  none;border-bottom:solid #CBD5E0 1.0pt;border-right:solid #CBD5E0 1.0pt;
+  mso-border-top-alt:solid #CBD5E0 .25pt;mso-border-left-alt:solid #CBD5E0 .25pt;
+  mso-border-alt:solid #CBD5E0 .25pt;background:#EDF2F7;padding:4.0pt 7.0pt 4.0pt 7.0pt'>
+  <p class=MsoNormal><span class=SpellE><span style='font-size:10.0pt;
+  font-family:"Courier New";mso-fareast-font-family:"Courier New";color:#4A5568'>OrderCreated</span></span></p>
+  </td>
+  <td width=357 valign=top style='width:268.0pt;border-top:none;border-left:
+  none;border-bottom:solid #CBD5E0 1.0pt;border-right:solid #CBD5E0 1.0pt;
+  mso-border-top-alt:solid #CBD5E0 .25pt;mso-border-left-alt:solid #CBD5E0 .25pt;
+  mso-border-alt:solid #CBD5E0 .25pt;background:#EDF2F7;padding:4.0pt 7.0pt 4.0pt 7.0pt'>
+  <p class=MsoNormal><span style='font-size:10.0pt'>Creates Jane's entitlement
+  — her right to book classes. Status: pending payment confirmation.</span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:4'>
+  <td width=147 valign=top style='width:110.0pt;border:solid #CBD5E0 1.0pt;
+  border-top:none;mso-border-top-alt:solid #CBD5E0 .25pt;mso-border-alt:solid #CBD5E0 .25pt;
+  background:white;padding:4.0pt 7.0pt 4.0pt 7.0pt'>
+  <p class=MsoNormal><b><span style='font-size:10.0pt'>Finance</span></b></p>
+  </td>
+  <td width=120 valign=top style='width:1.25in;border-top:none;border-left:
+  none;border-bottom:solid #CBD5E0 1.0pt;border-right:solid #CBD5E0 1.0pt;
+  mso-border-top-alt:solid #CBD5E0 .25pt;mso-border-left-alt:solid #CBD5E0 .25pt;
+  mso-border-alt:solid #CBD5E0 .25pt;background:white;padding:4.0pt 7.0pt 4.0pt 7.0pt'>
+  <p class=MsoNormal><span class=SpellE><span style='font-size:10.0pt;
+  font-family:"Courier New";mso-fareast-font-family:"Courier New";color:#4A5568'>OrderCreated</span></span></p>
+  </td>
+  <td width=357 valign=top style='width:268.0pt;border-top:none;border-left:
+  none;border-bottom:solid #CBD5E0 1.0pt;border-right:solid #CBD5E0 1.0pt;
+  mso-border-top-alt:solid #CBD5E0 .25pt;mso-border-left-alt:solid #CBD5E0 .25pt;
+  mso-border-alt:solid #CBD5E0 .25pt;background:white;padding:4.0pt 7.0pt 4.0pt 7.0pt'>
+  <p class=MsoNormal><span style='font-size:10.0pt'>Records accounting entry:
+  Accounts Receivable debited, Revenue credited (monthly) or Deferred Revenue
+  (quarterly/annual). No member name stored.</span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:5;mso-yfti-lastrow:yes'>
+  <td width=147 valign=top style='width:110.0pt;border:solid #CBD5E0 1.0pt;
+  border-top:none;mso-border-top-alt:solid #CBD5E0 .25pt;mso-border-alt:solid #CBD5E0 .25pt;
+  background:#EDF2F7;padding:4.0pt 7.0pt 4.0pt 7.0pt'>
+  <p class=MsoNormal><b><span style='font-size:10.0pt'>Supplier</span></b></p>
+  </td>
+  <td width=120 valign=top style='width:1.25in;border-top:none;border-left:
+  none;border-bottom:solid #CBD5E0 1.0pt;border-right:solid #CBD5E0 1.0pt;
+  mso-border-top-alt:solid #CBD5E0 .25pt;mso-border-left-alt:solid #CBD5E0 .25pt;
+  mso-border-alt:solid #CBD5E0 .25pt;background:#EDF2F7;padding:4.0pt 7.0pt 4.0pt 7.0pt'>
+  <p class=MsoNormal><span class=SpellE><span style='font-size:10.0pt;
+  font-family:"Courier New";mso-fareast-font-family:"Courier New";color:#4A5568'>OrderCreated</span></span></p>
+  </td>
+  <td width=357 valign=top style='width:268.0pt;border-top:none;border-left:
+  none;border-bottom:solid #CBD5E0 1.0pt;border-right:solid #CBD5E0 1.0pt;
+  mso-border-top-alt:solid #CBD5E0 .25pt;mso-border-left-alt:solid #CBD5E0 .25pt;
+  mso-border-alt:solid #CBD5E0 .25pt;background:#EDF2F7;padding:4.0pt 7.0pt 4.0pt 7.0pt'>
+  <p class=MsoNormal><span style='font-size:10.0pt'>If the order came via a
+  partner channel: records referral obligation. <span class=GramE>Otherwise</span>
+  uninvolved.</span></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal style='margin-bottom:10.0pt'><o:p>&nbsp;</o:p></p>
+
+<h2><span class=GramE>3.2<span style='mso-spacerun:yes'>  </span>Jane's</span>
+Payment Clears</h2>
+
+<p class=MsoNormal style='margin-bottom:8.0pt'>Jane's card is charged. The
+payment processor confirms settlement. <span class=SpellE><b>PaymentCleared</b></span>
+is published by the Finance payment component. Two domains react:</p>
+
+<p class=MsoNormal style='margin-bottom:8.0pt'>Customer clears Jane's balance
+to zero. Any payment reminder sequences stop. Entitlement is confirmed active.
+Payment confirmation sent to Jane.</p>
+
+<p class=MsoNormal style='margin-bottom:8.0pt'>Finance closes the Accounts
+Receivable entry. DR Cash / CR Accounts Receivable. The obligation is settled
+for this period.</p>
+
+<p class=MsoNormal style='margin-bottom:8.0pt'>Neither domain <span
+class=GramE>called</span> the other. Both learned from <span class=SpellE><b>PaymentCleared</b></span>.
+Same fact, two reactions, no coordination required.</p>
+
+<p class=MsoNormal style='margin-bottom:10.0pt'><o:p>&nbsp;</o:p></p>
+
+<h2><span class=GramE>3.3<span style='mso-spacerun:yes'>  </span>Jane</span>
+Attends Her First Class</h2>
+
+<p class=MsoNormal style='margin-bottom:8.0pt'>Jane books through the member
+app and attends. The coach marks her present. <span class=SpellE><span
+class=GramE><b>AttendanceRecorded</b></span></span> is published. For a monthly
+subscription paid and <span class=SpellE>recognised</span> already, this is
+primarily an operational signal — the service was delivered. For Customer it is
+a retention signal: members who attend in week one <span class=GramE>are</span>
+significantly more likely to still be members in month three.</p>
+
+<p class=MsoNormal style='margin-bottom:10.0pt'><o:p>&nbsp;</o:p></p>
+
+<h2><span class=GramE>3.4<span style='mso-spacerun:yes'>  </span>End</span> of
+Month — Renewal</h2>
+
+<p class=MsoNormal style='margin-bottom:8.0pt'>Jane's first month closes. For a
+monthly subscription, revenue was <span class=SpellE>recognised</span> when
+payment cleared — no deferred balance to <span class=SpellE>amortise</span>.
+The month-end entry is already <span class=GramE>on</span> the books. <span
+class=SpellE><b>SubscriptionRenewalDue</b></span> is published. Customer
+initiates the charge. The cycle repeats.</p>
+
+<p class=MsoNormal style='margin-bottom:10.0pt'><o:p>&nbsp;</o:p></p>
+
+<div style='mso-element:para-border-div;border:none;border-bottom:solid #2A7A6A 1.0pt;
+mso-border-bottom-alt:solid #2A7A6A .75pt;padding:0in 0in 1.0pt 0in'>
+
+<h1 style='border:none;mso-border-bottom-alt:solid #2A7A6A .75pt;padding:0in;
+mso-padding-alt:0in 0in 1.0pt 0in'>4. Retail Purchases and the Tab</h1>
+
+</div>
+
+<p class=MsoNormal style='margin-bottom:8.0pt'>Most gyms sell more than
+memberships. Supplements, drinks, merchandise. Charging each $4 item through a
+card payment individually would cost the gym significant processing fees.</p>
+
+<p class=MsoNormal style='margin-bottom:8.0pt'>The platform uses a <b>tab model</b>.
+Retail purchases during a visit accumulate on the member's tab. The tab is
+settled as a single charge at visit end — one transaction, one fee.</p>
+
+<p class=MsoNormal style='margin-bottom:4.0pt'><o:p>&nbsp;</o:p></p>
+
+<table class=MsoNormalTable border=1 cellspacing=0 cellpadding=0 width=624
+ style='width:6.5in;border-collapse:collapse;border:none;mso-border-alt:solid windowtext .5pt;
+ mso-yfti-tbllook:1184;mso-padding-alt:0in .5pt 0in .5pt;mso-border-insideh:
+ .5pt solid windowtext;mso-border-insidev:.5pt solid windowtext'>
+ <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes'>
+  <td width=147 valign=top style='width:110.0pt;border:solid #CBD5E0 1.0pt;
+  mso-border-alt:solid #CBD5E0 .25pt;background:#1B2A4A;padding:4.0pt 7.0pt 4.0pt 7.0pt'>
+  <p class=MsoNormal><b><span style='font-size:10.0pt;color:white'>Domain</span></b></p>
+  </td>
+  <td width=120 valign=top style='width:1.25in;border:solid #CBD5E0 1.0pt;
+  border-left:none;mso-border-left-alt:solid #CBD5E0 .25pt;mso-border-alt:solid #CBD5E0 .25pt;
+  background:#1B2A4A;padding:4.0pt 7.0pt 4.0pt 7.0pt'>
+  <p class=MsoNormal><b><span style='font-size:10.0pt;color:white'>Reacts To</span></b></p>
+  </td>
+  <td width=357 valign=top style='width:268.0pt;border:solid #CBD5E0 1.0pt;
+  border-left:none;mso-border-left-alt:solid #CBD5E0 .25pt;mso-border-alt:solid #CBD5E0 .25pt;
+  background:#1B2A4A;padding:4.0pt 7.0pt 4.0pt 7.0pt'>
+  <p class=MsoNormal><b><span style='font-size:10.0pt;color:white'>Business
+  Consequence</span></b></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:1'>
+  <td width=147 valign=top style='width:110.0pt;border:solid #CBD5E0 1.0pt;
+  border-top:none;mso-border-top-alt:solid #CBD5E0 .25pt;mso-border-alt:solid #CBD5E0 .25pt;
+  background:#EDF2F7;padding:4.0pt 7.0pt 4.0pt 7.0pt'>
+  <p class=MsoNormal><b><span style='font-size:10.0pt'>Member buys a drink</span></b></p>
+  </td>
+  <td width=120 valign=top style='width:1.25in;border-top:none;border-left:
+  none;border-bottom:solid #CBD5E0 1.0pt;border-right:solid #CBD5E0 1.0pt;
+  mso-border-top-alt:solid #CBD5E0 .25pt;mso-border-left-alt:solid #CBD5E0 .25pt;
+  mso-border-alt:solid #CBD5E0 .25pt;background:#EDF2F7;padding:4.0pt 7.0pt 4.0pt 7.0pt'>
+  <p class=MsoNormal><span class=SpellE><span style='font-size:10.0pt;
+  font-family:"Courier New";mso-fareast-font-family:"Courier New";color:#4A5568'>RetailItemAdded</span></span></p>
+  </td>
+  <td width=357 valign=top style='width:268.0pt;border-top:none;border-left:
+  none;border-bottom:solid #CBD5E0 1.0pt;border-right:solid #CBD5E0 1.0pt;
+  mso-border-top-alt:solid #CBD5E0 .25pt;mso-border-left-alt:solid #CBD5E0 .25pt;
+  mso-border-alt:solid #CBD5E0 .25pt;background:#EDF2F7;padding:4.0pt 7.0pt 4.0pt 7.0pt'>
+  <p class=MsoNormal><span style='font-size:10.0pt'>Customer adds to open tab.
+  Finance records DR Accounts Receivable / CR Sales. No card <span class=GramE>charge</span>
+  yet.</span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:2'>
+  <td width=147 valign=top style='width:110.0pt;border:solid #CBD5E0 1.0pt;
+  border-top:none;mso-border-top-alt:solid #CBD5E0 .25pt;mso-border-alt:solid #CBD5E0 .25pt;
+  background:white;padding:4.0pt 7.0pt 4.0pt 7.0pt'>
+  <p class=MsoNormal><b><span style='font-size:10.0pt'>Member buys another item</span></b></p>
+  </td>
+  <td width=120 valign=top style='width:1.25in;border-top:none;border-left:
+  none;border-bottom:solid #CBD5E0 1.0pt;border-right:solid #CBD5E0 1.0pt;
+  mso-border-top-alt:solid #CBD5E0 .25pt;mso-border-left-alt:solid #CBD5E0 .25pt;
+  mso-border-alt:solid #CBD5E0 .25pt;background:white;padding:4.0pt 7.0pt 4.0pt 7.0pt'>
+  <p class=MsoNormal><span class=SpellE><span style='font-size:10.0pt;
+  font-family:"Courier New";mso-fareast-font-family:"Courier New";color:#4A5568'>RetailItemAdded</span></span></p>
+  </td>
+  <td width=357 valign=top style='width:268.0pt;border-top:none;border-left:
+  none;border-bottom:solid #CBD5E0 1.0pt;border-right:solid #CBD5E0 1.0pt;
+  mso-border-top-alt:solid #CBD5E0 .25pt;mso-border-left-alt:solid #CBD5E0 .25pt;
+  mso-border-alt:solid #CBD5E0 .25pt;background:white;padding:4.0pt 7.0pt 4.0pt 7.0pt'>
+  <p class=MsoNormal><span style='font-size:10.0pt'>Added to same tab. Balance
+  grows.</span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:3'>
+  <td width=147 valign=top style='width:110.0pt;border:solid #CBD5E0 1.0pt;
+  border-top:none;mso-border-top-alt:solid #CBD5E0 .25pt;mso-border-alt:solid #CBD5E0 .25pt;
+  background:#EDF2F7;padding:4.0pt 7.0pt 4.0pt 7.0pt'>
+  <p class=MsoNormal><b><span style='font-size:10.0pt'>Visit ends</span></b></p>
+  </td>
+  <td width=120 valign=top style='width:1.25in;border-top:none;border-left:
+  none;border-bottom:solid #CBD5E0 1.0pt;border-right:solid #CBD5E0 1.0pt;
+  mso-border-top-alt:solid #CBD5E0 .25pt;mso-border-left-alt:solid #CBD5E0 .25pt;
+  mso-border-alt:solid #CBD5E0 .25pt;background:#EDF2F7;padding:4.0pt 7.0pt 4.0pt 7.0pt'>
+  <p class=MsoNormal><span class=SpellE><span style='font-size:10.0pt;
+  font-family:"Courier New";mso-fareast-font-family:"Courier New";color:#4A5568'>TabClosed</span></span></p>
+  </td>
+  <td width=357 valign=top style='width:268.0pt;border-top:none;border-left:
+  none;border-bottom:solid #CBD5E0 1.0pt;border-right:solid #CBD5E0 1.0pt;
+  mso-border-top-alt:solid #CBD5E0 .25pt;mso-border-left-alt:solid #CBD5E0 .25pt;
+  mso-border-alt:solid #CBD5E0 .25pt;background:#EDF2F7;padding:4.0pt 7.0pt 4.0pt 7.0pt'>
+  <p class=MsoNormal><span style='font-size:10.0pt'>Customer triggers a single
+  charge for the full tab amount.</span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:4;mso-yfti-lastrow:yes'>
+  <td width=147 valign=top style='width:110.0pt;border:solid #CBD5E0 1.0pt;
+  border-top:none;mso-border-top-alt:solid #CBD5E0 .25pt;mso-border-alt:solid #CBD5E0 .25pt;
+  background:white;padding:4.0pt 7.0pt 4.0pt 7.0pt'>
+  <p class=MsoNormal><b><span style='font-size:10.0pt'>Payment clears</span></b></p>
+  </td>
+  <td width=120 valign=top style='width:1.25in;border-top:none;border-left:
+  none;border-bottom:solid #CBD5E0 1.0pt;border-right:solid #CBD5E0 1.0pt;
+  mso-border-top-alt:solid #CBD5E0 .25pt;mso-border-left-alt:solid #CBD5E0 .25pt;
+  mso-border-alt:solid #CBD5E0 .25pt;background:white;padding:4.0pt 7.0pt 4.0pt 7.0pt'>
+  <p class=MsoNormal><span class=SpellE><span style='font-size:10.0pt;
+  font-family:"Courier New";mso-fareast-font-family:"Courier New";color:#4A5568'>PaymentCleared</span></span></p>
+  </td>
+  <td width=357 valign=top style='width:268.0pt;border-top:none;border-left:
+  none;border-bottom:solid #CBD5E0 1.0pt;border-right:solid #CBD5E0 1.0pt;
+  mso-border-top-alt:solid #CBD5E0 .25pt;mso-border-left-alt:solid #CBD5E0 .25pt;
+  mso-border-alt:solid #CBD5E0 .25pt;background:white;padding:4.0pt 7.0pt 4.0pt 7.0pt'>
+  <p class=MsoNormal><span style='font-size:10.0pt'>Customer clears tab
+  balance. Finance closes AR, records cash.</span></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal style='margin-bottom:10.0pt'><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal style='margin-bottom:8.0pt'>The tab is Customer's concept
+entirely. Finance sees an AR entry when the tab opens and a cash entry when it
+clears. Retail line items never appear on the general ledger individually.</p>
+
+<span style='font-size:12.0pt;font-family:"Arial",sans-serif;mso-fareast-font-family:
+Arial;mso-ansi-language:EN-US;mso-fareast-language:EN-US;mso-bidi-language:
+AR-SA'><br clear=all style='mso-special-character:line-break;page-break-before:
+always'>
+</span>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal style='margin-bottom:4.0pt'><b><span style='font-size:10.0pt;
+color:#1B2A4A'>PART TWO</span></b></p>
+
+<p class=MsoNormal style='margin-bottom:2.0pt'><b><span style='font-size:20.0pt;
+color:#1B2A4A'>Information Flow in Detail</span></b></p>
+
+<p class=MsoNormal style='margin-bottom:15.0pt'><i><span style='font-size:11.0pt;
+color:#4A5568'>Written for developers and solution architects.</span></i></p>
+
+<div style='mso-element:para-border-div;border:none;border-bottom:solid #2A7A6A 1.0pt;
+mso-border-bottom-alt:solid #2A7A6A .75pt;padding:0in 0in 1.0pt 0in'>
+
+<h1 style='border:none;mso-border-bottom-alt:solid #2A7A6A .75pt;padding:0in;
+mso-padding-alt:0in 0in 1.0pt 0in'>5. <span class=SpellE>OrderCreated</span> —
+The Founding Event</h1>
+
+</div>
+
+<p class=MsoNormal style='margin-bottom:8.0pt'>Every member relationship begins
+with <span class=SpellE><b>OrderCreated</b></span>. It is general enough to
+represent any offering — membership, class pack, retail bundle, partner product
+— without prescribing downstream <span class=SpellE>behaviour</span>. The <span
+class=SpellE><span style='font-size:10.0pt;font-family:"Courier New";
+mso-fareast-font-family:"Courier New";color:#4A5568'>offeringType</span></span>
+and <span class=SpellE><span style='font-size:10.0pt;font-family:"Courier New";
+mso-fareast-font-family:"Courier New";color:#4A5568'>billingCycle</span></span>
+fields are the routing keys each consumer uses to decide what to do.</p>
+
+<p class=MsoNormal style='margin-bottom:4.0pt'><o:p>&nbsp;</o:p></p>
+
+<table class=MsoNormalTable border=1 cellspacing=0 cellpadding=0 width=624
+ style='width:6.5in;border-collapse:collapse;border:none;mso-border-alt:solid windowtext .5pt;
+ mso-yfti-tbllook:1184;mso-padding-alt:0in .5pt 0in .5pt;mso-border-insideh:
+ .5pt solid windowtext;mso-border-insidev:.5pt solid windowtext'>
+ <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes'>
+  <td width=624 colspan=2 valign=top style='width:6.5in;border:solid #CBD5E0 1.0pt;
+  mso-border-alt:solid #CBD5E0 .25pt;background:#1B2A4A;padding:5.0pt 8.0pt 5.0pt 8.0pt'>
+  <p class=MsoNormal><span class=SpellE><b><span style='font-size:11.0pt;
+  color:white'>OrderCreated</span></b></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:1'>
+  <td width=187 valign=top style='width:140.0pt;border:solid #CBD5E0 1.0pt;
+  border-top:none;mso-border-top-alt:solid #CBD5E0 .25pt;mso-border-alt:solid #CBD5E0 .25pt;
+  background:#EDF2F7;padding:3.0pt 7.0pt 3.0pt 7.0pt'>
+  <p class=MsoNormal><span class=SpellE><span style='font-size:10.0pt;
+  font-family:"Courier New";mso-fareast-font-family:"Courier New";color:#4A5568'>orderId</span></span></p>
+  </td>
+  <td width=437 valign=top style='width:328.0pt;border-top:none;border-left:
+  none;border-bottom:solid #CBD5E0 1.0pt;border-right:solid #CBD5E0 1.0pt;
+  mso-border-top-alt:solid #CBD5E0 .25pt;mso-border-left-alt:solid #CBD5E0 .25pt;
+  mso-border-alt:solid #CBD5E0 .25pt;background:#EDF2F7;padding:3.0pt 7.0pt 3.0pt 7.0pt'>
+  <p class=MsoNormal><span style='font-size:11.0pt'>Stable identifier. Every
+  subsequent event in this member's lifecycle references this.</span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:2'>
+  <td width=187 valign=top style='width:140.0pt;border:solid #CBD5E0 1.0pt;
+  border-top:none;mso-border-top-alt:solid #CBD5E0 .25pt;mso-border-alt:solid #CBD5E0 .25pt;
+  background:white;padding:3.0pt 7.0pt 3.0pt 7.0pt'>
+  <p class=MsoNormal><span class=SpellE><span style='font-size:10.0pt;
+  font-family:"Courier New";mso-fareast-font-family:"Courier New";color:#4A5568'>memberId</span></span></p>
+  </td>
+  <td width=437 valign=top style='width:328.0pt;border-top:none;border-left:
+  none;border-bottom:solid #CBD5E0 1.0pt;border-right:solid #CBD5E0 1.0pt;
+  mso-border-top-alt:solid #CBD5E0 .25pt;mso-border-left-alt:solid #CBD5E0 .25pt;
+  mso-border-alt:solid #CBD5E0 .25pt;background:white;padding:3.0pt 7.0pt 3.0pt 7.0pt'>
+  <p class=MsoNormal><span style='font-size:11.0pt'>Platform identity of the
+  purchaser.</span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:3'>
+  <td width=187 valign=top style='width:140.0pt;border:solid #CBD5E0 1.0pt;
+  border-top:none;mso-border-top-alt:solid #CBD5E0 .25pt;mso-border-alt:solid #CBD5E0 .25pt;
+  background:#EDF2F7;padding:3.0pt 7.0pt 3.0pt 7.0pt'>
+  <p class=MsoNormal><span class=SpellE><span style='font-size:10.0pt;
+  font-family:"Courier New";mso-fareast-font-family:"Courier New";color:#4A5568'>tenantId</span></span></p>
+  </td>
+  <td width=437 valign=top style='width:328.0pt;border-top:none;border-left:
+  none;border-bottom:solid #CBD5E0 1.0pt;border-right:solid #CBD5E0 1.0pt;
+  mso-border-top-alt:solid #CBD5E0 .25pt;mso-border-left-alt:solid #CBD5E0 .25pt;
+  mso-border-alt:solid #CBD5E0 .25pt;background:#EDF2F7;padding:3.0pt 7.0pt 3.0pt 7.0pt'>
+  <p class=MsoNormal><span style='font-size:11.0pt'>Which gym. Extracted from
+  the member's Trust Envelope — never a parameter.</span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:4'>
+  <td width=187 valign=top style='width:140.0pt;border:solid #CBD5E0 1.0pt;
+  border-top:none;mso-border-top-alt:solid #CBD5E0 .25pt;mso-border-alt:solid #CBD5E0 .25pt;
+  background:white;padding:3.0pt 7.0pt 3.0pt 7.0pt'>
+  <p class=MsoNormal><span style='font-size:10.0pt;font-family:"Courier New";
+  mso-fareast-font-family:"Courier New";color:#4A5568'>channel</span></p>
+  </td>
+  <td width=437 valign=top style='width:328.0pt;border-top:none;border-left:
+  none;border-bottom:solid #CBD5E0 1.0pt;border-right:solid #CBD5E0 1.0pt;
+  mso-border-top-alt:solid #CBD5E0 .25pt;mso-border-left-alt:solid #CBD5E0 .25pt;
+  mso-border-alt:solid #CBD5E0 .25pt;background:white;padding:3.0pt 7.0pt 3.0pt 7.0pt'>
+  <p class=MsoNormal><span style='font-size:11.0pt'>DIRECT | PARTNER | ONLINE |
+  IN_PERSON — where the order originated.</span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:5'>
+  <td width=187 valign=top style='width:140.0pt;border:solid #CBD5E0 1.0pt;
+  border-top:none;mso-border-top-alt:solid #CBD5E0 .25pt;mso-border-alt:solid #CBD5E0 .25pt;
+  background:#EDF2F7;padding:3.0pt 7.0pt 3.0pt 7.0pt'>
+  <p class=MsoNormal><span class=SpellE><span class=GramE><span
+  style='font-size:10.0pt;font-family:"Courier New";mso-fareast-font-family:
+  "Courier New";color:#4A5568'>orderLines</span></span></span><span
+  class=GramE><span style='font-size:10.0pt;font-family:"Courier New";
+  mso-fareast-font-family:"Courier New";color:#4A5568'>[</span></span><span
+  style='font-size:10.0pt;font-family:"Courier New";mso-fareast-font-family:
+  "Courier New";color:#4A5568'>]</span></p>
+  </td>
+  <td width=437 valign=top style='width:328.0pt;border-top:none;border-left:
+  none;border-bottom:solid #CBD5E0 1.0pt;border-right:solid #CBD5E0 1.0pt;
+  mso-border-top-alt:solid #CBD5E0 .25pt;mso-border-left-alt:solid #CBD5E0 .25pt;
+  mso-border-alt:solid #CBD5E0 .25pt;background:#EDF2F7;padding:3.0pt 7.0pt 3.0pt 7.0pt'>
+  <p class=MsoNormal><span class=GramE><span style='font-size:11.0pt'>One or
+  more line</span></span><span style='font-size:11.0pt'> items. Each <span
+  class=GramE>carries</span> <span class=SpellE>offeringId</span>, <span
+  class=SpellE>offeringType</span>, quantity, <span class=SpellE>unitPrice</span>.</span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:6'>
+  <td width=187 valign=top style='width:140.0pt;border:solid #CBD5E0 1.0pt;
+  border-top:none;mso-border-top-alt:solid #CBD5E0 .25pt;mso-border-alt:solid #CBD5E0 .25pt;
+  background:white;padding:3.0pt 7.0pt 3.0pt 7.0pt'>
+  <p class=MsoNormal><span class=SpellE><span style='font-size:10.0pt;
+  font-family:"Courier New";mso-fareast-font-family:"Courier New";color:#4A5568'>offeringType</span></span></p>
+  </td>
+  <td width=437 valign=top style='width:328.0pt;border-top:none;border-left:
+  none;border-bottom:solid #CBD5E0 1.0pt;border-right:solid #CBD5E0 1.0pt;
+  mso-border-top-alt:solid #CBD5E0 .25pt;mso-border-left-alt:solid #CBD5E0 .25pt;
+  mso-border-alt:solid #CBD5E0 .25pt;background:white;padding:3.0pt 7.0pt 3.0pt 7.0pt'>
+  <p class=MsoNormal><span style='font-size:11.0pt'>MEMBERSHIP | CLASS_PACK |
+  DROP_IN | RETAIL — drives domain <span class=SpellE>behaviour</span>.</span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:7'>
+  <td width=187 valign=top style='width:140.0pt;border:solid #CBD5E0 1.0pt;
+  border-top:none;mso-border-top-alt:solid #CBD5E0 .25pt;mso-border-alt:solid #CBD5E0 .25pt;
+  background:#EDF2F7;padding:3.0pt 7.0pt 3.0pt 7.0pt'>
+  <p class=MsoNormal><span class=SpellE><span style='font-size:10.0pt;
+  font-family:"Courier New";mso-fareast-font-family:"Courier New";color:#4A5568'>totalAmount</span></span></p>
+  </td>
+  <td width=437 valign=top style='width:328.0pt;border-top:none;border-left:
+  none;border-bottom:solid #CBD5E0 1.0pt;border-right:solid #CBD5E0 1.0pt;
+  mso-border-top-alt:solid #CBD5E0 .25pt;mso-border-left-alt:solid #CBD5E0 .25pt;
+  mso-border-alt:solid #CBD5E0 .25pt;background:#EDF2F7;padding:3.0pt 7.0pt 3.0pt 7.0pt'>
+  <p class=MsoNormal><span style='font-size:11.0pt'>Sum of all line items.
+  Minor currency units (cents).</span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:8'>
+  <td width=187 valign=top style='width:140.0pt;border:solid #CBD5E0 1.0pt;
+  border-top:none;mso-border-top-alt:solid #CBD5E0 .25pt;mso-border-alt:solid #CBD5E0 .25pt;
+  background:white;padding:3.0pt 7.0pt 3.0pt 7.0pt'>
+  <p class=MsoNormal><span style='font-size:10.0pt;font-family:"Courier New";
+  mso-fareast-font-family:"Courier New";color:#4A5568'>currency</span></p>
+  </td>
+  <td width=437 valign=top style='width:328.0pt;border-top:none;border-left:
+  none;border-bottom:solid #CBD5E0 1.0pt;border-right:solid #CBD5E0 1.0pt;
+  mso-border-top-alt:solid #CBD5E0 .25pt;mso-border-left-alt:solid #CBD5E0 .25pt;
+  mso-border-alt:solid #CBD5E0 .25pt;background:white;padding:3.0pt 7.0pt 3.0pt 7.0pt'>
+  <p class=MsoNormal><span style='font-size:11.0pt'>ISO 4217. e.g. USD.</span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:9'>
+  <td width=187 valign=top style='width:140.0pt;border:solid #CBD5E0 1.0pt;
+  border-top:none;mso-border-top-alt:solid #CBD5E0 .25pt;mso-border-alt:solid #CBD5E0 .25pt;
+  background:#EDF2F7;padding:3.0pt 7.0pt 3.0pt 7.0pt'>
+  <p class=MsoNormal><span class=SpellE><span style='font-size:10.0pt;
+  font-family:"Courier New";mso-fareast-font-family:"Courier New";color:#4A5568'>paymentTerms</span></span></p>
+  </td>
+  <td width=437 valign=top style='width:328.0pt;border-top:none;border-left:
+  none;border-bottom:solid #CBD5E0 1.0pt;border-right:solid #CBD5E0 1.0pt;
+  mso-border-top-alt:solid #CBD5E0 .25pt;mso-border-left-alt:solid #CBD5E0 .25pt;
+  mso-border-alt:solid #CBD5E0 .25pt;background:#EDF2F7;padding:3.0pt 7.0pt 3.0pt 7.0pt'>
+  <p class=MsoNormal><span style='font-size:11.0pt'>IMMEDIATE |
+  SUBSCRIPTION_RECURRING | TAB</span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:10;mso-yfti-lastrow:yes'>
+  <td width=187 valign=top style='width:140.0pt;border:solid #CBD5E0 1.0pt;
+  border-top:none;mso-border-top-alt:solid #CBD5E0 .25pt;mso-border-alt:solid #CBD5E0 .25pt;
+  background:white;padding:3.0pt 7.0pt 3.0pt 7.0pt'>
+  <p class=MsoNormal><span class=SpellE><span style='font-size:10.0pt;
+  font-family:"Courier New";mso-fareast-font-family:"Courier New";color:#4A5568'>billingCycle</span></span></p>
+  </td>
+  <td width=437 valign=top style='width:328.0pt;border-top:none;border-left:
+  none;border-bottom:solid #CBD5E0 1.0pt;border-right:solid #CBD5E0 1.0pt;
+  mso-border-top-alt:solid #CBD5E0 .25pt;mso-border-left-alt:solid #CBD5E0 .25pt;
+  mso-border-alt:solid #CBD5E0 .25pt;background:white;padding:3.0pt 7.0pt 3.0pt 7.0pt'>
+  <p class=MsoNormal><span style='font-size:11.0pt'>MONTHLY | QUARTERLY |
+  ANNUAL. Present for SUBSCRIPTION_RECURRING only.</span></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal style='margin-bottom:10.0pt'><o:p>&nbsp;</o:p></p>
+
+<table class=MsoNormalTable border=1 cellspacing=0 cellpadding=0 width=624
+ style='width:6.5in;border-collapse:collapse;border:none;mso-border-alt:solid windowtext .5pt;
+ mso-yfti-tbllook:1184;mso-padding-alt:0in .5pt 0in .5pt;mso-border-insideh:
+ .5pt solid windowtext;mso-border-insidev:.5pt solid windowtext'>
+ <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes;mso-yfti-lastrow:yes'>
+  <td valign=top style='border-top:#B45309;border-left:#B45309;border-bottom:
+  #CBD5E0;border-right:#CBD5E0;border-style:solid;border-width:1.0pt;
+  mso-border-top-alt:#B45309 1.0pt;mso-border-left-alt:#B45309 1.0pt;
+  mso-border-bottom-alt:#CBD5E0 .25pt;mso-border-right-alt:#CBD5E0 .25pt;
+  mso-border-style-alt:solid;background:#F7FAFA;padding:8.0pt 10.0pt 8.0pt 10.0pt'>
+  <p class=MsoNormal><b><span style='color:#B45309'>Design principle<span
+  class=GramE>:<span style='mso-spacerun:yes'>  </span><span class=SpellE><span
+  style='color:windowtext;font-weight:normal'>OrderCreated</span></span></span></span></b>
+  is intentionally broad. A new product type is added by defining a new <span
+  class=SpellE>offeringType</span> value. Each domain decides independently how
+  to handle it. The publisher does not need to know what its consumers will do.</p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal style='margin-bottom:10.0pt'><o:p>&nbsp;</o:p></p>
+
+<div style='mso-element:para-border-div;border:none;border-bottom:solid #2A7A6A 1.0pt;
+mso-border-bottom-alt:solid #2A7A6A .75pt;padding:0in 0in 1.0pt 0in'>
+
+<h1 style='border:none;mso-border-bottom-alt:solid #2A7A6A .75pt;padding:0in;
+mso-padding-alt:0in 0in 1.0pt 0in'>6. Finance and Customer — Two Views of the
+Same Money</h1>
+
+</div>
+
+<p class=MsoNormal style='margin-bottom:8.0pt'>The most important boundary in
+the revenue flow is between Finance and Customer. They handle complementary
+concerns and must never be conflated.</p>
+
+<p class=MsoNormal style='margin-bottom:4.0pt'><o:p>&nbsp;</o:p></p>
+
+<table class=MsoNormalTable border=1 cellspacing=0 cellpadding=0 width=624
+ style='width:6.5in;border-collapse:collapse;border:none;mso-border-alt:solid windowtext .5pt;
+ mso-yfti-tbllook:1184;mso-padding-alt:0in .5pt 0in .5pt;mso-border-insideh:
+ .5pt solid windowtext;mso-border-insidev:.5pt solid windowtext'>
+ <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes'>
+  <td width=147 valign=top style='width:110.0pt;border:solid #CBD5E0 1.0pt;
+  mso-border-alt:solid #CBD5E0 .25pt;background:#1B2A4A;padding:4.0pt 7.0pt 4.0pt 7.0pt'>
+  <p class=MsoNormal><b><span style='font-size:10.0pt;color:white'>Domain</span></b></p>
+  </td>
+  <td width=120 valign=top style='width:1.25in;border:solid #CBD5E0 1.0pt;
+  border-left:none;mso-border-left-alt:solid #CBD5E0 .25pt;mso-border-alt:solid #CBD5E0 .25pt;
+  background:#1B2A4A;padding:4.0pt 7.0pt 4.0pt 7.0pt'>
+  <p class=MsoNormal><b><span style='font-size:10.0pt;color:white'>Reacts To</span></b></p>
+  </td>
+  <td width=357 valign=top style='width:268.0pt;border:solid #CBD5E0 1.0pt;
+  border-left:none;mso-border-left-alt:solid #CBD5E0 .25pt;mso-border-alt:solid #CBD5E0 .25pt;
+  background:#1B2A4A;padding:4.0pt 7.0pt 4.0pt 7.0pt'>
+  <p class=MsoNormal><b><span style='font-size:10.0pt;color:white'>Business
+  Consequence</span></b></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:1'>
+  <td width=147 valign=top style='width:110.0pt;border:solid #CBD5E0 1.0pt;
+  border-top:none;mso-border-top-alt:solid #CBD5E0 .25pt;mso-border-alt:solid #CBD5E0 .25pt;
+  background:#EDF2F7;padding:4.0pt 7.0pt 4.0pt 7.0pt'>
+  <p class=MsoNormal><b><span style='font-size:10.0pt'>Finance</span></b></p>
+  </td>
+  <td width=120 valign=top style='width:1.25in;border-top:none;border-left:
+  none;border-bottom:solid #CBD5E0 1.0pt;border-right:solid #CBD5E0 1.0pt;
+  mso-border-top-alt:solid #CBD5E0 .25pt;mso-border-left-alt:solid #CBD5E0 .25pt;
+  mso-border-alt:solid #CBD5E0 .25pt;background:#EDF2F7;padding:4.0pt 7.0pt 4.0pt 7.0pt'>
+  <p class=MsoNormal><span style='font-size:10.0pt'>Ledger-level only</span></p>
+  </td>
+  <td width=357 valign=top style='width:268.0pt;border-top:none;border-left:
+  none;border-bottom:solid #CBD5E0 1.0pt;border-right:solid #CBD5E0 1.0pt;
+  mso-border-top-alt:solid #CBD5E0 .25pt;mso-border-left-alt:solid #CBD5E0 .25pt;
+  mso-border-alt:solid #CBD5E0 .25pt;background:#EDF2F7;padding:4.0pt 7.0pt 4.0pt 7.0pt'>
+  <p class=MsoNormal><span style='font-size:10.0pt'>Journal entries, account
+  codes, revenue recognition, cash, financial reporting. Never stores a member
+  name. Never <span class=GramE>manages</span> a member relationship.</span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:2;mso-yfti-lastrow:yes'>
+  <td width=147 valign=top style='width:110.0pt;border:solid #CBD5E0 1.0pt;
+  border-top:none;mso-border-top-alt:solid #CBD5E0 .25pt;mso-border-alt:solid #CBD5E0 .25pt;
+  background:white;padding:4.0pt 7.0pt 4.0pt 7.0pt'>
+  <p class=MsoNormal><b><span style='font-size:10.0pt'>Customer</span></b></p>
+  </td>
+  <td width=120 valign=top style='width:1.25in;border-top:none;border-left:
+  none;border-bottom:solid #CBD5E0 1.0pt;border-right:solid #CBD5E0 1.0pt;
+  mso-border-top-alt:solid #CBD5E0 .25pt;mso-border-left-alt:solid #CBD5E0 .25pt;
+  mso-border-alt:solid #CBD5E0 .25pt;background:white;padding:4.0pt 7.0pt 4.0pt 7.0pt'>
+  <p class=MsoNormal><span style='font-size:10.0pt'>Member-level only</span></p>
+  </td>
+  <td width=357 valign=top style='width:268.0pt;border-top:none;border-left:
+  none;border-bottom:solid #CBD5E0 1.0pt;border-right:solid #CBD5E0 1.0pt;
+  mso-border-top-alt:solid #CBD5E0 .25pt;mso-border-left-alt:solid #CBD5E0 .25pt;
+  mso-border-alt:solid #CBD5E0 .25pt;background:white;padding:4.0pt 7.0pt 4.0pt 7.0pt'>
+  <p class=MsoNormal><span style='font-size:10.0pt'>Member balances, payment
+  instruments, arrears, dunning sequences, refunds. Never <span class=GramE>posts</span>
+  a journal entry. Never <span class=GramE>processes</span> real cash.</span></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal style='margin-bottom:10.0pt'><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal style='margin-bottom:8.0pt'>Cash arrives at the business
+through Finance's payment processing component — not through Customer. When a
+payment <span class=GramE>settles</span>, <span class=SpellE><b>PaymentCleared</b></span>
+is published. Finance records the cash. Customer clears the member balance.
+Both learned from the same event. Neither called the other.</p>
+
+<p class=MsoNormal style='margin-bottom:8.0pt'>Customer knows Jane owes $99.
+Finance knows account code 1200 (AR) has a $99 debit. These are the same
+commercial fact expressed in two completely different languages. The event is
+what keeps them consistent.</p>
+
+<p class=MsoNormal style='margin-bottom:10.0pt'><o:p>&nbsp;</o:p></p>
+
+<div style='mso-element:para-border-div;border:none;border-bottom:solid #2A7A6A 1.0pt;
+mso-border-bottom-alt:solid #2A7A6A .75pt;padding:0in 0in 1.0pt 0in'>
+
+<h1 style='border:none;mso-border-bottom-alt:solid #2A7A6A .75pt;padding:0in;
+mso-padding-alt:0in 0in 1.0pt 0in'>7. Revenue Recognition by Billing Cycle</h1>
+
+</div>
+
+<p class=MsoNormal style='margin-bottom:8.0pt'>How Finance reacts to <span
+class=SpellE><b>OrderCreated</b></span> depends entirely on <span class=SpellE><span
+style='font-size:10.0pt;font-family:"Courier New";mso-fareast-font-family:"Courier New";
+color:#4A5568'>billingCycle</span></span>. The rule is straightforward: when
+the payment period matches the recognition period, <span class=SpellE>recognise</span>
+immediately. When payment period exceeds recognition period, defer and <span
+class=SpellE>amortise</span>.</p>
+
+<p class=MsoNormal style='margin-bottom:5.0pt'><o:p>&nbsp;</o:p></p>
+
+<h3>Monthly subscription — <span class=SpellE>recognise</span> immediately</h3>
+
+<table class=MsoNormalTable border=1 cellspacing=0 cellpadding=0 width=624
+ style='width:6.5in;border-collapse:collapse;border:none;mso-border-alt:solid windowtext .5pt;
+ mso-yfti-tbllook:1184;mso-padding-alt:0in .5pt 0in .5pt;mso-border-insideh:
+ .5pt solid windowtext;mso-border-insidev:.5pt solid windowtext'>
+ <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes'>
+  <td width=227 valign=top style='width:170.0pt;border:solid #CBD5E0 1.0pt;
+  mso-border-alt:solid #CBD5E0 .25pt;background:#2A7A6A;padding:3.0pt 7.0pt 3.0pt 7.0pt'>
+  <p class=MsoNormal><b><span style='font-size:10.0pt;color:white'>Debit</span></b></p>
+  </td>
+  <td width=233 valign=top style='width:175.0pt;border:solid #CBD5E0 1.0pt;
+  border-left:none;mso-border-left-alt:solid #CBD5E0 .25pt;mso-border-alt:solid #CBD5E0 .25pt;
+  background:#2A7A6A;padding:3.0pt 7.0pt 3.0pt 14.0pt'>
+  <p class=MsoNormal><b><span style='font-size:10.0pt;color:white'>Credit</span></b></p>
+  </td>
+  <td width=104 valign=top style='width:78.0pt;border:solid #CBD5E0 1.0pt;
+  border-left:none;mso-border-left-alt:solid #CBD5E0 .25pt;mso-border-alt:solid #CBD5E0 .25pt;
+  background:#2A7A6A;padding:3.0pt 7.0pt 3.0pt 7.0pt'>
+  <p class=MsoNormal><b><span style='font-size:10.0pt;color:white'>Amount</span></b></p>
+  </td>
+  <td width=60 valign=top style='width:45.0pt;border:solid #CBD5E0 1.0pt;
+  border-left:none;mso-border-left-alt:solid #CBD5E0 .25pt;mso-border-alt:solid #CBD5E0 .25pt;
+  background:#2A7A6A;padding:3.0pt 7.0pt 3.0pt 7.0pt'>
+  <p class=MsoNormal><o:p>&nbsp;</o:p></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:1;mso-yfti-lastrow:yes'>
+  <td width=227 valign=top style='width:170.0pt;border:solid #CBD5E0 1.0pt;
+  border-top:none;mso-border-top-alt:solid #CBD5E0 .25pt;mso-border-alt:solid #CBD5E0 .25pt;
+  background:#EDF2F7;padding:3.0pt 7.0pt 3.0pt 7.0pt'>
+  <p class=MsoNormal><span style='font-size:10.0pt;color:#333333'>Accounts
+  Receivable</span></p>
+  </td>
+  <td width=233 valign=top style='width:175.0pt;border-top:none;border-left:
+  none;border-bottom:solid #CBD5E0 1.0pt;border-right:solid #CBD5E0 1.0pt;
+  mso-border-top-alt:solid #CBD5E0 .25pt;mso-border-left-alt:solid #CBD5E0 .25pt;
+  mso-border-alt:solid #CBD5E0 .25pt;background:#EDF2F7;padding:3.0pt 7.0pt 3.0pt 14.0pt'>
+  <p class=MsoNormal><span style='font-size:10.0pt;color:#4A5568'>Revenue —
+  Membership</span></p>
+  </td>
+  <td width=104 valign=top style='width:78.0pt;border-top:none;border-left:
+  none;border-bottom:solid #CBD5E0 1.0pt;border-right:solid #CBD5E0 1.0pt;
+  mso-border-top-alt:solid #CBD5E0 .25pt;mso-border-left-alt:solid #CBD5E0 .25pt;
+  mso-border-alt:solid #CBD5E0 .25pt;background:#EDF2F7;padding:3.0pt 7.0pt 3.0pt 7.0pt'>
+  <p class=MsoNormal align=right style='text-align:right'><b><span
+  style='font-size:10.0pt'>$99.00</span></b></p>
+  </td>
+  <td width=60 valign=top style='width:45.0pt;border-top:none;border-left:none;
+  border-bottom:solid #CBD5E0 1.0pt;border-right:solid #CBD5E0 1.0pt;
+  mso-border-top-alt:solid #CBD5E0 .25pt;mso-border-left-alt:solid #CBD5E0 .25pt;
+  mso-border-alt:solid #CBD5E0 .25pt;background:#EDF2F7;padding:3.0pt 7.0pt 3.0pt 7.0pt'>
+  <p class=MsoNormal><span style='font-size:9.0pt;color:#4A5568'>DR</span></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal style='margin-bottom:3.0pt'><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal style='margin-bottom:8.0pt'><i><span style='font-size:11.0pt;
+color:#4A5568'>Revenue <span class=SpellE>recognised</span> in the period of <span
+class=GramE>sale</span>. No deferred balance required.</span></i></p>
+
+<p class=MsoNormal style='margin-bottom:6.0pt'><o:p>&nbsp;</o:p></p>
+
+<h3>Quarterly subscription — $297 upfront, <span class=SpellE>recognised</span>
+monthly</h3>
+
+<table class=MsoNormalTable border=1 cellspacing=0 cellpadding=0 width=624
+ style='width:6.5in;border-collapse:collapse;border:none;mso-border-alt:solid windowtext .5pt;
+ mso-yfti-tbllook:1184;mso-padding-alt:0in .5pt 0in .5pt;mso-border-insideh:
+ .5pt solid windowtext;mso-border-insidev:.5pt solid windowtext'>
+ <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes'>
+  <td width=227 valign=top style='width:170.0pt;border:solid #CBD5E0 1.0pt;
+  mso-border-alt:solid #CBD5E0 .25pt;background:#2A7A6A;padding:3.0pt 7.0pt 3.0pt 7.0pt'>
+  <p class=MsoNormal><b><span style='font-size:10.0pt;color:white'>Debit</span></b></p>
+  </td>
+  <td width=233 valign=top style='width:175.0pt;border:solid #CBD5E0 1.0pt;
+  border-left:none;mso-border-left-alt:solid #CBD5E0 .25pt;mso-border-alt:solid #CBD5E0 .25pt;
+  background:#2A7A6A;padding:3.0pt 7.0pt 3.0pt 14.0pt'>
+  <p class=MsoNormal><b><span style='font-size:10.0pt;color:white'>Credit</span></b></p>
+  </td>
+  <td width=104 valign=top style='width:78.0pt;border:solid #CBD5E0 1.0pt;
+  border-left:none;mso-border-left-alt:solid #CBD5E0 .25pt;mso-border-alt:solid #CBD5E0 .25pt;
+  background:#2A7A6A;padding:3.0pt 7.0pt 3.0pt 7.0pt'>
+  <p class=MsoNormal><b><span style='font-size:10.0pt;color:white'>Amount</span></b></p>
+  </td>
+  <td width=60 valign=top style='width:45.0pt;border:solid #CBD5E0 1.0pt;
+  border-left:none;mso-border-left-alt:solid #CBD5E0 .25pt;mso-border-alt:solid #CBD5E0 .25pt;
+  background:#2A7A6A;padding:3.0pt 7.0pt 3.0pt 7.0pt'>
+  <p class=MsoNormal><o:p>&nbsp;</o:p></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:1;mso-yfti-lastrow:yes'>
+  <td width=227 valign=top style='width:170.0pt;border:solid #CBD5E0 1.0pt;
+  border-top:none;mso-border-top-alt:solid #CBD5E0 .25pt;mso-border-alt:solid #CBD5E0 .25pt;
+  background:#EDF2F7;padding:3.0pt 7.0pt 3.0pt 7.0pt'>
+  <p class=MsoNormal><span style='font-size:10.0pt;color:#333333'>Accounts
+  Receivable</span></p>
+  </td>
+  <td width=233 valign=top style='width:175.0pt;border-top:none;border-left:
+  none;border-bottom:solid #CBD5E0 1.0pt;border-right:solid #CBD5E0 1.0pt;
+  mso-border-top-alt:solid #CBD5E0 .25pt;mso-border-left-alt:solid #CBD5E0 .25pt;
+  mso-border-alt:solid #CBD5E0 .25pt;background:#EDF2F7;padding:3.0pt 7.0pt 3.0pt 14.0pt'>
+  <p class=MsoNormal><span style='font-size:10.0pt;color:#4A5568'>Deferred
+  Revenue</span></p>
+  </td>
+  <td width=104 valign=top style='width:78.0pt;border-top:none;border-left:
+  none;border-bottom:solid #CBD5E0 1.0pt;border-right:solid #CBD5E0 1.0pt;
+  mso-border-top-alt:solid #CBD5E0 .25pt;mso-border-left-alt:solid #CBD5E0 .25pt;
+  mso-border-alt:solid #CBD5E0 .25pt;background:#EDF2F7;padding:3.0pt 7.0pt 3.0pt 7.0pt'>
+  <p class=MsoNormal align=right style='text-align:right'><b><span
+  style='font-size:10.0pt'>$297.00</span></b></p>
+  </td>
+  <td width=60 valign=top style='width:45.0pt;border-top:none;border-left:none;
+  border-bottom:solid #CBD5E0 1.0pt;border-right:solid #CBD5E0 1.0pt;
+  mso-border-top-alt:solid #CBD5E0 .25pt;mso-border-left-alt:solid #CBD5E0 .25pt;
+  mso-border-alt:solid #CBD5E0 .25pt;background:#EDF2F7;padding:3.0pt 7.0pt 3.0pt 7.0pt'>
+  <p class=MsoNormal><span style='font-size:9.0pt;color:#4A5568'>DR</span></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal style='margin-bottom:3.0pt'><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal style='margin-bottom:8.0pt'><i><span style='font-size:11.0pt;
+color:#4A5568'>Liability recorded at sale. Monthly <span class=SpellE>amortisation</span>
+job <span class=SpellE>recognises</span> $99 each month-end.</span></i></p>
+
+<p class=MsoNormal style='margin-bottom:6.0pt'><o:p>&nbsp;</o:p></p>
+
+<h3>Annual subscription — $1,068 upfront, <span class=SpellE>recognised</span>
+monthly</h3>
+
+<table class=MsoNormalTable border=1 cellspacing=0 cellpadding=0 width=624
+ style='width:6.5in;border-collapse:collapse;border:none;mso-border-alt:solid windowtext .5pt;
+ mso-yfti-tbllook:1184;mso-padding-alt:0in .5pt 0in .5pt;mso-border-insideh:
+ .5pt solid windowtext;mso-border-insidev:.5pt solid windowtext'>
+ <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes'>
+  <td width=227 valign=top style='width:170.0pt;border:solid #CBD5E0 1.0pt;
+  mso-border-alt:solid #CBD5E0 .25pt;background:#2A7A6A;padding:3.0pt 7.0pt 3.0pt 7.0pt'>
+  <p class=MsoNormal><b><span style='font-size:10.0pt;color:white'>Debit</span></b></p>
+  </td>
+  <td width=233 valign=top style='width:175.0pt;border:solid #CBD5E0 1.0pt;
+  border-left:none;mso-border-left-alt:solid #CBD5E0 .25pt;mso-border-alt:solid #CBD5E0 .25pt;
+  background:#2A7A6A;padding:3.0pt 7.0pt 3.0pt 14.0pt'>
+  <p class=MsoNormal><b><span style='font-size:10.0pt;color:white'>Credit</span></b></p>
+  </td>
+  <td width=104 valign=top style='width:78.0pt;border:solid #CBD5E0 1.0pt;
+  border-left:none;mso-border-left-alt:solid #CBD5E0 .25pt;mso-border-alt:solid #CBD5E0 .25pt;
+  background:#2A7A6A;padding:3.0pt 7.0pt 3.0pt 7.0pt'>
+  <p class=MsoNormal><b><span style='font-size:10.0pt;color:white'>Amount</span></b></p>
+  </td>
+  <td width=60 valign=top style='width:45.0pt;border:solid #CBD5E0 1.0pt;
+  border-left:none;mso-border-left-alt:solid #CBD5E0 .25pt;mso-border-alt:solid #CBD5E0 .25pt;
+  background:#2A7A6A;padding:3.0pt 7.0pt 3.0pt 7.0pt'>
+  <p class=MsoNormal><o:p>&nbsp;</o:p></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:1;mso-yfti-lastrow:yes'>
+  <td width=227 valign=top style='width:170.0pt;border:solid #CBD5E0 1.0pt;
+  border-top:none;mso-border-top-alt:solid #CBD5E0 .25pt;mso-border-alt:solid #CBD5E0 .25pt;
+  background:#EDF2F7;padding:3.0pt 7.0pt 3.0pt 7.0pt'>
+  <p class=MsoNormal><span style='font-size:10.0pt;color:#333333'>Accounts
+  Receivable</span></p>
+  </td>
+  <td width=233 valign=top style='width:175.0pt;border-top:none;border-left:
+  none;border-bottom:solid #CBD5E0 1.0pt;border-right:solid #CBD5E0 1.0pt;
+  mso-border-top-alt:solid #CBD5E0 .25pt;mso-border-left-alt:solid #CBD5E0 .25pt;
+  mso-border-alt:solid #CBD5E0 .25pt;background:#EDF2F7;padding:3.0pt 7.0pt 3.0pt 14.0pt'>
+  <p class=MsoNormal><span style='font-size:10.0pt;color:#4A5568'>Deferred
+  Revenue</span></p>
+  </td>
+  <td width=104 valign=top style='width:78.0pt;border-top:none;border-left:
+  none;border-bottom:solid #CBD5E0 1.0pt;border-right:solid #CBD5E0 1.0pt;
+  mso-border-top-alt:solid #CBD5E0 .25pt;mso-border-left-alt:solid #CBD5E0 .25pt;
+  mso-border-alt:solid #CBD5E0 .25pt;background:#EDF2F7;padding:3.0pt 7.0pt 3.0pt 7.0pt'>
+  <p class=MsoNormal align=right style='text-align:right'><b><span
+  style='font-size:10.0pt'>$1,068.00</span></b></p>
+  </td>
+  <td width=60 valign=top style='width:45.0pt;border-top:none;border-left:none;
+  border-bottom:solid #CBD5E0 1.0pt;border-right:solid #CBD5E0 1.0pt;
+  mso-border-top-alt:solid #CBD5E0 .25pt;mso-border-left-alt:solid #CBD5E0 .25pt;
+  mso-border-alt:solid #CBD5E0 .25pt;background:#EDF2F7;padding:3.0pt 7.0pt 3.0pt 7.0pt'>
+  <p class=MsoNormal><span style='font-size:9.0pt;color:#4A5568'>DR</span></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal style='margin-bottom:3.0pt'><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal style='margin-bottom:8.0pt'><i><span style='font-size:11.0pt;
+color:#4A5568'>Twelve monthly <span class=SpellE>amortisation</span> entries of
+$89 each. Deferred Revenue balance reduces to zero over the year.</span></i></p>
+
+<p class=MsoNormal style='margin-bottom:8.0pt'><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal style='margin-bottom:8.0pt'>The monthly <span class=SpellE>amortisation</span>
+is a scheduled Finance job. It does not require any signal from Operations —
+Finance knows the billing cycle from the original <span class=SpellE><b>OrderCreated</b></span>
+event and runs the entries on its own schedule.</p>
+
+<p class=MsoNormal style='margin-bottom:10.0pt'><o:p>&nbsp;</o:p></p>
+
+<div style='mso-element:para-border-div;border:none;border-bottom:solid #2A7A6A 1.0pt;
+mso-border-bottom-alt:solid #2A7A6A .75pt;padding:0in 0in 1.0pt 0in'>
+
+<h1 style='border:none;mso-border-bottom-alt:solid #2A7A6A .75pt;padding:0in;
+mso-padding-alt:0in 0in 1.0pt 0in'>8. <span class=SpellE>PaymentCleared</span>
+— Cash Enters the Business</h1>
+
+</div>
+
+<p class=MsoNormal style='margin-bottom:8.0pt'>Real cash movement is always a
+Finance concern. When the payment processor confirms settlement, <span
+class=SpellE><b>PaymentCleared</b></span> is published by Finance's payment
+reconciliation component.</p>
+
+<p class=MsoNormal style='margin-bottom:4.0pt'><o:p>&nbsp;</o:p></p>
+
+<table class=MsoNormalTable border=1 cellspacing=0 cellpadding=0 width=624
+ style='width:6.5in;border-collapse:collapse;border:none;mso-border-alt:solid windowtext .5pt;
+ mso-yfti-tbllook:1184;mso-padding-alt:0in .5pt 0in .5pt;mso-border-insideh:
+ .5pt solid windowtext;mso-border-insidev:.5pt solid windowtext'>
+ <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes'>
+  <td width=624 colspan=2 valign=top style='width:6.5in;border:solid #CBD5E0 1.0pt;
+  mso-border-alt:solid #CBD5E0 .25pt;background:#1B2A4A;padding:5.0pt 8.0pt 5.0pt 8.0pt'>
+  <p class=MsoNormal><span class=SpellE><b><span style='font-size:11.0pt;
+  color:white'>PaymentCleared</span></b></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:1'>
+  <td width=187 valign=top style='width:140.0pt;border:solid #CBD5E0 1.0pt;
+  border-top:none;mso-border-top-alt:solid #CBD5E0 .25pt;mso-border-alt:solid #CBD5E0 .25pt;
+  background:#EDF2F7;padding:3.0pt 7.0pt 3.0pt 7.0pt'>
+  <p class=MsoNormal><span class=SpellE><span style='font-size:10.0pt;
+  font-family:"Courier New";mso-fareast-font-family:"Courier New";color:#4A5568'>paymentId</span></span></p>
+  </td>
+  <td width=437 valign=top style='width:328.0pt;border-top:none;border-left:
+  none;border-bottom:solid #CBD5E0 1.0pt;border-right:solid #CBD5E0 1.0pt;
+  mso-border-top-alt:solid #CBD5E0 .25pt;mso-border-left-alt:solid #CBD5E0 .25pt;
+  mso-border-alt:solid #CBD5E0 .25pt;background:#EDF2F7;padding:3.0pt 7.0pt 3.0pt 7.0pt'>
+  <p class=MsoNormal><span style='font-size:11.0pt'>Stable identifier for this
+  payment.</span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:2'>
+  <td width=187 valign=top style='width:140.0pt;border:solid #CBD5E0 1.0pt;
+  border-top:none;mso-border-top-alt:solid #CBD5E0 .25pt;mso-border-alt:solid #CBD5E0 .25pt;
+  background:white;padding:3.0pt 7.0pt 3.0pt 7.0pt'>
+  <p class=MsoNormal><span class=SpellE><span style='font-size:10.0pt;
+  font-family:"Courier New";mso-fareast-font-family:"Courier New";color:#4A5568'>orderId</span></span></p>
+  </td>
+  <td width=437 valign=top style='width:328.0pt;border-top:none;border-left:
+  none;border-bottom:solid #CBD5E0 1.0pt;border-right:solid #CBD5E0 1.0pt;
+  mso-border-top-alt:solid #CBD5E0 .25pt;mso-border-left-alt:solid #CBD5E0 .25pt;
+  mso-border-alt:solid #CBD5E0 .25pt;background:white;padding:3.0pt 7.0pt 3.0pt 7.0pt'>
+  <p class=MsoNormal><span style='font-size:11.0pt'>References the originating <span
+  class=SpellE>OrderCreated</span>.</span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:3'>
+  <td width=187 valign=top style='width:140.0pt;border:solid #CBD5E0 1.0pt;
+  border-top:none;mso-border-top-alt:solid #CBD5E0 .25pt;mso-border-alt:solid #CBD5E0 .25pt;
+  background:#EDF2F7;padding:3.0pt 7.0pt 3.0pt 7.0pt'>
+  <p class=MsoNormal><span class=SpellE><span style='font-size:10.0pt;
+  font-family:"Courier New";mso-fareast-font-family:"Courier New";color:#4A5568'>memberId</span></span></p>
+  </td>
+  <td width=437 valign=top style='width:328.0pt;border-top:none;border-left:
+  none;border-bottom:solid #CBD5E0 1.0pt;border-right:solid #CBD5E0 1.0pt;
+  mso-border-top-alt:solid #CBD5E0 .25pt;mso-border-left-alt:solid #CBD5E0 .25pt;
+  mso-border-alt:solid #CBD5E0 .25pt;background:#EDF2F7;padding:3.0pt 7.0pt 3.0pt 7.0pt'>
+  <p class=MsoNormal><span style='font-size:11.0pt'>Who paid.</span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:4'>
+  <td width=187 valign=top style='width:140.0pt;border:solid #CBD5E0 1.0pt;
+  border-top:none;mso-border-top-alt:solid #CBD5E0 .25pt;mso-border-alt:solid #CBD5E0 .25pt;
+  background:white;padding:3.0pt 7.0pt 3.0pt 7.0pt'>
+  <p class=MsoNormal><span class=SpellE><span style='font-size:10.0pt;
+  font-family:"Courier New";mso-fareast-font-family:"Courier New";color:#4A5568'>tenantId</span></span></p>
+  </td>
+  <td width=437 valign=top style='width:328.0pt;border-top:none;border-left:
+  none;border-bottom:solid #CBD5E0 1.0pt;border-right:solid #CBD5E0 1.0pt;
+  mso-border-top-alt:solid #CBD5E0 .25pt;mso-border-left-alt:solid #CBD5E0 .25pt;
+  mso-border-alt:solid #CBD5E0 .25pt;background:white;padding:3.0pt 7.0pt 3.0pt 7.0pt'>
+  <p class=MsoNormal><span style='font-size:11.0pt'>Which gym.</span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:5'>
+  <td width=187 valign=top style='width:140.0pt;border:solid #CBD5E0 1.0pt;
+  border-top:none;mso-border-top-alt:solid #CBD5E0 .25pt;mso-border-alt:solid #CBD5E0 .25pt;
+  background:#EDF2F7;padding:3.0pt 7.0pt 3.0pt 7.0pt'>
+  <p class=MsoNormal><span style='font-size:10.0pt;font-family:"Courier New";
+  mso-fareast-font-family:"Courier New";color:#4A5568'>amount</span></p>
+  </td>
+  <td width=437 valign=top style='width:328.0pt;border-top:none;border-left:
+  none;border-bottom:solid #CBD5E0 1.0pt;border-right:solid #CBD5E0 1.0pt;
+  mso-border-top-alt:solid #CBD5E0 .25pt;mso-border-left-alt:solid #CBD5E0 .25pt;
+  mso-border-alt:solid #CBD5E0 .25pt;background:#EDF2F7;padding:3.0pt 7.0pt 3.0pt 7.0pt'>
+  <p class=MsoNormal><span style='font-size:11.0pt'>Amount settled by the
+  processor. Minor currency units.</span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:6'>
+  <td width=187 valign=top style='width:140.0pt;border:solid #CBD5E0 1.0pt;
+  border-top:none;mso-border-top-alt:solid #CBD5E0 .25pt;mso-border-alt:solid #CBD5E0 .25pt;
+  background:white;padding:3.0pt 7.0pt 3.0pt 7.0pt'>
+  <p class=MsoNormal><span style='font-size:10.0pt;font-family:"Courier New";
+  mso-fareast-font-family:"Courier New";color:#4A5568'>currency</span></p>
+  </td>
+  <td width=437 valign=top style='width:328.0pt;border-top:none;border-left:
+  none;border-bottom:solid #CBD5E0 1.0pt;border-right:solid #CBD5E0 1.0pt;
+  mso-border-top-alt:solid #CBD5E0 .25pt;mso-border-left-alt:solid #CBD5E0 .25pt;
+  mso-border-alt:solid #CBD5E0 .25pt;background:white;padding:3.0pt 7.0pt 3.0pt 7.0pt'>
+  <p class=MsoNormal><span style='font-size:11.0pt'>ISO 4217.</span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:7'>
+  <td width=187 valign=top style='width:140.0pt;border:solid #CBD5E0 1.0pt;
+  border-top:none;mso-border-top-alt:solid #CBD5E0 .25pt;mso-border-alt:solid #CBD5E0 .25pt;
+  background:#EDF2F7;padding:3.0pt 7.0pt 3.0pt 7.0pt'>
+  <p class=MsoNormal><span class=SpellE><span style='font-size:10.0pt;
+  font-family:"Courier New";mso-fareast-font-family:"Courier New";color:#4A5568'>clearedAt</span></span></p>
+  </td>
+  <td width=437 valign=top style='width:328.0pt;border-top:none;border-left:
+  none;border-bottom:solid #CBD5E0 1.0pt;border-right:solid #CBD5E0 1.0pt;
+  mso-border-top-alt:solid #CBD5E0 .25pt;mso-border-left-alt:solid #CBD5E0 .25pt;
+  mso-border-alt:solid #CBD5E0 .25pt;background:#EDF2F7;padding:3.0pt 7.0pt 3.0pt 7.0pt'>
+  <p class=MsoNormal><span style='font-size:11.0pt'>When the processor
+  confirmed settlement.</span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:8;mso-yfti-lastrow:yes'>
+  <td width=187 valign=top style='width:140.0pt;border:solid #CBD5E0 1.0pt;
+  border-top:none;mso-border-top-alt:solid #CBD5E0 .25pt;mso-border-alt:solid #CBD5E0 .25pt;
+  background:white;padding:3.0pt 7.0pt 3.0pt 7.0pt'>
+  <p class=MsoNormal><span class=SpellE><span style='font-size:10.0pt;
+  font-family:"Courier New";mso-fareast-font-family:"Courier New";color:#4A5568'>processorRef</span></span></p>
+  </td>
+  <td width=437 valign=top style='width:328.0pt;border-top:none;border-left:
+  none;border-bottom:solid #CBD5E0 1.0pt;border-right:solid #CBD5E0 1.0pt;
+  mso-border-top-alt:solid #CBD5E0 .25pt;mso-border-left-alt:solid #CBD5E0 .25pt;
+  mso-border-alt:solid #CBD5E0 .25pt;background:white;padding:3.0pt 7.0pt 3.0pt 7.0pt'>
+  <p class=MsoNormal><span style='font-size:11.0pt'>Payment processor
+  transaction reference. For bank reconciliation.</span></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal style='margin-bottom:10.0pt'><o:p>&nbsp;</o:p></p>
+
+<h2><span class=GramE>8.1<span style='mso-spacerun:yes'>  </span>Finance</span>
+reacts</h2>
+
+<table class=MsoNormalTable border=1 cellspacing=0 cellpadding=0 width=624
+ style='width:6.5in;border-collapse:collapse;border:none;mso-border-alt:solid windowtext .5pt;
+ mso-yfti-tbllook:1184;mso-padding-alt:0in .5pt 0in .5pt;mso-border-insideh:
+ .5pt solid windowtext;mso-border-insidev:.5pt solid windowtext'>
+ <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes'>
+  <td width=227 valign=top style='width:170.0pt;border:solid #CBD5E0 1.0pt;
+  mso-border-alt:solid #CBD5E0 .25pt;background:#2A7A6A;padding:3.0pt 7.0pt 3.0pt 7.0pt'>
+  <p class=MsoNormal><b><span style='font-size:10.0pt;color:white'>Debit</span></b></p>
+  </td>
+  <td width=233 valign=top style='width:175.0pt;border:solid #CBD5E0 1.0pt;
+  border-left:none;mso-border-left-alt:solid #CBD5E0 .25pt;mso-border-alt:solid #CBD5E0 .25pt;
+  background:#2A7A6A;padding:3.0pt 7.0pt 3.0pt 14.0pt'>
+  <p class=MsoNormal><b><span style='font-size:10.0pt;color:white'>Credit</span></b></p>
+  </td>
+  <td width=104 valign=top style='width:78.0pt;border:solid #CBD5E0 1.0pt;
+  border-left:none;mso-border-left-alt:solid #CBD5E0 .25pt;mso-border-alt:solid #CBD5E0 .25pt;
+  background:#2A7A6A;padding:3.0pt 7.0pt 3.0pt 7.0pt'>
+  <p class=MsoNormal><b><span style='font-size:10.0pt;color:white'>Amount</span></b></p>
+  </td>
+  <td width=60 valign=top style='width:45.0pt;border:solid #CBD5E0 1.0pt;
+  border-left:none;mso-border-left-alt:solid #CBD5E0 .25pt;mso-border-alt:solid #CBD5E0 .25pt;
+  background:#2A7A6A;padding:3.0pt 7.0pt 3.0pt 7.0pt'>
+  <p class=MsoNormal><o:p>&nbsp;</o:p></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:1;mso-yfti-lastrow:yes'>
+  <td width=227 valign=top style='width:170.0pt;border:solid #CBD5E0 1.0pt;
+  border-top:none;mso-border-top-alt:solid #CBD5E0 .25pt;mso-border-alt:solid #CBD5E0 .25pt;
+  background:#EDF2F7;padding:3.0pt 7.0pt 3.0pt 7.0pt'>
+  <p class=MsoNormal><span style='font-size:10.0pt;color:#333333'>Cash</span></p>
+  </td>
+  <td width=233 valign=top style='width:175.0pt;border-top:none;border-left:
+  none;border-bottom:solid #CBD5E0 1.0pt;border-right:solid #CBD5E0 1.0pt;
+  mso-border-top-alt:solid #CBD5E0 .25pt;mso-border-left-alt:solid #CBD5E0 .25pt;
+  mso-border-alt:solid #CBD5E0 .25pt;background:#EDF2F7;padding:3.0pt 7.0pt 3.0pt 14.0pt'>
+  <p class=MsoNormal><span style='font-size:10.0pt;color:#4A5568'>Accounts
+  Receivable</span></p>
+  </td>
+  <td width=104 valign=top style='width:78.0pt;border-top:none;border-left:
+  none;border-bottom:solid #CBD5E0 1.0pt;border-right:solid #CBD5E0 1.0pt;
+  mso-border-top-alt:solid #CBD5E0 .25pt;mso-border-left-alt:solid #CBD5E0 .25pt;
+  mso-border-alt:solid #CBD5E0 .25pt;background:#EDF2F7;padding:3.0pt 7.0pt 3.0pt 7.0pt'>
+  <p class=MsoNormal align=right style='text-align:right'><b><span
+  style='font-size:10.0pt'>$99.00</span></b></p>
+  </td>
+  <td width=60 valign=top style='width:45.0pt;border-top:none;border-left:none;
+  border-bottom:solid #CBD5E0 1.0pt;border-right:solid #CBD5E0 1.0pt;
+  mso-border-top-alt:solid #CBD5E0 .25pt;mso-border-left-alt:solid #CBD5E0 .25pt;
+  mso-border-alt:solid #CBD5E0 .25pt;background:#EDF2F7;padding:3.0pt 7.0pt 3.0pt 7.0pt'>
+  <p class=MsoNormal><span style='font-size:9.0pt;color:#4A5568'>DR</span></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal style='margin-bottom:4.0pt'><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal style='margin-bottom:8.0pt'>The AR entry opened at <span
+class=SpellE><b>OrderCreated</b></span> is closed. For monthly subscriptions
+the cycle is complete. For quarterly/annual subscriptions, the Deferred Revenue
+balance remains and continues <span class=SpellE>amortising</span>.</p>
+
+<p class=MsoNormal style='margin-bottom:6.0pt'><o:p>&nbsp;</o:p></p>
+
+<h2><span class=GramE>8.2<span style='mso-spacerun:yes'>  </span>Customer</span>
+reacts</h2>
+
+<p class=MsoListParagraph style='margin-top:0in;margin-right:0in;margin-bottom:
+5.0pt;margin-left:.5in;text-indent:-.25in;mso-list:l0 level1 lfo2'><![if !supportLists]><span
+style='mso-list:Ignore'>•<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><![endif]>Member balance set to zero for this billing period.</p>
+
+<p class=MsoListParagraph style='margin-top:0in;margin-right:0in;margin-bottom:
+5.0pt;margin-left:.5in;text-indent:-.25in;mso-list:l0 level1 lfo2'><![if !supportLists]><span
+style='mso-list:Ignore'>•<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><![endif]>Any pending payment reminders cancelled.</p>
+
+<p class=MsoListParagraph style='margin-top:0in;margin-right:0in;margin-bottom:
+5.0pt;margin-left:.5in;text-indent:-.25in;mso-list:l0 level1 lfo2'><![if !supportLists]><span
+style='mso-list:Ignore'>•<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><![endif]>If entitlement was held pending payment confirmation, <span
+class=SpellE>EntitlementActivated</span> published.</p>
+
+<p class=MsoListParagraph style='margin-top:0in;margin-right:0in;margin-bottom:
+5.0pt;margin-left:.5in;text-indent:-.25in;mso-list:l0 level1 lfo2'><![if !supportLists]><span
+style='mso-list:Ignore'>•<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><![endif]>Payment confirmation sent to <span class=GramE>member</span>.</p>
+
+<p class=MsoNormal style='margin-bottom:10.0pt'><o:p>&nbsp;</o:p></p>
+
+<div style='mso-element:para-border-div;border:none;border-bottom:solid #2A7A6A 1.0pt;
+mso-border-bottom-alt:solid #2A7A6A .75pt;padding:0in 0in 1.0pt 0in'>
+
+<h1 style='border:none;mso-border-bottom-alt:solid #2A7A6A .75pt;padding:0in;
+mso-padding-alt:0in 0in 1.0pt 0in'>9. Deferred Revenue <span class=SpellE>Amortisation</span></h1>
+
+</div>
+
+<p class=MsoNormal style='margin-bottom:8.0pt'>For quarterly and annual
+subscriptions, Finance posts a recognition entry each month-end without any
+external trigger. The schedule was determined at <span class=SpellE><b>OrderCreated</b></span>.
+Finance <span class=GramE>owns</span> this process entirely.</p>
+
+<p class=MsoNormal style='margin-bottom:4.0pt'><o:p>&nbsp;</o:p></p>
+
+<h3>Monthly recognition entry (quarterly or annual sub):</h3>
+
+<table class=MsoNormalTable border=1 cellspacing=0 cellpadding=0 width=624
+ style='width:6.5in;border-collapse:collapse;border:none;mso-border-alt:solid windowtext .5pt;
+ mso-yfti-tbllook:1184;mso-padding-alt:0in .5pt 0in .5pt;mso-border-insideh:
+ .5pt solid windowtext;mso-border-insidev:.5pt solid windowtext'>
+ <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes'>
+  <td width=227 valign=top style='width:170.0pt;border:solid #CBD5E0 1.0pt;
+  mso-border-alt:solid #CBD5E0 .25pt;background:#2A7A6A;padding:3.0pt 7.0pt 3.0pt 7.0pt'>
+  <p class=MsoNormal><b><span style='font-size:10.0pt;color:white'>Debit</span></b></p>
+  </td>
+  <td width=233 valign=top style='width:175.0pt;border:solid #CBD5E0 1.0pt;
+  border-left:none;mso-border-left-alt:solid #CBD5E0 .25pt;mso-border-alt:solid #CBD5E0 .25pt;
+  background:#2A7A6A;padding:3.0pt 7.0pt 3.0pt 14.0pt'>
+  <p class=MsoNormal><b><span style='font-size:10.0pt;color:white'>Credit</span></b></p>
+  </td>
+  <td width=104 valign=top style='width:78.0pt;border:solid #CBD5E0 1.0pt;
+  border-left:none;mso-border-left-alt:solid #CBD5E0 .25pt;mso-border-alt:solid #CBD5E0 .25pt;
+  background:#2A7A6A;padding:3.0pt 7.0pt 3.0pt 7.0pt'>
+  <p class=MsoNormal><b><span style='font-size:10.0pt;color:white'>Amount</span></b></p>
+  </td>
+  <td width=60 valign=top style='width:45.0pt;border:solid #CBD5E0 1.0pt;
+  border-left:none;mso-border-left-alt:solid #CBD5E0 .25pt;mso-border-alt:solid #CBD5E0 .25pt;
+  background:#2A7A6A;padding:3.0pt 7.0pt 3.0pt 7.0pt'>
+  <p class=MsoNormal><o:p>&nbsp;</o:p></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:1;mso-yfti-lastrow:yes'>
+  <td width=227 valign=top style='width:170.0pt;border:solid #CBD5E0 1.0pt;
+  border-top:none;mso-border-top-alt:solid #CBD5E0 .25pt;mso-border-alt:solid #CBD5E0 .25pt;
+  background:#EDF2F7;padding:3.0pt 7.0pt 3.0pt 7.0pt'>
+  <p class=MsoNormal><span style='font-size:10.0pt;color:#333333'>Deferred
+  Revenue</span></p>
+  </td>
+  <td width=233 valign=top style='width:175.0pt;border-top:none;border-left:
+  none;border-bottom:solid #CBD5E0 1.0pt;border-right:solid #CBD5E0 1.0pt;
+  mso-border-top-alt:solid #CBD5E0 .25pt;mso-border-left-alt:solid #CBD5E0 .25pt;
+  mso-border-alt:solid #CBD5E0 .25pt;background:#EDF2F7;padding:3.0pt 7.0pt 3.0pt 14.0pt'>
+  <p class=MsoNormal><span style='font-size:10.0pt;color:#4A5568'>Revenue —
+  Membership</span></p>
+  </td>
+  <td width=104 valign=top style='width:78.0pt;border-top:none;border-left:
+  none;border-bottom:solid #CBD5E0 1.0pt;border-right:solid #CBD5E0 1.0pt;
+  mso-border-top-alt:solid #CBD5E0 .25pt;mso-border-left-alt:solid #CBD5E0 .25pt;
+  mso-border-alt:solid #CBD5E0 .25pt;background:#EDF2F7;padding:3.0pt 7.0pt 3.0pt 7.0pt'>
+  <p class=MsoNormal align=right style='text-align:right'><b><span
+  style='font-size:10.0pt'>$99.00</span></b></p>
+  </td>
+  <td width=60 valign=top style='width:45.0pt;border-top:none;border-left:none;
+  border-bottom:solid #CBD5E0 1.0pt;border-right:solid #CBD5E0 1.0pt;
+  mso-border-top-alt:solid #CBD5E0 .25pt;mso-border-left-alt:solid #CBD5E0 .25pt;
+  mso-border-alt:solid #CBD5E0 .25pt;background:#EDF2F7;padding:3.0pt 7.0pt 3.0pt 7.0pt'>
+  <p class=MsoNormal><span style='font-size:9.0pt;color:#4A5568'>DR</span></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal style='margin-bottom:4.0pt'><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal style='margin-bottom:8.0pt'>Posted each month for the
+subscription period. The Deferred Revenue balance on the balance sheet reduces
+to zero as each period's revenue is <span class=SpellE>recognised</span>. A gym
+that sold 200 annual memberships in January is carrying a meaningful Deferred
+Revenue liability — visible on the balance sheet, <span class=SpellE>amortising</span>
+correctly each month.</p>
+
+<p class=MsoNormal style='margin-bottom:10.0pt'><o:p>&nbsp;</o:p></p>
+
+<div style='mso-element:para-border-div;border:none;border-bottom:solid #2A7A6A 1.0pt;
+mso-border-bottom-alt:solid #2A7A6A .75pt;padding:0in 0in 1.0pt 0in'>
+
+<h1 style='border:none;mso-border-bottom-alt:solid #2A7A6A .75pt;padding:0in;
+mso-padding-alt:0in 0in 1.0pt 0in'>10. Cancellation Mid-Period</h1>
+
+</div>
+
+<p class=MsoNormal style='margin-bottom:8.0pt'>A member cancels their annual
+subscription after four months. Customer processes the request and publishes <span
+class=SpellE><b>SubscriptionCancelled</b></span>.</p>
+
+<p class=MsoNormal style='margin-bottom:4.0pt'><o:p>&nbsp;</o:p></p>
+
+<table class=MsoNormalTable border=1 cellspacing=0 cellpadding=0 width=624
+ style='width:6.5in;border-collapse:collapse;border:none;mso-border-alt:solid windowtext .5pt;
+ mso-yfti-tbllook:1184;mso-padding-alt:0in .5pt 0in .5pt;mso-border-insideh:
+ .5pt solid windowtext;mso-border-insidev:.5pt solid windowtext'>
+ <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes'>
+  <td width=624 colspan=2 valign=top style='width:6.5in;border:solid #CBD5E0 1.0pt;
+  mso-border-alt:solid #CBD5E0 .25pt;background:#1B2A4A;padding:5.0pt 8.0pt 5.0pt 8.0pt'>
+  <p class=MsoNormal><span class=SpellE><b><span style='font-size:11.0pt;
+  color:white'>SubscriptionCancelled</span></b></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:1'>
+  <td width=187 valign=top style='width:140.0pt;border:solid #CBD5E0 1.0pt;
+  border-top:none;mso-border-top-alt:solid #CBD5E0 .25pt;mso-border-alt:solid #CBD5E0 .25pt;
+  background:#EDF2F7;padding:3.0pt 7.0pt 3.0pt 7.0pt'>
+  <p class=MsoNormal><span class=SpellE><span style='font-size:10.0pt;
+  font-family:"Courier New";mso-fareast-font-family:"Courier New";color:#4A5568'>subscriptionId</span></span></p>
+  </td>
+  <td width=437 valign=top style='width:328.0pt;border-top:none;border-left:
+  none;border-bottom:solid #CBD5E0 1.0pt;border-right:solid #CBD5E0 1.0pt;
+  mso-border-top-alt:solid #CBD5E0 .25pt;mso-border-left-alt:solid #CBD5E0 .25pt;
+  mso-border-alt:solid #CBD5E0 .25pt;background:#EDF2F7;padding:3.0pt 7.0pt 3.0pt 7.0pt'>
+  <p class=MsoNormal><span class=GramE><span style='font-size:11.0pt'>References</span></span><span
+  style='font-size:11.0pt'> the original order.</span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:2'>
+  <td width=187 valign=top style='width:140.0pt;border:solid #CBD5E0 1.0pt;
+  border-top:none;mso-border-top-alt:solid #CBD5E0 .25pt;mso-border-alt:solid #CBD5E0 .25pt;
+  background:white;padding:3.0pt 7.0pt 3.0pt 7.0pt'>
+  <p class=MsoNormal><span class=SpellE><span style='font-size:10.0pt;
+  font-family:"Courier New";mso-fareast-font-family:"Courier New";color:#4A5568'>memberId</span></span></p>
+  </td>
+  <td width=437 valign=top style='width:328.0pt;border-top:none;border-left:
+  none;border-bottom:solid #CBD5E0 1.0pt;border-right:solid #CBD5E0 1.0pt;
+  mso-border-top-alt:solid #CBD5E0 .25pt;mso-border-left-alt:solid #CBD5E0 .25pt;
+  mso-border-alt:solid #CBD5E0 .25pt;background:white;padding:3.0pt 7.0pt 3.0pt 7.0pt'>
+  <p class=MsoNormal><span style='font-size:11.0pt'>Who cancelled.</span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:3'>
+  <td width=187 valign=top style='width:140.0pt;border:solid #CBD5E0 1.0pt;
+  border-top:none;mso-border-top-alt:solid #CBD5E0 .25pt;mso-border-alt:solid #CBD5E0 .25pt;
+  background:#EDF2F7;padding:3.0pt 7.0pt 3.0pt 7.0pt'>
+  <p class=MsoNormal><span class=SpellE><span style='font-size:10.0pt;
+  font-family:"Courier New";mso-fareast-font-family:"Courier New";color:#4A5568'>tenantId</span></span></p>
+  </td>
+  <td width=437 valign=top style='width:328.0pt;border-top:none;border-left:
+  none;border-bottom:solid #CBD5E0 1.0pt;border-right:solid #CBD5E0 1.0pt;
+  mso-border-top-alt:solid #CBD5E0 .25pt;mso-border-left-alt:solid #CBD5E0 .25pt;
+  mso-border-alt:solid #CBD5E0 .25pt;background:#EDF2F7;padding:3.0pt 7.0pt 3.0pt 7.0pt'>
+  <p class=MsoNormal><span style='font-size:11.0pt'>Which gym.</span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:4'>
+  <td width=187 valign=top style='width:140.0pt;border:solid #CBD5E0 1.0pt;
+  border-top:none;mso-border-top-alt:solid #CBD5E0 .25pt;mso-border-alt:solid #CBD5E0 .25pt;
+  background:white;padding:3.0pt 7.0pt 3.0pt 7.0pt'>
+  <p class=MsoNormal><span class=SpellE><span style='font-size:10.0pt;
+  font-family:"Courier New";mso-fareast-font-family:"Courier New";color:#4A5568'>cancelledAt</span></span></p>
+  </td>
+  <td width=437 valign=top style='width:328.0pt;border-top:none;border-left:
+  none;border-bottom:solid #CBD5E0 1.0pt;border-right:solid #CBD5E0 1.0pt;
+  mso-border-top-alt:solid #CBD5E0 .25pt;mso-border-left-alt:solid #CBD5E0 .25pt;
+  mso-border-alt:solid #CBD5E0 .25pt;background:white;padding:3.0pt 7.0pt 3.0pt 7.0pt'>
+  <p class=MsoNormal><span style='font-size:11.0pt'>When processed.</span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:5'>
+  <td width=187 valign=top style='width:140.0pt;border:solid #CBD5E0 1.0pt;
+  border-top:none;mso-border-top-alt:solid #CBD5E0 .25pt;mso-border-alt:solid #CBD5E0 .25pt;
+  background:#EDF2F7;padding:3.0pt 7.0pt 3.0pt 7.0pt'>
+  <p class=MsoNormal><span class=SpellE><span style='font-size:10.0pt;
+  font-family:"Courier New";mso-fareast-font-family:"Courier New";color:#4A5568'>effectiveDate</span></span></p>
+  </td>
+  <td width=437 valign=top style='width:328.0pt;border-top:none;border-left:
+  none;border-bottom:solid #CBD5E0 1.0pt;border-right:solid #CBD5E0 1.0pt;
+  mso-border-top-alt:solid #CBD5E0 .25pt;mso-border-left-alt:solid #CBD5E0 .25pt;
+  mso-border-alt:solid #CBD5E0 .25pt;background:#EDF2F7;padding:3.0pt 7.0pt 3.0pt 7.0pt'>
+  <p class=MsoNormal><span style='font-size:11.0pt'>When access ends. May
+  differ from <span class=SpellE>cancelledAt</span> — e.g. end of paid period.</span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:6'>
+  <td width=187 valign=top style='width:140.0pt;border:solid #CBD5E0 1.0pt;
+  border-top:none;mso-border-top-alt:solid #CBD5E0 .25pt;mso-border-alt:solid #CBD5E0 .25pt;
+  background:white;padding:3.0pt 7.0pt 3.0pt 7.0pt'>
+  <p class=MsoNormal><span class=SpellE><span style='font-size:10.0pt;
+  font-family:"Courier New";mso-fareast-font-family:"Courier New";color:#4A5568'>refundAmount</span></span></p>
+  </td>
+  <td width=437 valign=top style='width:328.0pt;border-top:none;border-left:
+  none;border-bottom:solid #CBD5E0 1.0pt;border-right:solid #CBD5E0 1.0pt;
+  mso-border-top-alt:solid #CBD5E0 .25pt;mso-border-left-alt:solid #CBD5E0 .25pt;
+  mso-border-alt:solid #CBD5E0 .25pt;background:white;padding:3.0pt 7.0pt 3.0pt 7.0pt'>
+  <p class=MsoNormal><span style='font-size:11.0pt'>Amount to refund. Zero if
+  cancelling at end of paid period.</span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:7;mso-yfti-lastrow:yes'>
+  <td width=187 valign=top style='width:140.0pt;border:solid #CBD5E0 1.0pt;
+  border-top:none;mso-border-top-alt:solid #CBD5E0 .25pt;mso-border-alt:solid #CBD5E0 .25pt;
+  background:#EDF2F7;padding:3.0pt 7.0pt 3.0pt 7.0pt'>
+  <p class=MsoNormal><span class=SpellE><span style='font-size:10.0pt;
+  font-family:"Courier New";mso-fareast-font-family:"Courier New";color:#4A5568'>refundReason</span></span></p>
+  </td>
+  <td width=437 valign=top style='width:328.0pt;border-top:none;border-left:
+  none;border-bottom:solid #CBD5E0 1.0pt;border-right:solid #CBD5E0 1.0pt;
+  mso-border-top-alt:solid #CBD5E0 .25pt;mso-border-left-alt:solid #CBD5E0 .25pt;
+  mso-border-alt:solid #CBD5E0 .25pt;background:#EDF2F7;padding:3.0pt 7.0pt 3.0pt 7.0pt'>
+  <p class=MsoNormal><span style='font-size:11.0pt'>MEMBER_REQUEST |
+  PAYMENT_FAILURE | ADMIN | POLICY</span></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal style='margin-bottom:10.0pt'><o:p>&nbsp;</o:p></p>
+
+<h2><span class=GramE>10.1<span style='mso-spacerun:yes'>  </span>Finance</span>
+— annual sub cancelled in month 4</h2>
+
+<p class=MsoNormal style='margin-bottom:8.0pt'>Months 1–4 are already <span
+class=SpellE>recognised</span>. The Deferred Revenue balance holds months 5–12
+($712 = 8 × $89).</p>
+
+<table class=MsoNormalTable border=1 cellspacing=0 cellpadding=0 width=624
+ style='width:6.5in;border-collapse:collapse;border:none;mso-border-alt:solid windowtext .5pt;
+ mso-yfti-tbllook:1184;mso-padding-alt:0in .5pt 0in .5pt;mso-border-insideh:
+ .5pt solid windowtext;mso-border-insidev:.5pt solid windowtext'>
+ <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes'>
+  <td width=227 valign=top style='width:170.0pt;border:solid #CBD5E0 1.0pt;
+  mso-border-alt:solid #CBD5E0 .25pt;background:#2A7A6A;padding:3.0pt 7.0pt 3.0pt 7.0pt'>
+  <p class=MsoNormal><b><span style='font-size:10.0pt;color:white'>Debit</span></b></p>
+  </td>
+  <td width=233 valign=top style='width:175.0pt;border:solid #CBD5E0 1.0pt;
+  border-left:none;mso-border-left-alt:solid #CBD5E0 .25pt;mso-border-alt:solid #CBD5E0 .25pt;
+  background:#2A7A6A;padding:3.0pt 7.0pt 3.0pt 14.0pt'>
+  <p class=MsoNormal><b><span style='font-size:10.0pt;color:white'>Credit</span></b></p>
+  </td>
+  <td width=104 valign=top style='width:78.0pt;border:solid #CBD5E0 1.0pt;
+  border-left:none;mso-border-left-alt:solid #CBD5E0 .25pt;mso-border-alt:solid #CBD5E0 .25pt;
+  background:#2A7A6A;padding:3.0pt 7.0pt 3.0pt 7.0pt'>
+  <p class=MsoNormal><b><span style='font-size:10.0pt;color:white'>Amount</span></b></p>
+  </td>
+  <td width=60 valign=top style='width:45.0pt;border:solid #CBD5E0 1.0pt;
+  border-left:none;mso-border-left-alt:solid #CBD5E0 .25pt;mso-border-alt:solid #CBD5E0 .25pt;
+  background:#2A7A6A;padding:3.0pt 7.0pt 3.0pt 7.0pt'>
+  <p class=MsoNormal><o:p>&nbsp;</o:p></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:1;mso-yfti-lastrow:yes'>
+  <td width=227 valign=top style='width:170.0pt;border:solid #CBD5E0 1.0pt;
+  border-top:none;mso-border-top-alt:solid #CBD5E0 .25pt;mso-border-alt:solid #CBD5E0 .25pt;
+  background:#EDF2F7;padding:3.0pt 7.0pt 3.0pt 7.0pt'>
+  <p class=MsoNormal><span style='font-size:10.0pt;color:#333333'>Deferred
+  Revenue</span></p>
+  </td>
+  <td width=233 valign=top style='width:175.0pt;border-top:none;border-left:
+  none;border-bottom:solid #CBD5E0 1.0pt;border-right:solid #CBD5E0 1.0pt;
+  mso-border-top-alt:solid #CBD5E0 .25pt;mso-border-left-alt:solid #CBD5E0 .25pt;
+  mso-border-alt:solid #CBD5E0 .25pt;background:#EDF2F7;padding:3.0pt 7.0pt 3.0pt 14.0pt'>
+  <p class=MsoNormal><span style='font-size:10.0pt;color:#4A5568'>Cash /
+  Accounts Receivable</span></p>
+  </td>
+  <td width=104 valign=top style='width:78.0pt;border-top:none;border-left:
+  none;border-bottom:solid #CBD5E0 1.0pt;border-right:solid #CBD5E0 1.0pt;
+  mso-border-top-alt:solid #CBD5E0 .25pt;mso-border-left-alt:solid #CBD5E0 .25pt;
+  mso-border-alt:solid #CBD5E0 .25pt;background:#EDF2F7;padding:3.0pt 7.0pt 3.0pt 7.0pt'>
+  <p class=MsoNormal align=right style='text-align:right'><b><span
+  style='font-size:10.0pt'>$712.00</span></b></p>
+  </td>
+  <td width=60 valign=top style='width:45.0pt;border-top:none;border-left:none;
+  border-bottom:solid #CBD5E0 1.0pt;border-right:solid #CBD5E0 1.0pt;
+  mso-border-top-alt:solid #CBD5E0 .25pt;mso-border-left-alt:solid #CBD5E0 .25pt;
+  mso-border-alt:solid #CBD5E0 .25pt;background:#EDF2F7;padding:3.0pt 7.0pt 3.0pt 7.0pt'>
+  <p class=MsoNormal><span style='font-size:9.0pt;color:#4A5568'>DR</span></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal style='margin-bottom:3.0pt'><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal style='margin-bottom:8.0pt'><i><span style='font-size:11.0pt;
+color:#4A5568'>Remaining deferred balance reversed. Refund issued for the
+unearned portion. <span class=SpellE>Recognised</span> revenue (months 1–4)
+requires no reversal.</span></i></p>
+
+<p class=MsoNormal style='margin-bottom:8.0pt'><o:p>&nbsp;</o:p></p>
+
+<h2><span class=GramE>10.2<span style='mso-spacerun:yes'>  </span>Operations</span>
+<span class=GramE>reacts</span></h2>
+
+<p class=MsoListParagraph style='margin-top:0in;margin-right:0in;margin-bottom:
+5.0pt;margin-left:.5in;text-indent:-.25in;mso-list:l0 level1 lfo2'><![if !supportLists]><span
+style='mso-list:Ignore'>•<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><![endif]><span class=SpellE><b>EntitlementSuspended</b></span>
+published for this member.</p>
+
+<p class=MsoListParagraph style='margin-top:0in;margin-right:0in;margin-bottom:
+5.0pt;margin-left:.5in;text-indent:-.25in;mso-list:l0 level1 lfo2'><![if !supportLists]><span
+style='mso-list:Ignore'>•<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><![endif]>Any future class bookings after <span class=SpellE>effectiveDate</span>
+are cancelled.</p>
+
+<p class=MsoListParagraph style='margin-top:0in;margin-right:0in;margin-bottom:
+5.0pt;margin-left:.5in;text-indent:-.25in;mso-list:l0 level1 lfo2'><![if !supportLists]><span
+style='mso-list:Ignore'>•<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><![endif]><span class=SpellE><span class=GramE><b>ReservationCancelled</b></span></span>
+published for each affected booking.</p>
+
+<p class=MsoNormal style='margin-bottom:6.0pt'><o:p>&nbsp;</o:p></p>
+
+<h2><span class=GramE>10.3<span style='mso-spacerun:yes'>  </span>Customer</span>
+reacts</h2>
+
+<p class=MsoListParagraph style='margin-top:0in;margin-right:0in;margin-bottom:
+5.0pt;margin-left:.5in;text-indent:-.25in;mso-list:l0 level1 lfo2'><![if !supportLists]><span
+style='mso-list:Ignore'>•<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><![endif]>Member record updated: status = CANCELLED.</p>
+
+<p class=MsoListParagraph style='margin-top:0in;margin-right:0in;margin-bottom:
+5.0pt;margin-left:.5in;text-indent:-.25in;mso-list:l0 level1 lfo2'><![if !supportLists]><span
+style='mso-list:Ignore'>•<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><![endif]>Recurring billing sequence stopped.</p>
+
+<p class=MsoListParagraph style='margin-top:0in;margin-right:0in;margin-bottom:
+5.0pt;margin-left:.5in;text-indent:-.25in;mso-list:l0 level1 lfo2'><![if !supportLists]><span
+style='mso-list:Ignore'>•<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><![endif]>Cancellation confirmation sent to member.</p>
+
+<p class=MsoListParagraph style='margin-top:0in;margin-right:0in;margin-bottom:
+5.0pt;margin-left:.5in;text-indent:-.25in;mso-list:l0 level1 lfo2'><![if !supportLists]><span
+style='mso-list:Ignore'>•<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><![endif]>Retention sequence triggered if gym policy permits a
+save attempt.</p>
+
+<p class=MsoNormal style='margin-bottom:10.0pt'><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal style='margin-bottom:8.0pt'>Three domains. One event. Each
+acted independently and in parallel. The refund, the entitlement suspension,
+and the member communication are not coordinated — they are consequences of the
+same published fact.</p>
+
+<div style='mso-element:para-border-div;border:none;border-bottom:solid #2A7A6A 1.0pt;
+mso-border-bottom-alt:solid #2A7A6A .75pt;padding:0in 0in 1.0pt 0in'>
+
+<h1 style='border:none;mso-border-bottom-alt:solid #2A7A6A .75pt;padding:0in;
+mso-padding-alt:0in 0in 1.0pt 0in'>11. Payment Failure and Arrears</h1>
+
+</div>
+
+<p class=MsoNormal style='margin-bottom:8.0pt'>A subscription renewal fails —
+card declined. <span class=SpellE><b>PaymentFailed</b></span> is published by
+Finance's payment component.</p>
+
+<p class=MsoNormal style='margin-bottom:4.0pt'><o:p>&nbsp;</o:p></p>
+
+<table class=MsoNormalTable border=1 cellspacing=0 cellpadding=0 width=624
+ style='width:6.5in;border-collapse:collapse;border:none;mso-border-alt:solid windowtext .5pt;
+ mso-yfti-tbllook:1184;mso-padding-alt:0in .5pt 0in .5pt;mso-border-insideh:
+ .5pt solid windowtext;mso-border-insidev:.5pt solid windowtext'>
+ <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes'>
+  <td width=147 valign=top style='width:110.0pt;border:solid #CBD5E0 1.0pt;
+  mso-border-alt:solid #CBD5E0 .25pt;background:#1B2A4A;padding:4.0pt 7.0pt 4.0pt 7.0pt'>
+  <p class=MsoNormal><b><span style='font-size:10.0pt;color:white'>Domain</span></b></p>
+  </td>
+  <td width=120 valign=top style='width:1.25in;border:solid #CBD5E0 1.0pt;
+  border-left:none;mso-border-left-alt:solid #CBD5E0 .25pt;mso-border-alt:solid #CBD5E0 .25pt;
+  background:#1B2A4A;padding:4.0pt 7.0pt 4.0pt 7.0pt'>
+  <p class=MsoNormal><b><span style='font-size:10.0pt;color:white'>Reacts To</span></b></p>
+  </td>
+  <td width=357 valign=top style='width:268.0pt;border:solid #CBD5E0 1.0pt;
+  border-left:none;mso-border-left-alt:solid #CBD5E0 .25pt;mso-border-alt:solid #CBD5E0 .25pt;
+  background:#1B2A4A;padding:4.0pt 7.0pt 4.0pt 7.0pt'>
+  <p class=MsoNormal><b><span style='font-size:10.0pt;color:white'>Business
+  Consequence</span></b></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:1'>
+  <td width=147 valign=top style='width:110.0pt;border:solid #CBD5E0 1.0pt;
+  border-top:none;mso-border-top-alt:solid #CBD5E0 .25pt;mso-border-alt:solid #CBD5E0 .25pt;
+  background:#EDF2F7;padding:4.0pt 7.0pt 4.0pt 7.0pt'>
+  <p class=MsoNormal><b><span style='font-size:10.0pt'>Customer</span></b></p>
+  </td>
+  <td width=120 valign=top style='width:1.25in;border-top:none;border-left:
+  none;border-bottom:solid #CBD5E0 1.0pt;border-right:solid #CBD5E0 1.0pt;
+  mso-border-top-alt:solid #CBD5E0 .25pt;mso-border-left-alt:solid #CBD5E0 .25pt;
+  mso-border-alt:solid #CBD5E0 .25pt;background:#EDF2F7;padding:4.0pt 7.0pt 4.0pt 7.0pt'>
+  <p class=MsoNormal><span class=SpellE><span style='font-size:10.0pt;
+  font-family:"Courier New";mso-fareast-font-family:"Courier New";color:#4A5568'>PaymentFailed</span></span></p>
+  </td>
+  <td width=357 valign=top style='width:268.0pt;border-top:none;border-left:
+  none;border-bottom:solid #CBD5E0 1.0pt;border-right:solid #CBD5E0 1.0pt;
+  mso-border-top-alt:solid #CBD5E0 .25pt;mso-border-left-alt:solid #CBD5E0 .25pt;
+  mso-border-alt:solid #CBD5E0 .25pt;background:#EDF2F7;padding:4.0pt 7.0pt 4.0pt 7.0pt'>
+  <p class=MsoNormal><span style='font-size:10.0pt'>Opens arrears record.
+  Begins <span class=GramE>dunning:</span> day 1 reminder, day 3 follow-up, day
+  7 final notice. <span class=GramE>Manages</span> all member communication and
+  retry logic.</span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:2'>
+  <td width=147 valign=top style='width:110.0pt;border:solid #CBD5E0 1.0pt;
+  border-top:none;mso-border-top-alt:solid #CBD5E0 .25pt;mso-border-alt:solid #CBD5E0 .25pt;
+  background:white;padding:4.0pt 7.0pt 4.0pt 7.0pt'>
+  <p class=MsoNormal><b><span style='font-size:10.0pt'>Operations</span></b></p>
+  </td>
+  <td width=120 valign=top style='width:1.25in;border-top:none;border-left:
+  none;border-bottom:solid #CBD5E0 1.0pt;border-right:solid #CBD5E0 1.0pt;
+  mso-border-top-alt:solid #CBD5E0 .25pt;mso-border-left-alt:solid #CBD5E0 .25pt;
+  mso-border-alt:solid #CBD5E0 .25pt;background:white;padding:4.0pt 7.0pt 4.0pt 7.0pt'>
+  <p class=MsoNormal><span class=SpellE><span style='font-size:10.0pt;
+  font-family:"Courier New";mso-fareast-font-family:"Courier New";color:#4A5568'>PaymentFailed</span></span></p>
+  </td>
+  <td width=357 valign=top style='width:268.0pt;border-top:none;border-left:
+  none;border-bottom:solid #CBD5E0 1.0pt;border-right:solid #CBD5E0 1.0pt;
+  mso-border-top-alt:solid #CBD5E0 .25pt;mso-border-left-alt:solid #CBD5E0 .25pt;
+  mso-border-alt:solid #CBD5E0 .25pt;background:white;padding:4.0pt 7.0pt 4.0pt 7.0pt'>
+  <p class=MsoNormal><span style='font-size:10.0pt'>Grace period: entitlement
+  stays active. After grace period expires with no payment: <span class=SpellE>EntitlementSuspended</span>
+  published.</span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:3;mso-yfti-lastrow:yes'>
+  <td width=147 valign=top style='width:110.0pt;border:solid #CBD5E0 1.0pt;
+  border-top:none;mso-border-top-alt:solid #CBD5E0 .25pt;mso-border-alt:solid #CBD5E0 .25pt;
+  background:#EDF2F7;padding:4.0pt 7.0pt 4.0pt 7.0pt'>
+  <p class=MsoNormal><b><span style='font-size:10.0pt'>Finance</span></b></p>
+  </td>
+  <td width=120 valign=top style='width:1.25in;border-top:none;border-left:
+  none;border-bottom:solid #CBD5E0 1.0pt;border-right:solid #CBD5E0 1.0pt;
+  mso-border-top-alt:solid #CBD5E0 .25pt;mso-border-left-alt:solid #CBD5E0 .25pt;
+  mso-border-alt:solid #CBD5E0 .25pt;background:#EDF2F7;padding:4.0pt 7.0pt 4.0pt 7.0pt'>
+  <p class=MsoNormal><span class=SpellE><span style='font-size:10.0pt;
+  font-family:"Courier New";mso-fareast-font-family:"Courier New";color:#4A5568'>PaymentFailed</span></span></p>
+  </td>
+  <td width=357 valign=top style='width:268.0pt;border-top:none;border-left:
+  none;border-bottom:solid #CBD5E0 1.0pt;border-right:solid #CBD5E0 1.0pt;
+  mso-border-top-alt:solid #CBD5E0 .25pt;mso-border-left-alt:solid #CBD5E0 .25pt;
+  mso-border-alt:solid #CBD5E0 .25pt;background:#EDF2F7;padding:4.0pt 7.0pt 4.0pt 7.0pt'>
+  <p class=MsoNormal><span style='font-size:10.0pt'>AR entry stays open. No
+  cash. No revenue reversal — revenue was <span class=SpellE>recognised</span>,
+  the obligation to pay remains. Finance monitors AR ageing.</span></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal style='margin-bottom:10.0pt'><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal style='margin-bottom:8.0pt'>If the member pays during the
+dunning window, <span class=SpellE><b>PaymentCleared</b></span> is published
+and all three domains react exactly as in Section 8. If payment never arrives, <span
+class=SpellE><b>MemberInArrears</b></span> is published by Customer. Operations
+<span class=GramE>suspends</span> the entitlement. Finance provisions the AR
+balance as doubtful debt if gym policy requires.</p>
+
+<span style='font-size:12.0pt;font-family:"Arial",sans-serif;mso-fareast-font-family:
+Arial;mso-ansi-language:EN-US;mso-fareast-language:EN-US;mso-bidi-language:
+AR-SA'><br clear=all style='mso-special-character:line-break;page-break-before:
+always'>
+</span>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal style='margin-bottom:4.0pt'><b><span style='font-size:10.0pt;
+color:#1B2A4A'>PART THREE</span></b></p>
+
+<p class=MsoNormal style='margin-bottom:2.0pt'><b><span style='font-size:20.0pt;
+color:#1B2A4A'>Why This Model Stays Flexible</span></b></p>
+
+<p class=MsoNormal style='margin-bottom:15.0pt'><i><span style='font-size:11.0pt;
+color:#4A5568'>Written for both audiences.</span></i></p>
+
+<div style='mso-element:para-border-div;border:none;border-bottom:solid #2A7A6A 1.0pt;
+mso-border-bottom-alt:solid #2A7A6A .75pt;padding:0in 0in 1.0pt 0in'>
+
+<h1 style='border:none;mso-border-bottom-alt:solid #2A7A6A .75pt;padding:0in;
+mso-padding-alt:0in 0in 1.0pt 0in'>12. Adding Capabilities Without Rebuilding</h1>
+
+</div>
+
+<p class=MsoNormal style='margin-bottom:8.0pt'>The flows in this document
+describe <span class=GramE>a monthly</span> membership. The same event
+structure handles class packs, drop-ins, retail tabs, partner network passes,
+and any future product the business creates.</p>
+
+<p class=MsoNormal style='margin-bottom:8.0pt'>This is the result of one design
+decision: <b>the event is the only shared language between domains</b>. Each
+domain subscribes to the events it cares about and ignores the rest. New
+capabilities plug in by subscribing to existing events. The existing business
+does not change.</p>
+
+<h2>Adding a Loyalty <span class=SpellE>Programme</span></h2>
+
+<p class=MsoListParagraph style='margin-top:0in;margin-right:0in;margin-bottom:
+5.0pt;margin-left:.5in;text-indent:-.25in;mso-list:l0 level1 lfo2'><![if !supportLists]><span
+style='mso-list:Ignore'>•<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><![endif]><span class=SpellE><span class=GramE><b>AttendanceRecorded</b></span></span>
+already exists. The loyalty <span class=SpellE>programme</span> subscribes to
+it and awards points. No change to Operations.</p>
+
+<p class=MsoListParagraph style='margin-top:0in;margin-right:0in;margin-bottom:
+5.0pt;margin-left:.5in;text-indent:-.25in;mso-list:l0 level1 lfo2'><![if !supportLists]><span
+style='mso-list:Ignore'>•<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><![endif]><span class=SpellE><b>RetailItemAdded</b></span>
+already exists. The loyalty <span class=SpellE>programme</span> subscribes <span
+class=GramE>for</span> redemption logic. No change to Customer or the tab
+system.</p>
+
+<p class=MsoListParagraph style='margin-top:0in;margin-right:0in;margin-bottom:
+5.0pt;margin-left:.5in;text-indent:-.25in;mso-list:l0 level1 lfo2'><![if !supportLists]><span
+style='mso-list:Ignore'>•<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><![endif]>The loyalty <span class=SpellE>programme</span> is a
+new capability. It plugs into existing events. Zero changes to the existing
+platform.</p>
+
+<p class=MsoNormal style='margin-bottom:10.0pt'><o:p>&nbsp;</o:p></p>
+
+<h2>Switching a Scheduling Vendor</h2>
+
+<p class=MsoListParagraph style='margin-top:0in;margin-right:0in;margin-bottom:
+5.0pt;margin-left:.5in;text-indent:-.25in;mso-list:l0 level1 lfo2'><![if !supportLists]><span
+style='mso-list:Ignore'>•<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><![endif]>The scheduling vendor's job is to publish
+ClassPublished and <span class=SpellE>ClassCancelled</span>.</p>
+
+<p class=MsoListParagraph style='margin-top:0in;margin-right:0in;margin-bottom:
+5.0pt;margin-left:.5in;text-indent:-.25in;mso-list:l0 level1 lfo2'><![if !supportLists]><span
+style='mso-list:Ignore'>•<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><![endif]>An adapter translates the new vendor's native format
+into the <span class=SpellE>OpenGym</span> event contract.</p>
+
+<p class=MsoListParagraph style='margin-top:0in;margin-right:0in;margin-bottom:
+5.0pt;margin-left:.5in;text-indent:-.25in;mso-list:l0 level1 lfo2'><![if !supportLists]><span
+style='mso-list:Ignore'>•<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><![endif]>Reservation, Operations, Finance — no changes. They
+subscribe to the contract, not the vendor.</p>
+
+<p class=MsoNormal style='margin-bottom:10.0pt'><o:p>&nbsp;</o:p></p>
+
+<h2>Adding a Partner Gym</h2>
+
+<p class=MsoListParagraph style='margin-top:0in;margin-right:0in;margin-bottom:
+5.0pt;margin-left:.5in;text-indent:-.25in;mso-list:l0 level1 lfo2'><![if !supportLists]><span
+style='mso-list:Ignore'>•<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><![endif]><span class=SpellE><b>ParticipationAgreementActivated</b></span>
+is published. Reservation subscribes and begins routing cross-tenant bookings.</p>
+
+<p class=MsoListParagraph style='margin-top:0in;margin-right:0in;margin-bottom:
+5.0pt;margin-left:.5in;text-indent:-.25in;mso-list:l0 level1 lfo2'><![if !supportLists]><span
+style='mso-list:Ignore'>•<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><![endif]>Partner classes appear in the member app. Revenue
+settlement is tracked by Platform Billing.</p>
+
+<p class=MsoListParagraph style='margin-top:0in;margin-right:0in;margin-bottom:
+5.0pt;margin-left:.5in;text-indent:-.25in;mso-list:l0 level1 lfo2'><![if !supportLists]><span
+style='mso-list:Ignore'>•<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><![endif]>No changes to Scheduling, Finance, or Customer.</p>
+
+<p class=MsoNormal style='margin-bottom:10.0pt'><o:p>&nbsp;</o:p></p>
+
+<table class=MsoNormalTable border=1 cellspacing=0 cellpadding=0 width=624
+ style='width:6.5in;border-collapse:collapse;border:none;mso-border-alt:solid windowtext .5pt;
+ mso-yfti-tbllook:1184;mso-padding-alt:0in .5pt 0in .5pt;mso-border-insideh:
+ .5pt solid windowtext;mso-border-insidev:.5pt solid windowtext'>
+ <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes;mso-yfti-lastrow:yes'>
+  <td valign=top style='border-top:#2A7A6A;border-left:#2A7A6A;border-bottom:
+  #CBD5E0;border-right:#CBD5E0;border-style:solid;border-width:1.0pt;
+  mso-border-top-alt:#2A7A6A 1.0pt;mso-border-left-alt:#2A7A6A 1.0pt;
+  mso-border-bottom-alt:#CBD5E0 .25pt;mso-border-right-alt:#CBD5E0 .25pt;
+  mso-border-style-alt:solid;background:#F7FAFA;padding:8.0pt 10.0pt 8.0pt 10.0pt'>
+  <p class=MsoNormal><b><span style='color:#2A7A6A'>The event is stable. The
+  reactions are composable.<span style='mso-spacerun:yes'>  </span></span></b>A
+  new capability that needs to react to something that already happens in <span
+  class=GramE>the business</span> simply subscribes to the existing event. This
+  is why the event contract is treated as a first-class design artifact — not
+  documentation written after the fact.</p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal style='margin-bottom:10.0pt'><o:p>&nbsp;</o:p></p>
+
+<div style='mso-element:para-border-div;border:none;border-bottom:solid #2A7A6A 1.0pt;
+mso-border-bottom-alt:solid #2A7A6A .75pt;padding:0in 0in 1.0pt 0in'>
+
+<h1 style='border:none;mso-border-bottom-alt:solid #2A7A6A .75pt;padding:0in;
+mso-padding-alt:0in 0in 1.0pt 0in'>13. The Event Map</h1>
+
+</div>
+
+<p class=MsoNormal style='margin-bottom:8.0pt'>All events discussed in this
+document, which domain publishes each, and what the primary consumers do.</p>
+
+<p class=MsoNormal style='margin-bottom:4.0pt'><o:p>&nbsp;</o:p></p>
+
+<table class=MsoNormalTable border=1 cellspacing=0 cellpadding=0 width=624
+ style='width:6.5in;border-collapse:collapse;border:none;mso-border-alt:solid windowtext .5pt;
+ mso-yfti-tbllook:1184;mso-padding-alt:0in .5pt 0in .5pt;mso-border-insideh:
+ .5pt solid windowtext;mso-border-insidev:.5pt solid windowtext'>
+ <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes'>
+  <td width=160 valign=top style='width:120.0pt;border:solid #CBD5E0 1.0pt;
+  mso-border-alt:solid #CBD5E0 .25pt;background:#1B2A4A;padding:4.0pt 7.0pt 4.0pt 7.0pt'>
+  <p class=MsoNormal><b><span style='font-size:10.0pt;color:white'>Event</span></b></p>
+  </td>
+  <td width=80 valign=top style='width:60.0pt;border:solid #CBD5E0 1.0pt;
+  border-left:none;mso-border-left-alt:solid #CBD5E0 .25pt;mso-border-alt:solid #CBD5E0 .25pt;
+  background:#1B2A4A;padding:4.0pt 7.0pt 4.0pt 7.0pt'>
+  <p class=MsoNormal><b><span style='font-size:10.0pt;color:white'>Publisher</span></b></p>
+  </td>
+  <td width=384 valign=top style='width:4.0in;border:solid #CBD5E0 1.0pt;
+  border-left:none;mso-border-left-alt:solid #CBD5E0 .25pt;mso-border-alt:solid #CBD5E0 .25pt;
+  background:#1B2A4A;padding:4.0pt 7.0pt 4.0pt 7.0pt'>
+  <p class=MsoNormal><b><span style='font-size:10.0pt;color:white'>Primary
+  Consumers &amp; Reactions</span></b></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:1'>
+  <td width=160 valign=top style='width:120.0pt;border:solid #CBD5E0 1.0pt;
+  border-top:none;mso-border-top-alt:solid #CBD5E0 .25pt;mso-border-alt:solid #CBD5E0 .25pt;
+  background:#EDF2F7;padding:3.5pt 7.0pt 3.5pt 7.0pt'>
+  <p class=MsoNormal><span class=SpellE><span style='font-size:10.0pt;
+  font-family:"Courier New";mso-fareast-font-family:"Courier New";color:#4A5568'>OrderCreated</span></span></p>
+  </td>
+  <td width=80 valign=top style='width:60.0pt;border-top:none;border-left:none;
+  border-bottom:solid #CBD5E0 1.0pt;border-right:solid #CBD5E0 1.0pt;
+  mso-border-top-alt:solid #CBD5E0 .25pt;mso-border-left-alt:solid #CBD5E0 .25pt;
+  mso-border-alt:solid #CBD5E0 .25pt;background:#EDF2F7;padding:3.5pt 7.0pt 3.5pt 7.0pt'>
+  <p class=MsoNormal><span style='font-size:10.0pt'>S&amp;M</span></p>
+  </td>
+  <td width=384 valign=top style='width:4.0in;border-top:none;border-left:none;
+  border-bottom:solid #CBD5E0 1.0pt;border-right:solid #CBD5E0 1.0pt;
+  mso-border-top-alt:solid #CBD5E0 .25pt;mso-border-left-alt:solid #CBD5E0 .25pt;
+  mso-border-alt:solid #CBD5E0 .25pt;background:#EDF2F7;padding:3.5pt 7.0pt 3.5pt 7.0pt'>
+  <p class=MsoNormal><span style='font-size:10.0pt'>Customer: member record,
+  balance, onboarding. Operations: entitlement. Finance: AR entry. Supplier:
+  referral if partner channel.</span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:2'>
+  <td width=160 valign=top style='width:120.0pt;border:solid #CBD5E0 1.0pt;
+  border-top:none;mso-border-top-alt:solid #CBD5E0 .25pt;mso-border-alt:solid #CBD5E0 .25pt;
+  background:white;padding:3.5pt 7.0pt 3.5pt 7.0pt'>
+  <p class=MsoNormal><span class=SpellE><span style='font-size:10.0pt;
+  font-family:"Courier New";mso-fareast-font-family:"Courier New";color:#4A5568'>MemberOnboardingStarted</span></span></p>
+  </td>
+  <td width=80 valign=top style='width:60.0pt;border-top:none;border-left:none;
+  border-bottom:solid #CBD5E0 1.0pt;border-right:solid #CBD5E0 1.0pt;
+  mso-border-top-alt:solid #CBD5E0 .25pt;mso-border-left-alt:solid #CBD5E0 .25pt;
+  mso-border-alt:solid #CBD5E0 .25pt;background:white;padding:3.5pt 7.0pt 3.5pt 7.0pt'>
+  <p class=MsoNormal><span style='font-size:10.0pt'>Customer</span></p>
+  </td>
+  <td width=384 valign=top style='width:4.0in;border-top:none;border-left:none;
+  border-bottom:solid #CBD5E0 1.0pt;border-right:solid #CBD5E0 1.0pt;
+  mso-border-top-alt:solid #CBD5E0 .25pt;mso-border-left-alt:solid #CBD5E0 .25pt;
+  mso-border-alt:solid #CBD5E0 .25pt;background:white;padding:3.5pt 7.0pt 3.5pt 7.0pt'>
+  <p class=MsoNormal><span style='font-size:10.0pt'>Identity: issue Trust
+  Envelope. Operations: hold entitlement pending completion.</span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:3'>
+  <td width=160 valign=top style='width:120.0pt;border:solid #CBD5E0 1.0pt;
+  border-top:none;mso-border-top-alt:solid #CBD5E0 .25pt;mso-border-alt:solid #CBD5E0 .25pt;
+  background:#EDF2F7;padding:3.5pt 7.0pt 3.5pt 7.0pt'>
+  <p class=MsoNormal><span class=SpellE><span style='font-size:10.0pt;
+  font-family:"Courier New";mso-fareast-font-family:"Courier New";color:#4A5568'>MemberOnboardingCompleted</span></span></p>
+  </td>
+  <td width=80 valign=top style='width:60.0pt;border-top:none;border-left:none;
+  border-bottom:solid #CBD5E0 1.0pt;border-right:solid #CBD5E0 1.0pt;
+  mso-border-top-alt:solid #CBD5E0 .25pt;mso-border-left-alt:solid #CBD5E0 .25pt;
+  mso-border-alt:solid #CBD5E0 .25pt;background:#EDF2F7;padding:3.5pt 7.0pt 3.5pt 7.0pt'>
+  <p class=MsoNormal><span style='font-size:10.0pt'>Customer</span></p>
+  </td>
+  <td width=384 valign=top style='width:4.0in;border-top:none;border-left:none;
+  border-bottom:solid #CBD5E0 1.0pt;border-right:solid #CBD5E0 1.0pt;
+  mso-border-top-alt:solid #CBD5E0 .25pt;mso-border-left-alt:solid #CBD5E0 .25pt;
+  mso-border-alt:solid #CBD5E0 .25pt;background:#EDF2F7;padding:3.5pt 7.0pt 3.5pt 7.0pt'>
+  <p class=MsoNormal><span style='font-size:10.0pt'>Operations: activate
+  entitlement. Identity: upgrade trust level.</span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:4'>
+  <td width=160 valign=top style='width:120.0pt;border:solid #CBD5E0 1.0pt;
+  border-top:none;mso-border-top-alt:solid #CBD5E0 .25pt;mso-border-alt:solid #CBD5E0 .25pt;
+  background:white;padding:3.5pt 7.0pt 3.5pt 7.0pt'>
+  <p class=MsoNormal><span class=SpellE><span style='font-size:10.0pt;
+  font-family:"Courier New";mso-fareast-font-family:"Courier New";color:#4A5568'>EntitlementIssued</span></span></p>
+  </td>
+  <td width=80 valign=top style='width:60.0pt;border-top:none;border-left:none;
+  border-bottom:solid #CBD5E0 1.0pt;border-right:solid #CBD5E0 1.0pt;
+  mso-border-top-alt:solid #CBD5E0 .25pt;mso-border-left-alt:solid #CBD5E0 .25pt;
+  mso-border-alt:solid #CBD5E0 .25pt;background:white;padding:3.5pt 7.0pt 3.5pt 7.0pt'>
+  <p class=MsoNormal><span style='font-size:10.0pt'>Operations</span></p>
+  </td>
+  <td width=384 valign=top style='width:4.0in;border-top:none;border-left:none;
+  border-bottom:solid #CBD5E0 1.0pt;border-right:solid #CBD5E0 1.0pt;
+  mso-border-top-alt:solid #CBD5E0 .25pt;mso-border-left-alt:solid #CBD5E0 .25pt;
+  mso-border-alt:solid #CBD5E0 .25pt;background:white;padding:3.5pt 7.0pt 3.5pt 7.0pt'>
+  <p class=MsoNormal><span style='font-size:10.0pt'>Member app: member can now
+  book classes.</span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:5'>
+  <td width=160 valign=top style='width:120.0pt;border:solid #CBD5E0 1.0pt;
+  border-top:none;mso-border-top-alt:solid #CBD5E0 .25pt;mso-border-alt:solid #CBD5E0 .25pt;
+  background:#EDF2F7;padding:3.5pt 7.0pt 3.5pt 7.0pt'>
+  <p class=MsoNormal><span class=SpellE><span style='font-size:10.0pt;
+  font-family:"Courier New";mso-fareast-font-family:"Courier New";color:#4A5568'>PaymentCleared</span></span></p>
+  </td>
+  <td width=80 valign=top style='width:60.0pt;border-top:none;border-left:none;
+  border-bottom:solid #CBD5E0 1.0pt;border-right:solid #CBD5E0 1.0pt;
+  mso-border-top-alt:solid #CBD5E0 .25pt;mso-border-left-alt:solid #CBD5E0 .25pt;
+  mso-border-alt:solid #CBD5E0 .25pt;background:#EDF2F7;padding:3.5pt 7.0pt 3.5pt 7.0pt'>
+  <p class=MsoNormal><span style='font-size:10.0pt'>Finance</span></p>
+  </td>
+  <td width=384 valign=top style='width:4.0in;border-top:none;border-left:none;
+  border-bottom:solid #CBD5E0 1.0pt;border-right:solid #CBD5E0 1.0pt;
+  mso-border-top-alt:solid #CBD5E0 .25pt;mso-border-left-alt:solid #CBD5E0 .25pt;
+  mso-border-alt:solid #CBD5E0 .25pt;background:#EDF2F7;padding:3.5pt 7.0pt 3.5pt 7.0pt'>
+  <p class=MsoNormal><span style='font-size:10.0pt'>Customer: clear balance,
+  stop dunning. Finance: DR Cash / CR AR.</span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:6'>
+  <td width=160 valign=top style='width:120.0pt;border:solid #CBD5E0 1.0pt;
+  border-top:none;mso-border-top-alt:solid #CBD5E0 .25pt;mso-border-alt:solid #CBD5E0 .25pt;
+  background:white;padding:3.5pt 7.0pt 3.5pt 7.0pt'>
+  <p class=MsoNormal><span class=SpellE><span style='font-size:10.0pt;
+  font-family:"Courier New";mso-fareast-font-family:"Courier New";color:#4A5568'>PaymentFailed</span></span></p>
+  </td>
+  <td width=80 valign=top style='width:60.0pt;border-top:none;border-left:none;
+  border-bottom:solid #CBD5E0 1.0pt;border-right:solid #CBD5E0 1.0pt;
+  mso-border-top-alt:solid #CBD5E0 .25pt;mso-border-left-alt:solid #CBD5E0 .25pt;
+  mso-border-alt:solid #CBD5E0 .25pt;background:white;padding:3.5pt 7.0pt 3.5pt 7.0pt'>
+  <p class=MsoNormal><span style='font-size:10.0pt'>Finance</span></p>
+  </td>
+  <td width=384 valign=top style='width:4.0in;border-top:none;border-left:none;
+  border-bottom:solid #CBD5E0 1.0pt;border-right:solid #CBD5E0 1.0pt;
+  mso-border-top-alt:solid #CBD5E0 .25pt;mso-border-left-alt:solid #CBD5E0 .25pt;
+  mso-border-alt:solid #CBD5E0 .25pt;background:white;padding:3.5pt 7.0pt 3.5pt 7.0pt'>
+  <p class=MsoNormal><span style='font-size:10.0pt'>Customer: open <span
+  class=GramE>arrears</span>, begin dunning. Operations: grace period then
+  suspend. Finance: AR stays open.</span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:7'>
+  <td width=160 valign=top style='width:120.0pt;border:solid #CBD5E0 1.0pt;
+  border-top:none;mso-border-top-alt:solid #CBD5E0 .25pt;mso-border-alt:solid #CBD5E0 .25pt;
+  background:#EDF2F7;padding:3.5pt 7.0pt 3.5pt 7.0pt'>
+  <p class=MsoNormal><span class=SpellE><span style='font-size:10.0pt;
+  font-family:"Courier New";mso-fareast-font-family:"Courier New";color:#4A5568'>AttendanceRecorded</span></span></p>
+  </td>
+  <td width=80 valign=top style='width:60.0pt;border-top:none;border-left:none;
+  border-bottom:solid #CBD5E0 1.0pt;border-right:solid #CBD5E0 1.0pt;
+  mso-border-top-alt:solid #CBD5E0 .25pt;mso-border-left-alt:solid #CBD5E0 .25pt;
+  mso-border-alt:solid #CBD5E0 .25pt;background:#EDF2F7;padding:3.5pt 7.0pt 3.5pt 7.0pt'>
+  <p class=MsoNormal><span style='font-size:10.0pt'>Operations</span></p>
+  </td>
+  <td width=384 valign=top style='width:4.0in;border-top:none;border-left:none;
+  border-bottom:solid #CBD5E0 1.0pt;border-right:solid #CBD5E0 1.0pt;
+  mso-border-top-alt:solid #CBD5E0 .25pt;mso-border-left-alt:solid #CBD5E0 .25pt;
+  mso-border-alt:solid #CBD5E0 .25pt;background:#EDF2F7;padding:3.5pt 7.0pt 3.5pt 7.0pt'>
+  <p class=MsoNormal><span style='font-size:10.0pt'>Finance: revenue
+  recognition signal (packs/drop-ins). Customer: retention signal. Platform
+  Billing: cross-tenant settlement if partner visit.</span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:8'>
+  <td width=160 valign=top style='width:120.0pt;border:solid #CBD5E0 1.0pt;
+  border-top:none;mso-border-top-alt:solid #CBD5E0 .25pt;mso-border-alt:solid #CBD5E0 .25pt;
+  background:white;padding:3.5pt 7.0pt 3.5pt 7.0pt'>
+  <p class=MsoNormal><span class=SpellE><span style='font-size:10.0pt;
+  font-family:"Courier New";mso-fareast-font-family:"Courier New";color:#4A5568'>RetailItemAdded</span></span></p>
+  </td>
+  <td width=80 valign=top style='width:60.0pt;border-top:none;border-left:none;
+  border-bottom:solid #CBD5E0 1.0pt;border-right:solid #CBD5E0 1.0pt;
+  mso-border-top-alt:solid #CBD5E0 .25pt;mso-border-left-alt:solid #CBD5E0 .25pt;
+  mso-border-alt:solid #CBD5E0 .25pt;background:white;padding:3.5pt 7.0pt 3.5pt 7.0pt'>
+  <p class=MsoNormal><span style='font-size:10.0pt'>Customer</span></p>
+  </td>
+  <td width=384 valign=top style='width:4.0in;border-top:none;border-left:none;
+  border-bottom:solid #CBD5E0 1.0pt;border-right:solid #CBD5E0 1.0pt;
+  mso-border-top-alt:solid #CBD5E0 .25pt;mso-border-left-alt:solid #CBD5E0 .25pt;
+  mso-border-alt:solid #CBD5E0 .25pt;background:white;padding:3.5pt 7.0pt 3.5pt 7.0pt'>
+  <p class=MsoNormal><span style='font-size:10.0pt'>Customer: add to tab.
+  Finance: DR AR / CR Sales.</span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:9'>
+  <td width=160 valign=top style='width:120.0pt;border:solid #CBD5E0 1.0pt;
+  border-top:none;mso-border-top-alt:solid #CBD5E0 .25pt;mso-border-alt:solid #CBD5E0 .25pt;
+  background:#EDF2F7;padding:3.5pt 7.0pt 3.5pt 7.0pt'>
+  <p class=MsoNormal><span class=SpellE><span style='font-size:10.0pt;
+  font-family:"Courier New";mso-fareast-font-family:"Courier New";color:#4A5568'>TabClosed</span></span></p>
+  </td>
+  <td width=80 valign=top style='width:60.0pt;border-top:none;border-left:none;
+  border-bottom:solid #CBD5E0 1.0pt;border-right:solid #CBD5E0 1.0pt;
+  mso-border-top-alt:solid #CBD5E0 .25pt;mso-border-left-alt:solid #CBD5E0 .25pt;
+  mso-border-alt:solid #CBD5E0 .25pt;background:#EDF2F7;padding:3.5pt 7.0pt 3.5pt 7.0pt'>
+  <p class=MsoNormal><span style='font-size:10.0pt'>Customer</span></p>
+  </td>
+  <td width=384 valign=top style='width:4.0in;border-top:none;border-left:none;
+  border-bottom:solid #CBD5E0 1.0pt;border-right:solid #CBD5E0 1.0pt;
+  mso-border-top-alt:solid #CBD5E0 .25pt;mso-border-left-alt:solid #CBD5E0 .25pt;
+  mso-border-alt:solid #CBD5E0 .25pt;background:#EDF2F7;padding:3.5pt 7.0pt 3.5pt 7.0pt'>
+  <p class=MsoNormal><span style='font-size:10.0pt'>Customer: trigger charge.
+  Finance: awaits <span class=SpellE>PaymentCleared</span>.</span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:10'>
+  <td width=160 valign=top style='width:120.0pt;border:solid #CBD5E0 1.0pt;
+  border-top:none;mso-border-top-alt:solid #CBD5E0 .25pt;mso-border-alt:solid #CBD5E0 .25pt;
+  background:white;padding:3.5pt 7.0pt 3.5pt 7.0pt'>
+  <p class=MsoNormal><span class=SpellE><span style='font-size:10.0pt;
+  font-family:"Courier New";mso-fareast-font-family:"Courier New";color:#4A5568'>SubscriptionRenewalDue</span></span></p>
+  </td>
+  <td width=80 valign=top style='width:60.0pt;border-top:none;border-left:none;
+  border-bottom:solid #CBD5E0 1.0pt;border-right:solid #CBD5E0 1.0pt;
+  mso-border-top-alt:solid #CBD5E0 .25pt;mso-border-left-alt:solid #CBD5E0 .25pt;
+  mso-border-alt:solid #CBD5E0 .25pt;background:white;padding:3.5pt 7.0pt 3.5pt 7.0pt'>
+  <p class=MsoNormal><span style='font-size:10.0pt'>Customer</span></p>
+  </td>
+  <td width=384 valign=top style='width:4.0in;border-top:none;border-left:none;
+  border-bottom:solid #CBD5E0 1.0pt;border-right:solid #CBD5E0 1.0pt;
+  mso-border-top-alt:solid #CBD5E0 .25pt;mso-border-left-alt:solid #CBD5E0 .25pt;
+  mso-border-alt:solid #CBD5E0 .25pt;background:white;padding:3.5pt 7.0pt 3.5pt 7.0pt'>
+  <p class=MsoNormal><span style='font-size:10.0pt'>Customer: <span
+  class=GramE>initiate</span> charge. Finance: awaits <span class=SpellE>PaymentCleared</span>.</span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:11'>
+  <td width=160 valign=top style='width:120.0pt;border:solid #CBD5E0 1.0pt;
+  border-top:none;mso-border-top-alt:solid #CBD5E0 .25pt;mso-border-alt:solid #CBD5E0 .25pt;
+  background:#EDF2F7;padding:3.5pt 7.0pt 3.5pt 7.0pt'>
+  <p class=MsoNormal><span class=SpellE><span style='font-size:10.0pt;
+  font-family:"Courier New";mso-fareast-font-family:"Courier New";color:#4A5568'>SubscriptionCancelled</span></span></p>
+  </td>
+  <td width=80 valign=top style='width:60.0pt;border-top:none;border-left:none;
+  border-bottom:solid #CBD5E0 1.0pt;border-right:solid #CBD5E0 1.0pt;
+  mso-border-top-alt:solid #CBD5E0 .25pt;mso-border-left-alt:solid #CBD5E0 .25pt;
+  mso-border-alt:solid #CBD5E0 .25pt;background:#EDF2F7;padding:3.5pt 7.0pt 3.5pt 7.0pt'>
+  <p class=MsoNormal><span style='font-size:10.0pt'>Customer</span></p>
+  </td>
+  <td width=384 valign=top style='width:4.0in;border-top:none;border-left:none;
+  border-bottom:solid #CBD5E0 1.0pt;border-right:solid #CBD5E0 1.0pt;
+  mso-border-top-alt:solid #CBD5E0 .25pt;mso-border-left-alt:solid #CBD5E0 .25pt;
+  mso-border-alt:solid #CBD5E0 .25pt;background:#EDF2F7;padding:3.5pt 7.0pt 3.5pt 7.0pt'>
+  <p class=MsoNormal><span style='font-size:10.0pt'>Operations: suspend
+  entitlement, cancel future bookings. Finance: reverse deferred balance, issue
+  refund. Customer: stop billing, confirm to member.</span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:12;mso-yfti-lastrow:yes'>
+  <td width=160 valign=top style='width:120.0pt;border:solid #CBD5E0 1.0pt;
+  border-top:none;mso-border-top-alt:solid #CBD5E0 .25pt;mso-border-alt:solid #CBD5E0 .25pt;
+  background:white;padding:3.5pt 7.0pt 3.5pt 7.0pt'>
+  <p class=MsoNormal><span class=SpellE><span style='font-size:10.0pt;
+  font-family:"Courier New";mso-fareast-font-family:"Courier New";color:#4A5568'>MemberInArrears</span></span></p>
+  </td>
+  <td width=80 valign=top style='width:60.0pt;border-top:none;border-left:none;
+  border-bottom:solid #CBD5E0 1.0pt;border-right:solid #CBD5E0 1.0pt;
+  mso-border-top-alt:solid #CBD5E0 .25pt;mso-border-left-alt:solid #CBD5E0 .25pt;
+  mso-border-alt:solid #CBD5E0 .25pt;background:white;padding:3.5pt 7.0pt 3.5pt 7.0pt'>
+  <p class=MsoNormal><span style='font-size:10.0pt'>Customer</span></p>
+  </td>
+  <td width=384 valign=top style='width:4.0in;border-top:none;border-left:none;
+  border-bottom:solid #CBD5E0 1.0pt;border-right:solid #CBD5E0 1.0pt;
+  mso-border-top-alt:solid #CBD5E0 .25pt;mso-border-left-alt:solid #CBD5E0 .25pt;
+  mso-border-alt:solid #CBD5E0 .25pt;background:white;padding:3.5pt 7.0pt 3.5pt 7.0pt'>
+  <p class=MsoNormal><span style='font-size:10.0pt'>Operations: suspend
+  entitlement. Finance: review AR ageing, provision if required.</span></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal style='margin-bottom:10.0pt'><o:p>&nbsp;</o:p></p>
+
+<table class=MsoNormalTable border=1 cellspacing=0 cellpadding=0 width=624
+ style='width:6.5in;border-collapse:collapse;border:none;mso-border-alt:solid windowtext .5pt;
+ mso-yfti-tbllook:1184;mso-padding-alt:0in .5pt 0in .5pt;mso-border-insideh:
+ .5pt solid windowtext;mso-border-insidev:.5pt solid windowtext'>
+ <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes;mso-yfti-lastrow:yes'>
+  <td valign=top style='border-top:#2A7A6A;border-left:#2A7A6A;border-bottom:
+  #CBD5E0;border-right:#CBD5E0;border-style:solid;border-width:1.0pt;
+  mso-border-top-alt:#2A7A6A 1.0pt;mso-border-left-alt:#2A7A6A 1.0pt;
+  mso-border-bottom-alt:#CBD5E0 .25pt;mso-border-right-alt:#CBD5E0 .25pt;
+  mso-border-style-alt:solid;background:#F7FAFA;padding:8.0pt 10.0pt 8.0pt 10.0pt'>
+  <p class=MsoNormal><b><span style='color:#2A7A6A'>The complete picture<span
+  class=GramE>:<span style='mso-spacerun:yes'>  </span><span style='color:windowtext;
+  font-weight:normal'>Twelve</span></span></span></b> events. Five domains. One
+  member <span class=GramE>journey —</span> from order through active
+  membership to renewal, retail purchase, and if it comes to it, cancellation
+  or arrears. Every domain reacts to the facts it cares about. The ledger
+  reflects the business. The <span class=GramE>member relationship</span> is
+  managed where it belongs. Revenue is <span class=SpellE>recognised</span>
+  when it is earned.</p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal style='margin-bottom:10.0pt'><o:p>&nbsp;</o:p></p>
+
+<div style='mso-element:para-border-div;border:none;border-bottom:solid #CBD5E0 1.0pt;
+mso-border-bottom-alt:solid #CBD5E0 .5pt;padding:0in 0in 1.0pt 0in'>
+
+<p class=MsoNormal style='margin-bottom:10.0pt;border:none;mso-border-bottom-alt:
+solid #CBD5E0 .5pt;padding:0in;mso-padding-alt:0in 0in 1.0pt 0in'><o:p>&nbsp;</o:p></p>
+
+</div>
+
+<p class=MsoNormal style='margin-bottom:8.0pt'><i><span style='color:#4A5568'>Next
+in this series: Cross-tenant bookings and network revenue settlement — how
+information flows when a member of one gym attends a class at another, and how
+the settlement obligation is calculated, tracked, and paid.</span></i></p>
+
+</div>
+
+</body>
+
+</html>
