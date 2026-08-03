@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Theater Grid — Second Worked Example (Home Services / HomeServe-style)</title>
+<style>
+  :root{
+    --bg:#0e1420; --panel:#161e2e; --panel2:#1d283b; --ink:#eef2f8; --muted:#9db0cc;
+    --line:#2a3750; --accent:#e8b04b; --accent2:#5aa2ff; --good:#4fd1a5; --warn:#f0866b;
+    --font:"Inter",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:#0b111c;color:var(--ink);font-family:var(--font);line-height:1.45;-webkit-font-smoothing:antialiased;padding:40px 26px 60px}
+  .wrap{max-width:1480px;margin:0 auto}
+  .eyebrow{letter-spacing:.2em;text-transform:uppercase;font-size:11px;color:var(--accent);font-weight:700}
+  h1{font-size:clamp(24px,3.4vw,36px);font-weight:800;letter-spacing:-.01em;margin:10px 0 8px}
+  .lede{color:var(--muted);max-width:960px;font-size:15px;margin:0 0 6px}
+  .lede b{color:var(--ink)}
+  .readrules{display:flex;gap:14px;flex-wrap:wrap;margin:16px 0 26px;font-size:12.5px}
+  .readrules span{background:var(--panel);border:1px solid var(--line);border-radius:999px;padding:6px 14px;color:var(--muted)}
+  .readrules b{color:var(--accent)}
+
+  .gridwrap{overflow-x:auto;border:1px solid var(--line);border-radius:14px;background:var(--panel)}
+  table{border-collapse:collapse;width:100%;min-width:1200px}
+  th,td{border:1px solid var(--line);padding:0;vertical-align:top}
+
+  th.stream{background:linear-gradient(180deg,#20304c,#1a2740);padding:12px 12px;text-align:left;min-width:168px}
+  th.stream .t{font-size:9.5px;letter-spacing:.14em;color:var(--accent2);font-weight:800;text-transform:uppercase}
+  th.stream .n{font-size:13.5px;font-weight:800;margin:3px 0 2px;color:var(--ink)}
+  th.stream .p{font-size:11px;color:var(--muted);font-style:italic;font-weight:400}
+  th.stream .lc{font-family:ui-monospace,Menlo,Consolas,monospace;font-size:9px;color:var(--good);margin-top:5px;font-weight:400}
+  th.stream .lc2{font-family:ui-monospace,Menlo,Consolas,monospace;font-size:9px;color:var(--warn);margin-top:2px;font-weight:400}
+  th.stream .nolc{font-size:9px;color:#8fa0bd;margin-top:5px;font-style:italic;font-weight:400}
+  th.corner{background:var(--panel2);padding:12px;text-align:left;vertical-align:middle;min-width:210px}
+  th.corner .a{font-size:11px;color:var(--muted);font-weight:600}
+  th.corner .b{font-size:13px;font-weight:800;color:var(--accent)}
+
+  th.dom{background:linear-gradient(90deg,#242e1f,#1c2519);padding:12px;text-align:left;width:210px}
+  th.dom .t{font-size:9.5px;letter-spacing:.14em;color:var(--good);font-weight:800;text-transform:uppercase}
+  th.dom .n{font-size:13.5px;font-weight:800;margin:3px 0 4px}
+  th.dom .lex{font-size:10.5px;color:var(--muted);font-family:ui-monospace,Menlo,Consolas,monospace;line-height:1.6}
+
+  td.cell{background:var(--bg);padding:9px;min-width:168px}
+  td.empty{background:#0d1320}
+  .cap{background:var(--panel2);border:1px solid var(--line);border-left:3px solid var(--accent);border-radius:8px;padding:7px 9px;margin-bottom:7px}
+  .cap:last-child{margin-bottom:0}
+  .cap .cn{font-size:12px;font-weight:700}
+  .cap .cc{font-size:10px;color:var(--muted);margin-top:2px}
+  .cap.core{border-left-color:var(--accent)}
+  .cap.supporting{border-left-color:var(--accent2)}
+  .cap.commodity{border-left-color:#5a6b8a}
+  .cap.ref{border-left-style:dashed;background:#182031}
+
+  td.spanrow{background:linear-gradient(90deg,#16231d,#131c2a);padding:11px 14px;font-size:12.5px;color:var(--muted)}
+  td.spanrow b{color:var(--good)}
+  td.spanrow .tag{font-size:9.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--good);font-weight:800;margin-right:10px}
+
+  .legend{display:flex;gap:18px;flex-wrap:wrap;margin-top:16px;font-size:12px;color:var(--muted);align-items:center}
+  .sw{width:10px;height:10px;border-radius:2px;display:inline-block;margin-right:6px;vertical-align:-1px}
+
+  .notes{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:22px}
+  @media(max-width:900px){.notes{grid-template-columns:1fr}}
+  .note{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:15px 17px;font-size:12.8px;color:var(--muted)}
+  .note h3{margin:0 0 8px;font-size:13.5px;color:var(--ink)}
+  .note b{color:var(--ink)}
+  .budget{margin-top:16px;background:var(--panel);border:1px solid var(--line);border-radius:999px;display:inline-block;padding:7px 16px;font-size:12px;color:var(--muted)}
+  .budget b{color:var(--good)}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="eyebrow">The Capability Model · Theater Grid — second worked example (proposed from public information)</div>
+  <h1>Home Repair Plans (HomeServe-style) — the 5+1 Holds</h1>
+  <p class="lede">A subscription home-repair-plan business: a <b>vetted contractor network</b> doing the actual repairs, 24/7 claims with dispatch, a one-year repair guarantee, and an HVAC install business on the side. The generality test: <b>Supplier becomes the contractor network</b> (the trades are the supply chain) and <b>Operations becomes the claims-and-jobs engine</b>. The utility-partner channel is real but <b>deliberately held off the theater for now</b> — Demand Creation manages that relationship by contract (partners realize it natively or behind an adapter, below the line), and the commercial paper is out-of-band.</p>
+  <div class="readrules">
+    <span><b>Read down a column:</b> everything that stream needs, across domains</span>
+    <span><b>Read across a row:</b> everywhere that domain's vocabulary is at work</span>
+    <span><b>Green line:</b> trigger → value-realized terminal · <b>amber line:</b> the declared unhappy endings</span>
+  </div>
+
+  <div class="gridwrap">
+  <table>
+    <tr>
+      <th class="corner"><div class="b">COMPOSITIONS →</div><div class="a">DOMAINS (lexicons) ↓</div></th>
+      <th class="stream"><div class="t">ValueStream</div><div class="n">Enroll-to-Covered</div><div class="p">"You're protected — and it's in force"</div><div class="lc">OfferPresented → CoverageEffective</div><div class="lc2">∅ OfferDeclined · EnrollmentLapsed</div></th>
+      <th class="stream"><div class="t">ValueStream</div><div class="n">Claim-to-Restore</div><div class="p">"It broke; we fixed it — guaranteed"</div><div class="lc">ClaimReported → RepairVerifiedClosed</div><div class="lc2">∅ ClaimDenied · JobUnfulfilled</div></th>
+      <th class="stream"><div class="t">ValueStream</div><div class="n">Quote-to-Install</div><div class="p">"A new system, commissioned"</div><div class="lc">InstallQuoteRequested → SystemCommissioned</div><div class="lc2">∅ QuoteDeclined · InstallAbandoned</div></th>
+      <th class="stream"><div class="t">ValueStream</div><div class="n">Renew-or-Save</div><div class="p">"Another year — or a graceful goodbye"</div><div class="lc">RenewalWindowOpened → PlanRenewed</div><div class="lc2">∅ PlanCancelled → opens Win-back</div></th>
+      <th class="stream"><div class="t">Application · View</div><div class="n">Homeowner 360</div><div class="p">"One homeowner, one property, every touchpoint"</div><div class="nolc">no lifecycle · builds the homeowner read model · channels (web, mobile, IVR, CS workbench) are columns on the Homeowner grid</div></th>
+      <th class="stream"><div class="t">Analytical</div><div class="n">Network &amp; Risk Insights</div><div class="p">"Loss ratio &amp; network health, by territory"</div><div class="nolc">no lifecycle · reshapes existing words · anything it mints lives in a row →</div></th>
+    </tr>
+
+    <tr>
+      <th class="dom"><div class="t">Domain</div><div class="n">Demand Creation</div><div class="lex">LeadCaptured<br>OfferPresented<br>CampaignLaunched</div></th>
+      <td class="cell">
+        <div class="cap core"><div class="cn">Offer &amp; Quote Presentment</div><div class="cc">ZIP → eligible plans · price</div></div>
+        <div class="cap supporting"><div class="cn">Campaign Execution</div><div class="cc">2 events · 1 command</div></div>
+      </td>
+      <td class="cell empty"></td>
+      <td class="cell">
+        <div class="cap supporting"><div class="cn">Install Lead Capture</div><div class="cc">from repair visits &amp; web</div></div>
+      </td>
+      <td class="cell">
+        <div class="cap supporting"><div class="cn">Win-back Campaigns</div><div class="cc">consumes ChurnRiskDetected · PlanCancelled</div></div>
+      </td>
+      <td class="cell">
+        <div class="cap supporting ref"><div class="cn">Active Offers</div><div class="cc">↩ ref · upgrade &amp; combo prompts</div></div>
+      </td>
+      <td class="cell empty"></td>
+    </tr>
+
+    <tr>
+      <th class="dom"><div class="t">Domain</div><div class="n">Homeowner Experience</div><div class="lex">PlanActivated<br>CoverageEffective<br>ChurnRiskDetected</div></th>
+      <td class="cell">
+        <div class="cap core"><div class="cn">Plan Catalog &amp; Coverage Terms</div><div class="cc">what's promisable in this territory</div></div>
+        <div class="cap core"><div class="cn">Homeowner &amp; Property Registry</div><div class="cc">the covered asset · dedup</div></div>
+        <div class="cap core"><div class="cn">Plan Activation &amp; Waiting Period</div><div class="cc">clock-driven edge → CoverageEffective</div></div>
+      </td>
+      <td class="cell">
+        <div class="cap supporting"><div class="cn">Service Communications</div><div class="cc">status at every fact · "your tech is on the way"</div></div>
+      </td>
+      <td class="cell empty"></td>
+      <td class="cell">
+        <div class="cap core"><div class="cn">Plan Administration &amp; Renewal</div><div class="cc">terms · amendments · renewal state</div></div>
+      </td>
+      <td class="cell">
+        <div class="cap core ref"><div class="cn">Homeowner &amp; Property Registry</div><div class="cc">↩ ref — also used by Enroll-to-Covered</div></div>
+        <div class="cap supporting ref"><div class="cn">…and 2 more</div><div class="cc">Plan Administration · Service Communications — drill for the manifest</div></div>
+      </td>
+      <td class="cell">
+        <div class="cap supporting"><div class="cn">Churn Risk Detection</div><div class="cc">mints ChurnRiskDetected — ML below the line, home here</div></div>
+      </td>
+    </tr>
+
+    <tr>
+      <th class="dom"><div class="t">Domain</div><div class="n">Operations · Service Delivery</div><div class="lex">ClaimReported<br>CoverageConfirmed<br>JobDispatched · RepairCompleted</div></th>
+      <td class="cell empty"></td>
+      <td class="cell">
+        <div class="cap core"><div class="cn">Claim Intake &amp; Triage</div><div class="cc">24/7/365 · phone + digital</div></div>
+        <div class="cap core"><div class="cn">Coverage Determination</div><div class="cc">EnsureCovered — the rule lives here</div></div>
+        <div class="cap core"><div class="cn">Dispatch &amp; Job Tracking</div><div class="cc">match trade × territory × urgency</div></div>
+        <div class="cap supporting"><div class="cn">Guarantee &amp; Rework</div><div class="cc">1-yr guarantee · reopens the job</div></div>
+      </td>
+      <td class="cell">
+        <div class="cap core"><div class="cn">Install Project Management</div><div class="cc">survey → install → commission</div></div>
+      </td>
+      <td class="cell empty"></td>
+      <td class="cell">
+        <div class="cap core ref"><div class="cn">Dispatch &amp; Job Tracking</div><div class="cc">↩ ref — "where's my technician" read model</div></div>
+      </td>
+      <td class="cell empty"></td>
+    </tr>
+
+    <tr>
+      <th class="dom"><div class="t">Domain</div><div class="n">Supplier · Contractor Network</div><div class="lex">ContractorCredentialed<br>CapacityDeclared<br>WorkOrderAccepted</div></th>
+      <td class="cell empty"></td>
+      <td class="cell">
+        <div class="cap core"><div class="cn">Work Order Offer &amp; Acceptance</div><div class="cc">the network takes the job</div></div>
+        <div class="cap core"><div class="cn">Network Capacity &amp; Coverage</div><div class="cc">trade × geography · the JobUnfulfilled guard</div></div>
+      </td>
+      <td class="cell">
+        <div class="cap supporting"><div class="cn">Installer Capacity &amp; Certification</div><div class="cc">licensed install crews</div></div>
+      </td>
+      <td class="cell empty"></td>
+      <td class="cell empty"></td>
+      <td class="cell">
+        <div class="cap supporting"><div class="cn">Contractor Performance Scoring</div><div class="cc">mints ContractorRiskScored — home here</div></div>
+      </td>
+    </tr>
+
+    <tr>
+      <th class="dom"><div class="t">Domain</div><div class="n">Finance</div><div class="lex">PremiumCollected<br>PartnerShareAccrued<br>ContractorSettled</div></th>
+      <td class="cell">
+        <div class="cap core"><div class="cn">Premium Billing &amp; Collections</div><div class="cc">monthly · dunning → EnrollmentLapsed</div></div>
+        <div class="cap core"><div class="cn">Pricing &amp; Underwriting</div><div class="cc">price the territory's risk</div></div>
+      </td>
+      <td class="cell">
+        <div class="cap core"><div class="cn">Contractor Settlement</div><div class="cc">pay the trade on RepairVerifiedClosed</div></div>
+        <div class="cap supporting"><div class="cn">Claims Cost Ledger</div><div class="cc">every job priced · the loss-ratio source</div></div>
+      </td>
+      <td class="cell">
+        <div class="cap commodity"><div class="cn">Install Financing</div><div class="cc">buy candidate · partner lender</div></div>
+      </td>
+      <td class="cell">
+        <div class="cap core ref"><div class="cn">Premium Billing &amp; Collections</div><div class="cc">↩ ref — renewal pricing &amp; charge</div></div>
+      </td>
+      <td class="cell empty"></td>
+      <td class="cell">
+        <div class="cap supporting ref"><div class="cn">Claims Cost Ledger</div><div class="cc">↩ ref — loss ratio is a reshape, not a mint</div></div>
+      </td>
+    </tr>
+
+    <tr>
+      <th class="dom"><div class="t">Domain · as composite</div><div class="n">Enabling (+1)</div><div class="lex">bus · registry · identity<br>payments · e-sign · state filings</div></th>
+      <td class="spanrow" colspan="6"><span class="tag">Standing enabling composite — the band</span> Serves every column: identity &amp; access, payment rails (PCI), document &amp; e-sign, notifications, the bus and registry — <b>plus Regulatory Compliance &amp; State Filings</b>, unusually load-bearing here because service plans are state-regulated products: <b>declarable</b> (Enroll-to-Covered must invoke it per territory), so it earns a named capability in the band rather than staying ambient.</td>
+    </tr>
+  </table>
+  </div>
+
+  <div class="legend">
+    <span><i class="sw" style="background:var(--accent)"></i>Core capability</span>
+    <span><i class="sw" style="background:var(--accent2)"></i>Supporting</span>
+    <span><i class="sw" style="background:#5a6b8a"></i>Commodity (buy candidate)</span>
+    <span><i class="sw" style="background:#0d1320;border:1px solid var(--line)"></i>Empty cell — fine</span>
+    <span><i class="sw" style="background:#182031;border:1px dashed var(--accent)"></i>Reference — used here; home stays its row</span>
+  </div>
+
+  <div class="notes">
+    <div class="note">
+      <h3>What the second example proves</h3>
+      The 5+1 held without strain — only the <b>lexicons</b> changed. Supplier's supply chain is <b>people</b> (the trades), not protein bars, and Operations is a claims-and-jobs engine. Note the terminal choice: Enroll-to-Covered ends at <b>CoverageEffective</b> (a clock-driven edge — the waiting period), not PlanSold. Same lesson as FirstClassAttended: <b>the stream ends when the value is real, not when the paperwork is</b>.
+    </div>
+    <div class="note">
+      <h3>What deliberately isn't on this grid</h3>
+      <b>The utility-partner channel</b> — real, and half the funnel — is held off the theater for now: Demand Creation manages the relationship as a contracted capability (partners implement the contract natively or sit behind an ACL adapter, both below the line), revenue share and the master agreement are out-of-band treaty paper, and a Partner-to-Program stream earns its seat only if partner programs become a managed population. <b>Contractor-to-Network</b> (ContractorApplied → ContractorActivated · ∅ ApplicationRejected · CredentialLapsed) is a real stream — but it crosses only Supplier + Enabling, so it appears as a <b>column on the Supplier grid</b>, one level down. Same rule that put the channels on the Homeowner grid: a composition surfaces at the level where it crosses boundaries. And the <b>Operations check</b>: repair claims and HVAC installs are two work-types, but they share the other five spheres — so one Operations sphere at theater, with a claims-ops / install-ops split as the first candidate decomposition on <i>its</i> grid.
+    </div>
+    <div class="note">
+      <h3>Streams chain — here too</h3>
+      <b>PlanCancelled opens Win-back</b> (an unhappy terminal is another stream's trigger); <b>RepairVerifiedClosed triggers Contractor Settlement's</b> money movement; a repair visit can emit <b>InstallLeadCaptured</b>, feeding Quote-to-Install — the repair business is the install business's best marketer, and the grid shows that as a fact crossing a seam, not as a dotted line on a slide. <b>JobUnfulfilled</b> — no contractor capacity in territory — is the ugliest terminal and the most important one to declare: it's the fact the Network Capacity capability exists to prevent, and the one a leader most needs on a dashboard.
+    </div>
+    <div class="note">
+      <h3>The analytical column behaves</h3>
+      <b>Loss ratio is a reshape</b> — premiums (Finance words) over claims costs (Finance words) — so it lives in the Insights column as a product, referencing the Claims Cost Ledger. <b>Churn risk and contractor scoring mint new words</b>, so they are capabilities with homes (Homeowner Experience and Supplier, respectively) that the column merely uses. Mints-vs-reshapes, applied twice, no exceptions needed.
+    </div>
+  </div>
+
+  <div class="budget">Budget check: 6 rows × 6 columns · <b>~24 named, contracted capabilities</b> (+5 references, 1 band) — comfortably inside 20–50 · every column ≤ 7 dependencies</div>
+</div>
+</body>
+</html>
